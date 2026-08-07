@@ -1,0 +1,7 @@
+pdfplumber>=0.11
+python-docx>=1.1
+anthropic>=0.40
+openpyxl>=3.1
+requests>=2.31
+html2text>=2024.2.26
+pandas>=2.2

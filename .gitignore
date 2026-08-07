@@ -1,0 +1,32 @@
+# --- secrets: never commit ---
+.env
+*.key
+*credentials*
+
+# --- source corpus (13 GB of IDB documents; rebuild with src/harvest_projects.py) ---
+corpus/
+data/raw/
+data/interim/
+
+# --- python ---
+__pycache__/
+*.py[cod]
+.Python
+venv/
+.venv/
+env/
+*.egg-info/
+
+# --- notebooks ---
+.ipynb_checkpoints/
+
+# --- os / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- run artifacts ---
+.current_batch.txt
+batch*.txt
+*.log
