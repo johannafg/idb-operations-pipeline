@@ -1,0 +1,60 @@
+{
+  "CO-L1234": {
+    "stats": {"operation_number": "CO-L1234", "n_documents": 1, "n_paragraphs_total": 105, "n_paragraphs_relevant": 37, "bundle_chars": 11890},
+    "fields": [
+      {"field": "cofinancing_present", "value": true, "status": "found", "citation_para": "1.27",
+       "quote": "Parallel financing... will be provided by the International Bank for Reconstruction and Development (US$70 million) and the European Investment Bank (US$56 million) directly to EMB."},
+      {"field": "cofinancing_share_pct", "value": 64.3, "status": "found", "citation_para": "1.38",
+       "quote": "TOTAL 70 [IDB] / 126 [Other MDBs] / 196 [TOTAL] (US$ million) -> 126/196 = 64.3%."},
+      {"field": "imported_inputs_present", "value": null, "status": "not_stated", "citation_para": "",
+       "quote": ""},
+      {"field": "imported_share_est", "value": null, "status": "not_stated", "citation_para": "",
+       "quote": ""},
+      {"field": "civil_works_type", "value": "Elevated metro viaduct, stations, train yard, utility relocation, road reconfiguration", "status": "found", "citation_para": "1.13",
+       "quote": "the metro run over a viaduct... train yard construction, works for the viaduct, transfer of utility networks, demolition, traffic management plans."},
+      {"field": "construction_share_pct", "value": 96.9, "status": "found", "citation_para": "1.38",
+       "quote": "Component 1. Preparatory activities, civil works, and inspections... 190 [TOTAL] of US$196M total -> 96.9%."},
+      {"field": "procurement_modality", "value": "ICB / NCB", "status": "found", "citation_para": "5.3",
+       "quote": "Contracts for goods, works, and nonconsulting services under the program subject to international competitive bidding (ICB) or national competitive bidding (NCB) will use standard bidding documents issued by the Bank."},
+      {"field": "counterpart_funding_share_pct", "value": 58.0, "status": "found", "citation_para": "3.3",
+       "quote": "Public financing for progress payments 2,500 [US$ million] 58 [%] of the US$4.4 billion total financing structure."},
+      {"field": "fx_denomination", "value": "USD (Ordinary Capital); planned conversion to COP", "status": "found", "citation_para": "3.5",
+       "quote": "Currency of approval: U.S. dollars from the Ordinary Capital. Colombia is therefore expected to ask the Bank to convert loan balances into local currency via the Flexible Financing Facility (FFF)."},
+      {"field": "price_escalation_clause", "value": null, "status": "not_stated", "citation_para": "",
+       "quote": ""},
+      {"field": "executing_agency_type", "value": "Newly created SOE (100% public equity)", "status": "found", "citation_para": "1.24",
+       "quote": "District authorities created Empresa de Metro de Bogota S.A. (EMB), a stock corporation with 100% public equity."},
+      {"field": "safeguards_category", "value": "A", "status": "found", "citation_para": "2.4",
+       "quote": "This was classified as a category 'A' operation under the Environment and Safeguards Compliance Policy (OP-703)."}
+    ]
+  },
+  "AR-L1436": {
+    "stats": {"operation_number": "AR-L1436", "n_documents": 1, "n_paragraphs_total": 98, "n_paragraphs_relevant": 31, "bundle_chars": 10240},
+    "fields": [
+      {"field": "cofinancing_present", "value": false, "status": "stated_absent", "citation_para": "Anexo III",
+       "quote": "Financing table lists a single source -- BID (Capital Ordinario): 280,000,000 (100%) -- with the cofinancing checkbox in Anexo III marked 'No'."},
+      {"field": "cofinancing_share_pct", "value": 0.0, "status": "found", "citation_para": "Resumen",
+       "quote": "Fuente: BID (Capital Ordinario) 280,000,000 = 100% / Total 280,000,000 = 100%."},
+      {"field": "imported_inputs_present", "value": null, "status": "not_stated", "citation_para": "",
+       "quote": ""},
+      {"field": "imported_share_est", "value": null, "status": "not_stated", "citation_para": "",
+       "quote": ""},
+      {"field": "civil_works_type", "value": "Road rehabilitation/reconstruction, bridges, hydraulic works, CREMA contracts, urban bypasses", "status": "found", "citation_para": "1.7",
+       "quote": "obras de rehabilitacion y reconstruccion de rutas provinciales; construccion de nuevas variantes para la circunvalacion de transito pesado; rehabilitacion de puentes y otras obras hidraulicas."},
+      {"field": "construction_share_pct", "value": 97.5, "status": "found", "citation_para": "Cuadro 2",
+       "quote": "Componente I (obras) = US$273M of US$280M total program cost -> 97.5%."},
+      {"field": "procurement_modality", "value": "ICB; direct contracting for select studies/staff", "status": "found", "citation_para": "Anexo III",
+       "quote": "Metodo de Adquisicion: ICB listed for the three key works procurements; separate section on Contratacion y Seleccion Directa for specified pre-investment studies and key positions."},
+      {"field": "counterpart_funding_share_pct", "value": 0.0, "status": "found", "citation_para": "Resumen",
+       "quote": "Same table as cofinancing_share_pct: 100% BID-financed, no separate counterpart line."},
+      {"field": "fx_denomination", "value": "USD (approved); local-currency operational flow via Central Bank", "status": "found", "citation_para": "Resumen",
+       "quote": "Moneda de aprobacion: Dolares de los Estados Unidos de America."},
+      {"field": "price_escalation_clause", "value": true, "status": "found", "citation_para": "3.1",
+       "quote": "La accion propuesta para lograr su mitigacion es incluir en los contratos de obra formulas parametricas especificas de redeterminacion de precios."},
+      {"field": "executing_agency_type", "value": "Provincial executing unit (UEP), est. 2001", "status": "found", "citation_para": "footnote",
+       "quote": "La UEP fue creada en el 2001 por decreto provincial."},
+      {"field": "safeguards_category", "value": "B", "status": "found", "citation_para": "3.6",
+       "quote": "la operacion se clasifica como de categoria de impacto B."}
+    ]
+  }
+}
