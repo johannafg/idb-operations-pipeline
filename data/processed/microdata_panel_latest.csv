@@ -1,0 +1,1218 @@
+operation_number,cofinancing_present,cofinancing_share_pct,imported_inputs_present,imported_share_est,civil_works_type,construction_share_pct,procurement_modality,counterpart_funding_share_pct,fx_denomination,price_escalation_clause,executing_agency_type,safeguards_category
+AR-L1001,,,,,none,0,International competitive bidding,,,,,
+AR-L1002,False,,,,none,,,40,U.S. dollars from the Single Currency Facility,,national government agency - Subsecretaría de Relaciones con Provincias (Provincial Relations Branch) of the Ministry of Economy and Production's Finance Secretariat,
+AR-L1003,False,,,,public infrastructure to support productive activities,,,40,US dollars from the Single Currency Facility of the Bank's Ordinary Capital,,Provincial Ministry of Finance (provincial government),
+AR-L1004,False,0,,,tourism infrastructure,,competitive bidding,41,US dollars from the Single Currency Facility,,national government department,
+AR-L1006,False,,,,none,,single-source selection,30,US dollar from the Single Currency Facility,,national government - Ministry of Social Development,
+AR-L1007,False,,,,buildings,,Bank procedures,30.2,US dollars from the Single Currency Facility,,Provincial Ministry of Economic Affairs,
+AR-L1008,False,,,,none,,,,,,national government legislative branch,
+AR-L1010,,,,,,,,,,,,
+AR-L1012,,,,,,,,,,,,
+AR-L1013,False,0,,,none,,,20,"U.S. dollars, Single Currency Facility of the Ordinary Capital",,national government,
+AR-L1014,,,,,roads,,,,,,,
+AR-L1015,,,,,water/sanitation,,,,,,,
+AR-L1016,False,0,,,,,"ICB, NCB",10,U.S. dollars from the Single Currency Facility,,National government (Ministry of the Interior) and participating provincial governments,
+AR-L1017,False,,,,none,,,67,US dollars of the Bank's single currency facility,,National Commission for Space Activities (CONAE) - autonomous national agency,
+AR-L1019,,,,,,,ICB and NCB,,,,"National government ministry (Ministry of Federal Planning, Public Investments, and Services)",
+AR-L1020,False,0,,,none,,,20,U.S. dollars from the Single Currency Facility,,national government (Ministry of Health of Argentina),
+AR-L1022,False,0,,,,,,38,US$,,subnational government department,
+AR-L1025,,,,,solid waste management,,,,,,,
+AR-L1026,False,,,,none,,,20,U.S. dollars from the Single Currency Facility,,national government: Secretaría de Ambiente y Desarrollo Sustentable and Secretaría de Minería de la Nación,
+AR-L1027,False,0,,,"buildings, housing",,,16,US dollars from the Single Currency Facility,,Autonomous provincial agency (Agencia Córdoba de Inversión y Financiamiento),
+AR-L1030,False,,,,"roads, energy, irrigation/drainage, soil conservation",,"ICB, NCB, shopping, direct contracting",,,,national government secretariat,
+AR-L1031,,,,,water/sanitation,,,,,,,
+AR-L1032,,,,,,,,,,,,
+AR-L1033,False,0,,,none,,,32,U.S. dollars from the Single Currency Facility,,National government - Subsecretaría de la Pequeña y Mediana Empresa y Desarrollo Regional (SEPYME),
+AR-L1035,,,,,none,,ICB,,,,national government,
+AR-L1036,,,,,roads and energy,,,,,,,
+AR-L1038,False,,,,buildings,,,10,U.S. dollar from the Ordinary Capital Single Currency Facility,,national government ministries,
+AR-L1043,False,0,,,buildings,,,10,U.S. dollars from the Single Currency Facility,,Provincial unit - Unidad Provincial de Coordinación y Ejecución de Financiamiento Externo (UPCEFE),
+AR-L1045,False,,,,roads,,,20,U.S. dollars from the Single Currency Facility of the Ordinary Capital,,national government,
+AR-L1063,False,,,,,,,33.33,U.S. dollars from the Single Currency Facility,,"National government - Department of Agriculture, Livestock, Fisheries, and Food (SAGPyA) of the Argentine Ministry of Economy and Production",
+AR-L1064,False,0,,,,,,20,U.S. dollars from the Ordinary Capital Single Currency Facility,,National government agency - Instituto Nacional de Tecnología Agropecuaria (INTA) [National Agricultural Technology Institute],
+AR-L1067,,,,,,,"ICB, NCB, CQS",,,,,
+AR-L1068,False,,,,,,,26.8,U.S. dollars,,"National government (Ministry of Agriculture, Livestock, and Fisheries - MAGyP) with subnational executing agencies (provinces of Chaco and Entre Ríos)",
+AR-L1071,False,,,,tourism infrastructure in protected areas,,International competitive bidding (ICB) and National competitive bidding (NCB),24,U.S. dollars from the Single Currency Facility,,National government ministry (Ministry of Tourism - MINTUR),
+AR-L1073,False,,,,science and technology infrastructure,,,20.44,U.S. dollars from the Single Currency Facility,,national government ministry,
+AR-L1074,False,,,,none,,"ICB, NCB",31.7,U.S. dollars from the Single Currency Facility,,subnational government (provincial ministry),C
+AR-L1079,False,0,,,energy,,,50,U.S. dollars from the Single Currency Facility,,national government,
+AR-L1080,False,,,,water/sanitation,,,20,,,autonomous SOE,
+AR-L1084,False,,,,water/sanitation,,,20,U.S. dollars from the Single Currency Facility,,National government agency (ENOHSA),
+AR-L1092,False,,,,none,,,40,U.S. dollars from the Single Currency Facility,,"national government - Ministry of Industry and Tourism, acting through the Office of the Secretary of Industry, Trade and Small and Medium-sized Enterprise",
+AR-L1095,False,,,,energy,,international bidding,28.9,,,"national government - Energy Secretariat acting through the Management Committee of the Trust Fund for Federal Electricity Transport (CAF) under the Federal Ministry of Planning, Public Investment and Services",
+AR-L1098,False,0,,,none,,,1.16,U.S. dollars from the Single Currency Facility,,national government ministry (Ministry of Economy and Public Finance),
+AR-L1101,False,0,,,,,,20,U.S. dollars from the Single Currency Facility,,national government - Ministry of the Interior,
+AR-L1106,False,,,,"port, roads, urban redevelopment",,,20,"US$, SCF",,Provincial government unit - Unidad Provincial de Coordinación y Ejecución del Financiamiento Externo,
+AR-L1108,False,,,,buildings,,,10,U.S. dollars from the Single Currency Facility of the Ordinary Capital,,"national government - Ministry of Education and Ministry of Federal Planning, Public Investment, and Services",B
+AR-L1111,,,,,,,,,,,,
+AR-L1118,True,,,,none,,,64.3,U.S. dollars from the Single Currency Facility of the Ordinary Capital,,national government - Ministry of Social Development (MDS),
+AR-L1119,False,0,,,"infrastructure, facilities, and environmental sanitation",87.6,,10,U.S. dollars from the Single Currency Facility of the Ordinary Capital,,"national government - Urban Development and Housing Division (SDUV) of the Public Works Department of the Ministry of Federal Planning, Public Investments, and Services",
+AR-L1120,True,,,,production infrastructure,,,20,US dollars from the Single Currency Facility,,national government ministry,
+AR-L1121,False,,,,water/sanitation,,,,,,,A
+AR-L1122,,,,,water/sanitation,,,,,,,
+AR-L1124,False,,,,none,,"National competitive bidding, Quality- and cost-based selection, Selection based on consultants' qualifications",27.8,U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital,,national government ministry,
+AR-L1127,,,,,,,,,,,,C
+AR-L1130,False,0,,,none,,,25,U.S. dollars from the Bank's Ordinary Capital,,Autonomous agency at subnational (provincial) level - not newly created,
+AR-L1131,False,0,,,roads,,,5,U.S. dollars from the Single Currency Facility of Ordinary Capital,,national government ministry through specialized coordinating unit,
+AR-L1133,True,,,,roads,,,,,,national government,
+AR-L1134,True,,,,"water/sanitation, energy, transportation, buildings",,,,,,,
+AR-L1136,,,,,water/sanitation,,ICB,,,,national government,
+AR-L1140,False,,,,tourism infrastructure,,competitive bidding,40.04,U.S. dollars from the Bank's Ordinary Capital (OC),,"subnational government - Finance Undersecretariat (SF), Province of Salta Ministry for the Economy, Infrastructure, and Public Services",
+AR-L1141,,,,,,,,,,,,
+AR-L1142,False,,,,,,,25,U.S. dollars from the Bank's Ordinary Capital,,national government - Argentine Ministry of Health,
+AR-L1144,False,,,,roads,,,10,U.S. dollars from the Bank's Ordinary Capital (OC),,"national government unit - Unit for Coordination of Externally Financed Programs and Projects (UCPyPFE) within Ministry of Federal Planning, Public Investment, and Services",
+AR-L1145,False,,,,none,,,37,U.S. dollars from the Bank's Ordinary Capital,,"National government - Ministry of Industry, acting through the Department of Small and Medium-sized Enterprise and Regional Development",
+AR-L1148,False,,,,urban infrastructure and public services,,,10,U.S. dollars from the FFF of the Ordinary Capital,,national government ministry with Central Executing Unit (CEU) reporting to the ministry's Coordination Unit for Externally Financed Programs and Projects (CUEFPP),
+AR-L1149,False,0,,,none,0,,20,U.S. dollars from the Ordinary Capital,,"national government directorate within Ministry, not newly created",
+AR-L1151,,,,,solid waste,,ICB,,,,national government agencies,B
+AR-L1152,False,,,,buildings,,,10.0,U.S. dollar from the FFF,,national government,B
+AR-L1154,False,,,,,,licitación pública internacional (international competitive bidding),9,U.S. dollars from the Bank's Ordinary Capital,,National government office - Office of the Deputy Secretary for Economic Coordination and Competitiveness Enhancement (SsCEyMC),
+AR-L1156,False,0,,,none,,"ICB, QCBS, CQS",9.8,U.S. dollars,,national government - Federal Cabinet Office,
+AR-L1157,,,,,,,"ICB, NCB, QCBS, CQS",,,,,
+AR-L1158,False,,,,rail,,,40,U.S. dollars from the Ordinary Capital,,National government ministry with Central Execution Unit,
+AR-L1159,False,,,,buildings,,,45.45,"United States dollars, charged to the Bank's Ordinary Capital",,"National government, Unit for Rural Change (UCAR) under the Ministry of Agriculture, Livestock and Fisheries (MAGyP)",B
+AR-L1162,False,0,True,,water/sanitation,,,20,,,autonomous SOE,B
+AR-L1179,False,0,,,"urban infrastructure, environmental sanitation, and social facilities",88.3,,10,U.S. dollars from the Ordinary capital,,"National government - Urban Development and Housing Division (SDUV) of the Public Works Department of the Ministry of Federal Planning, Public Investment, and Services",B
+AR-L1180,,,,,,,,,,,,B
+AR-L1181,False,,,,none,,,21.1,U.S. dollars from the Bank's Ordinary Capital,,national government ministry,
+AR-L1195,False,0,,,water/sanitation,,"ICB, NCB",20,United States dollars,,autonomous SOE,B
+AR-L1196,False,0,,,none,,bidding,39.8,U.S. dollars from the Bank's Ordinary Capital,,national government ministry,C
+AR-L1198,False,0,,,water/sanitation,,,24,U.S. dollars from the Ordinary Capital,,"national government - Ministry of Agroindustry through the Unit for Rural Change (URC), not newly created",
+AR-L1199,,,,,,,,,,,,
+AR-L1243,False,,,,urban infrastructure,,,20,U.S. dollars from the Ordinary Capital,,"national government - Ministry of the Interior, Public Works, and Housing",
+AR-L1245,,,,,"roads, water/sanitation, defense systems",,,,US dollars,,,
+AR-L1247,False,,,,none,,,27.8,U.S. dollars from the Ordinary Capital,,national government ministry,
+AR-L1248,False,0,,,,,,15,U.S. dollars from the Ordinary Capital,,"national government ministry with program coordination unit created under the Ministry of the Interior, Public Works, and Housing",
+AR-L1249,False,,,,none,,,4.7,U.S. dollars,,national government,
+AR-L1251,False,0,,,none,0,"ICB, NCB",10.2,U.S. dollars from the Ordinary Capital,,national government - Ministry of Production,C
+AR-L1252,False,,,,none,,,20,U.S. dollars from the Ordinary Capital,,national government ministry,
+AR-L1254,False,,,,buildings,,ICB,11.5,United States dollars from the Ordinary Capital,,national government,
+AR-L1255,False,,,,none,,,16.7,U.S. dollars from the Ordinary Capital,,National government ministry,B
+AR-L1257,True,,,,water/sanitation,,,43.7,United States dollars from the Ordinary Capital,,"autonomous SOE (Agua y Saneamientos Argentinos S.A., AySA), holding concession for water and sanitation services since 2006",
+AR-L1258,,,,,water/sanitation,,"ICB, NCB, QCBS",25.9,U.S. dollars from the Ordinary Capital,,"national government - Ministry of the Interior, Public Works, and Housing",
+AR-L1260,False,0,,,urban infrastructure,,,20,U.S. dollars from the Ordinary Capital,,Subnational government (Autonomous City of Buenos Aires) through the Finance Department in coordination with the Social and Urban Integration Department (SECISyU) and the Department of Education,
+AR-L1266,False,0,,,none,,,9,United States dollars from the Ordinary Capital,,National government agency (National Statistics and Census Institute - INDEC),C
+AR-L1267,False,,,,rail,,,23,U.S. dollars from the Ordinary Capital,,national government ministry with Central Execution Unit,
+AR-L1272,False,0,,,"roads, water access, and school infrastructure",,,20,U.S. dollars,,Subnational government - Province of Buenos Aires through the Ministry of Economic Affairs (Office of the Undersecretary for Finance) and Ministry of Infrastructure and Public Services,
+AR-L1273,False,0,,,water/sanitation,,"ICB, NCB, QCBS",16.7,U.S. dollars from the Bank's Ordinary Capital (OC),,subnational government (Province of Buenos Aires) through its Ministry of Infrastructure and Public Services (MISP),
+AR-L1274,False,,,,roads,,,28.6,United States dollars from the Ordinary Capital,,subnational autonomous road authority,
+AR-L1279,False,,,,roads,,"ICB, NCB, QCBS, SSS",7,United States dollar,,decentralized entity under the Ministry of Transportation,
+AR-L1280,True,62.5,,,none,,,37.5,United States dollars (US$),,National development bank (second-tier banking institution),B
+AR-L1281,,,,,productive infrastructure,,"ICB, QCBS",,United States dollar,,Ministry of Finance (national government),B or C (A excluded)
+AR-L1282,False,0,,,none,,"ICB, NCB, QCBS",9.5,U.S. dollars,,autonomous national government agency (Federal Administration of Public Revenue),C
+AR-L1285,,,,,"roads, energy, productive infrastructure",,,,,,National government ministry,B
+AR-L1288,False,,,,"urban infrastructure, public spaces, community facilities",,,10,U.S. dollars,,"provincial autonomous agency, newly created",
+AR-L1292,False,0,,,none,,,0,U.S. dollars,,national government,
+AR-L1293,False,0,,,roads,,,37.5,United States dollars from the Ordinary Capital,,subnational autonomous entity,
+AR-L1295,False,,,,roads,,,39,United States dollar,,decentralized agency of the Ministry of Transportation,
+AR-L1302,False,,,,none,,"ICB, NCB, QCBS",,United States dollar (from the Ordinary Capital),,"National government; Ministry of Finance (executing agency), with Ministry of Health and Social Development, Ministry of Education Culture Science and Technology, Ministry of Transportation, and National Council for Social Policy Coordination as coexecuting agencies",C
+AR-L1306,False,0,,,urban infrastructure,79,,0,U.S. dollar,,national government - Ministry of Health and Social Development (MSyDS),
+AR-L1307,,,,,roads,,,,,,national government entity (FFFIR),B or C (excludes Category A)
+AR-L1309,False,0,,,none,,,0,U.S. dollar,,national government ministries,
+AR-L1310,False,0,,,none,,"ICB, NCB, direct contracting, QCBS",34,United States dollar,,"decentralized national agency under the Ministry of Education, Culture, Science, and Technology",
+AR-L1312,,,,,,,,,,,,
+AR-L1436,,,,,,,,,,,,
+BA-L1002,False,,,,housing and neighborhood upgrading,,International Competitive Bidding (ICB),25,US$ from Single Currency Facility,,National government ministry,
+BA-L1003,False,0,,,none,,,20,US Dollar,,national government department,
+BA-L1004,False,,,,none,,,15.97,US$ Single Currency Facility,,national government,C
+BA-L1006,False,0,,,none,,"ICB, NCB",25.93,US$ from Single Currency Facility,,"Ministry of Commerce, Consumer Affairs and Business Development through the Barbados National Standards Institution (BNSI)",
+BA-L1007,False,0,,,none,,,15.25,Single Currency Facility in US$,,national government ministry,
+BA-L1008,False,,,,buildings,,ICB,28.6,Single Currency Facility in US$,,national government,
+BA-L1009,False,0,,,none,0,"ICB, NCB, shopping",20,US Dollar,,national government agency,
+BA-L1012,,,True,,energy,,,,US dollars,,"autonomous SOE, or newly created NPC-BNOCL entity following amalgamation",B
+BA-L1014,False,0,,,coastal infrastructure,,,28.57,US$,,national government ministry with existing coastal zone management unit,
+BA-L1015,False,,,,water/sanitation,,ICB (International Competitive Bidding),5,US Dollar,,"Autonomous SOE - Barbados Water Authority (BWA) of the Ministry of the Environment, Water Resources and Drainage",
+BA-L1016,True,,,,minor works for education facilities,0.46,Individual consultant selection and direct contracting,2.47,US Dollars from the Ordinary Capital,,National government ministry,
+BA-L1020,False,,,,none,,,0,US Dollar of Single Currency Facility,,national government with autonomous entity as sub executing agency,
+BA-L1025,True,31.08,,,energy,,"International competitive bidding, national competitive bidding, price comparison, individual consultants, short lists",0,US Dollars for IDB loan and Euros for EC grant; separate accounts for each currency,,National government - Prime Minister's Office through its Energy and Telecommunications Division (ETD),
+BA-L1032,True,50,,,none,,"ICB, NCB",,USD,,National government ministry (MSCD); not newly created,
+BA-L1033,True,50,,,heritage/cultural tourism infrastructure (Urban Route and Visitors Center),56.5,International Competitive Bidding,0,,,national government ministry (Ministry of Tourism and International Transport),B
+BA-L1034,True,50,,,none,,,,,,Central Bank (autonomous),FI-3 (low risk)
+BA-L1035,False,0,,,roads,,,0,US Dollars,,"Project Execution Unit (PEU) of the Ministry of Transport and Works (MTW), national government",B
+BA-L1043,True,,,,buildings,,"LPI (international public bidding), comparación de precios (price comparison)",,,,national government - Division of Energy and Telecommunications,B
+BA-L1046,True,9.78,,,none,,,,U.S. Dollar for the IDB loan; EU contribution in Euros converted to U.S. Dollars upon receipt by the Bank,,"national government ministry - Ministry of Industry, Innovation, Science, and Technology (MIST)",C
+BH-L1001,False,,,,none,,,30,US$ Dollars Single Currency Facility,,national government - Office of the Prime Minister (OPM),
+BH-L1003,,,,,,,,,,,,
+BH-L1005,False,,,,none,,,20,US$ - Single Currency Facility,,national government - Ministry of Energy and Environment,
+BH-L1007,False,0,,,infrastructure repair and reconstruction,,,20,"U.S. dollar, single currency facility",,national government ministry,
+BH-L1008,,,,,water/sanitation,,"ICB, NCB, PC (price comparison), QCBS, QBS, CQS, FBS",,,,"National government agency, relatively new with limited capacity; Project Executing Unit to be created within NEMA",
+BH-L1016,False,,,,none,,,0,US Dollar - Ordinary Capital,,national government customs department,
+BH-L1024,False,,,,roads,,"International Competitive Bidding (ICB), Limited International Bidding (LIB), Local/National Competitive Bidding",,"USD, Single Currency Facility",,National government ministry (Ministry of Public Works and Transport),
+BH-L1028,False,,,,water/sanitation,,ICB,,US Dollar – Single Currency Facility,,autonomous SOE,
+BH-L1029,False,,,,roads,,,15.58,United States of America Dollars,,national government - Ministry of Works and Urban Development,
+BH-L1030,False,0,,,none,,,23.16,US$,,national government ministry,
+BH-L1033,False,0,,,none,,direct contracting,0,US dollars chargeable to the Ordinary Capital,,national government - Ministry of National Security with Project Implementation Unit,C
+BH-L1035,False,,,,none,,,0,US$ dollars chargeable to the Ordinary Capital,,national government - Ministry of Finance,
+BH-L1037,False,,,,buildings,76.5,"ICB, NCB",,,,national government ministry with new project executing unit,
+BH-L1041,False,0,,,airport infrastructure,,,35,United States dollars,,national government ministry,B
+BH-L1043,False,,,,coastal infrastructure and shoreline protection,67.1,,,US$,,national government ministry,B
+BH-L1045,False,0,,,none,,,0,Dollars of the United States of America,,national government ministry (Ministry of Finance through Department of Information Technology); not newly created,C
+BH-L1046,False,,,,none,,,,Dollars of the United States of America,,"Small Business Development Centre Bahamas (SBDC), existing autonomous agency",B
+BH-L1049,,,,,,,,,,,,
+BL-L1003,False,,,,tourism destinations infrastructure,,public tendering,9.26,Single currency facility in US dollars,,National government ministry and autonomous board,
+BL-L1006,,,,,waste/sanitation,,,24.6,,,National government ministry (MNRE) and autonomous agency (SWMA - newly reorganized),B
+BL-L1008,False,0,,,none,,sole source contracting,8.39,"US dollars, single currency facility",,"national government ministry, existing",
+BL-L1009,True,9.09,,,,,,9.09,,,national government,B
+BL-L1010,False,0,,,roads,,"direct contracting, force account",0,United States Dollars from the Ordinary Capital Single Currency Facility,,national government (Ministry of Works),
+BL-L1014,,,,,,,ICB,,,,,
+BL-L1015,True,50,,,water/sanitation,,ICB,,US Dollars (Single currency facility),,autonomous SOE (The Belize Water Services Limited),
+BL-L1018,True,,,,none,0,"International Competitive Bidding, Quality Based Selection, Quality and Cost Based Selection, Single Source Selection",0.99,US$ chargeable to the Ordinary Capital,,National government ministry (MOEYS) through a Program Executing Unit (PEU) created in 2011,
+BL-L1019,True,16.16,,,roads,90.38,,4.49,"USD for IDB loan, EUR for EC Contribution converted to USD at €1=US$1.10",,national government (Ministry of Works with Project Execution Unit),
+BL-L1020,,,,,"tourism infrastructure (archeological, cultural and natural attractions restoration, basic infrastructure)",70,"LPI, SBCC, direct contracting (contratación directa), direct selection (selección directa), LPN, price comparison (comparación de precios), individual consultants",,,,national government ministry (Ministry of Tourism and Civil Aviation),
+BL-L1021,False,,,,"waste management infrastructure (transfer stations, dumpsite remediation/closure)",,Design Build Operate (DBO) with competitive bidding,,US$,,Autonomous national authority (Solid Waste Management Authority - SWaMA),B
+BL-L1028,False,0,,,water/flood control and coastal protection,,,0,Dollars of the United States of America,,national government ministry,B
+BL-L1029,False,0,,,roads,,,4.49,Dollars of the United States of America,,national government ministry,B
+BL-L1030,True,20,,,buildings,18.1,"International Competitive Bidding, Shopping, Single Source Selection",,US Dollar,,national government ministry,
+BL-L1031,False,,,,none,,,0,Dollars of the United States of America,,national government ministry (Ministry of Finance); Project Executing Unit established within the Program Management Office under MOF,C
+BO-L1001,False,0,,,none,,,49,U.S. dollars,,national government ministry (Ministry of Development Planning),
+BO-L1006,False,,,,none,,,19.3,"FSO currencies, except for Bolivian currency",,"Office of the Deputy Minister of Public Investment and External Financing (VIPFE), national government, existing agency",
+BO-L1007,False,0,,,none,0,,0,FSO currencies except Bolivian currency,,national government - Ministry of Finance,
+BO-L1011,False,0,,,roads,,"international competitive bidding, direct invitation (shortlist)",0,US dollars from the Single Currency Facility,,national government ministry,
+BO-L1012,False,,,,,,,5.3,U.S. dollars from the Single Currency Facility,,national government,
+BO-L1013,True,,,,water/sanitation,64.5,,14,U.S. Dollars,,"autonomous fund (Productive and Social Investment Fund), existing entity, not newly created",
+BO-L1015,,,,,roads,,,,,,autonomous agency - Bolivian Road Administration (ABC),B
+BO-L1016,True,,,,none,,,0,U.S. dollars,,autonomous SOE (Banco de Desarrollo Productivo),
+BO-L1021,False,,,,water/sanitation,,,4.2,U.S. dollars from the Single Currency Facility,,national government,
+BO-L1028,False,,,,water/sanitation,,,9,U.S. dollars from the Single Currency Facility (SCF),,subnational (autonomous municipal governments),
+BO-L1031,False,,,,roads,,,0,"U.S. dollars, SCF U.S. dollars",,Administradora Boliviana de Carreteras (ABC) - autonomous road administration,
+BO-L1032,False,0,,,none,,,6.3,U.S. dollars from the Single Currency Facility (SCF),,national government - Ministry of Planning and Development (MPD) and Ministry of Health and Sports (MSD),
+BO-L1034,,,,,water/sanitation,,,,,,Program coordination unit (PCU) attached to Ministry of the Environment and Water (MMAA); could be transferred to EMAGUA (Environment and Water Executing Agency),
+BO-L1037,False,,,,none,,,3.0,United States dollar from the Single Currency Facility of the Bank's Ordinary Capital,,National government through autonomous service agency,
+BO-L1038,False,,,,"neighborhood improvement works including roads, transportation stops, public lighting, and sanitary modules",,,17,U.S. dollar from the US$ Single Currency Facility,,"National ministry (Ministry of Public Works, Services, and Housing through the Vice Ministry of Housing and Urban Development), autonomous national fund (FNDR), and municipal government (Municipality of La Paz)",
+BO-L1039,False,0,,,tourism infrastructure (enhancement of tourist attractions),,,0,US$ Single Currency Facility,,national government ministry,
+BO-L1040,False,0,,,,,Goods and related services procurement and consulting services selection per Bank policies GN-2349-7 and GN-2350-7,20,U.S. dollars from the Single Currency Facility,,National government ministry,
+BO-L1043,False,,,,energy,,,11.5,U.S. dollars from the Single Currency Facility (SCF),,National state-owned enterprise (Empresa Nacional de Electricidad - ENDE),
+BO-L1047,,,,,none,,,,,,national government - Ministry of Institutional Transparency and Anticorruption,C
+BO-L1050,,,,,,,,,,,,
+BO-L1051,False,,,,none,,,0,U.S. dollars,,national government,
+BO-L1053,False,,,,water/watershed management,,,0,U.S. dollars,,autonomous SOE,
+BO-L1056,False,,,,,,,0,U.S. dollars from the Single Currency Facility,,National government ministry (existing),
+BO-L1063,False,,,,none,,"ICB, NCB, QCBS, NICQ",11.86,US$ - Single Currency Facility,,national government ministries,
+BO-L1064,False,0,,,physical improvements to existing childcare centers and health centers,,Bank procurement policies GN-2349-9 and GN-2350-9,9,U.S. dollars from the Single Currency Facility,,National government ministry (Ministry of Health and Sports) with support from autonomous fund (National Productive and Social Investment Fund),
+BO-L1067,,,,,,,,,,,,
+BO-L1070,False,,,,none,,,0,U.S. dollars from the Single Currency Facility (SCF),,"national government, Ministry of Development Planning",
+BO-L1071,False,0,,,buildings,,ICB,0,U.S. dollars,,national government,
+BO-L1072,,,,,energy (transmission line),,,,,,autonomous SOE (National Electricity Company),
+BO-L1073,False,0,,,waste management infrastructure (sanitary landfills),83.39,,0,U.S. dollars,,"national government ministry, through existing program coordination unit",
+BO-L1075,False,0,,,roads,,,0.81,United States Dollars from the Single Currency Facility,,autonomous SOE - Bolivian Road Authority (ABC),
+BO-L1076,False,0,,,airport infrastructure,,,8.01,U.S. dollars from the Single Currency Facility,,national government ministry,
+BO-L1078,False,,,,buildings,,ICB,29,U.S. dollars,,national government,
+BO-L1079,False,,,,urban transport infrastructure including aerial cable transport and road/urban infrastructure,93.53,"ICB, NCB, SSS",22.27,,,Autonomous Municipal Government (GAMEA) and State-Owned Enterprise (EETC-MT),B
+BO-L1080,True,35.28,,,water/sanitation,,,18.15,,,national government agency,A
+BO-L1082,False,,,,buildings,,,11.38,U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital,,national government ministry,
+BO-L1084,False,,,,irrigation,,,25.97,U.S. dollars,,national government ministry,
+BO-L1087,False,0,,,water/sanitation,,,28.6,U.S. dollars from the Single Currency Facility of the Ordinary Capital; U.S. dollars,,national government ministry (Ministry of the Environment and Water),B
+BO-L1093,False,0,,,roads,83.94,,0,US$,,autonomous SOE,
+BO-L1095,,,,,roads,,"ICB, NCB",,Single Currency Facility,,autonomous agency - Bolivian Highway Administration,
+BO-L1096,False,,,,,,,,U.S. dollars from the Single Currency Facility of the Ordinary Capital,,Deconcentrated Public Institution under Ministry of Rural and Land Development,
+BO-L1101,False,,,,none,,,0,U.S. dollars from the Ordinary Capital,,national government - Ministry of Development Planning through the Office of the Deputy Minister of Public Investment and External Financing,C
+BO-L1102,,,,,roads,,,,,,autonomous government agency,
+BO-L1106,False,,,,water/irrigation,,,19.2,U.S. dollars from the Single Currency Facility,,national government ministry (Ministry of Environment and Water),
+BO-L1111,False,,,,none - preinvestment studies only,,"ICB, NCB, QCBS, CQS, ICQ, SSS",0,U.S. dollars,,National government - Ministry of Development Planning through Office of Deputy Minister of Public Investment and External Financing,B13
+BO-L1113,True,40,,,none,,International Public Bidding (LPI),40,US$,,autonomous SOE - National Agrarian Reform Institute (INRA),
+BO-L1114,False,,,,water/sanitation,,Licitación Pública Internacional (LPI),12,U.S. dollars,,subnational,
+BO-L1117,False,,,,energy,,,0,,,Departmental autonomous governments and state-owned enterprise (ENDE),B
+BO-L1118,True,15,,,water/sanitation,,,,U.S. dollars,,national government ministry,B
+BO-L1121,False,0,,,none,0,"ICB, NCB",0,"US dollars, Single Currency Facility (SCF US$)",,national government ministry,
+BO-L1179,False,0,,,,,ICB,0,US$,,National government service agency,
+BO-L1182,False,0,,,buildings,,,0,United States dollars,,national government ministry (Ministry of Development Planning via Office of the Vice Minister for Planning and Coordination) and autonomous SOE (state cable transportation company Mi Teleférico) as coexecuting agency,
+BO-L1184,False,0,,,water/sanitation,,"ICB, NCB, QCBS, CQS, NICQ",,United States dollar (from the Ordinary Capital),,"national government ministry acting through program coordination unit, with national fund as coexecuting agency",
+BO-L1186,False,0,,,roads,99.38,,0,U.S. dollars,,autonomous SOE,B
+BO-L1188,False,,,,water/sanitation,92.3,,0,U.S. dollars,,national government,B or C
+BO-L1190,False,,,,energy,,competitive bidding,,U.S. dollars,,national government through Ministry of Energies (MEN) via the Electricity Program for Living with Dignity (PEVD) and the National Electricity Company (ENDE),B
+BO-L1191,True,,,,water/sanitation,,"ICB, NCB, QCBS, NICQ",,,,national government - Ministry of Environment and Water,
+BO-L1192,True,33,,,water/sanitation,,"ICB, NCB",,U.S. dollars,,national government - Program coordination unit in the Ministry of Environment and Water (MMAyA),B
+BO-L1198,False,,,,buildings,,ICB,,USD,,National government ministry (Ministerio de Salud) and autonomous agency (AISEM),B
+BR-L1001,,,,,,,,,,,,
+BR-L1004,True,,,,none,,direct contracting,,,,,
+BR-L1005,,,,,,,,,,,,
+BR-L1009,False,,,,none,0,International competitive bidding (ICB),,,,State government agency - newly created Project Management Unit (UAF),
+BR-L1013,,,,,,,,,,,,
+BR-L1016,False,,,,none,,,50,U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital,,Subnational government - State Department of Development,
+BR-L1018,False,0,,,"roads, urban transportation infrastructure including transfer stations, sidewalks, pedestrian walkways, bicycle paths",,,34.5,U.S. dollars from the Single Currency Facility,,"State Transportation Secretariat (SET) - subnational government agency, not newly created",B
+BR-L1020,,,,,,,"international competitive bidding, national competitive bidding, limited international bidding, quality- and cost-based selection, least-cost selection",,,,,
+BR-L1021,False,0,,,none,,,40,U.S. dollar from the Single Currency Facility,,Subnational government secretariat acting through autonomous institute,
+BR-L1026,False,,,,none,,"ICB, NCB, CQS, ICP, LCS",,,,State government department (State of Bahia Department of Finance),
+BR-L1027,,,,,roads,,,,,,State Department of Transportation and Public Works / Roads Department of the State of Minas Gerais,
+BR-L1028,False,,,,energy,,,42,US dollars,,State government department (State Economic Development Department - SEDE),
+BR-L1031,False,,,,roads,,Bank's procurement procedures,92,U.S. dollars from the Single Currency Facility,,National government agency (DNIT - National Department for Transportation Infrastructure),
+BR-L1033,,,,,roads,,"ICB, LIB, NCB, QBS, QCBS",,,,State government (subnational),
+BR-L1038,,,,,flood control and environmental improvement,,,,,,"Municipal government with autonomous water/sewer companies and agencies (Companhia Aguas de Joinville, AMAE, Municipal Council) and Program Coordinating Unit",
+BR-L1044,False,,,,health facilities,,,50,U.S. dollars from the Single Currency Facility,,"subnational government, Health Department",
+BR-L1047,,,,,,,"International competitive bidding, national competitive bidding, Brazil's e-procurement system (Pregão Eletrônico)",,,,,
+BR-L1051,False,,,,roads,,,30.07,U.S. dollars from the Single Currency Facility,,subnational government department (State Infrastructure Department),
+BR-L1053,False,,,,buildings,,,29.97,U.S. dollars from the Single Currency Facility,,subnational government department,
+BR-L1054,False,,,,none,,,50,U.S. dollars from the Single Currency Facility with conversions to reais (R$) via Local Currency Facility (LCF),,Autonomous national development bank (BNDES),
+BR-L1055,False,0,,,"urban renewal, environmental sanitation, transportation infrastructure",,"LPI (Licitación Pública Internacional / International Competitive Bidding), LPN (Licitación Pública Nacional / National Competitive Bidding), SBCC (Selection Based on Consultants' Qualifications)",40,"U.S. dollars from the OC Single Currency Facility, with conversion to Brazilian reais under the Local Currency Facility (LCF)",,subnational government (município),
+BR-L1058,,,,,,,"ICB, NCB",,LCF,,Municipal Government,
+BR-L1060,False,0,,,none,,,18.75,U.S. dollars from the Single Currency Facility,,national government research institute,
+BR-L1065,,,,,water/sanitation; roads,,,,,,,
+BR-L1068,False,0,,,none,,,50,U.S. dollars from the Single Currency Facility,,Federal Senate Special Secretariat (SINTER),
+BR-L1076,False,,,,urban infrastructure,,,30.0,U.S. dollars from the Ordinary Capital with conversion to reais via Local Currency Facility,,"Subnational government department (Federal District, through the Secretaria de Estado de Desenvolvimento Econômico)",
+BR-L1077,,,,,water/sanitation,,"ICB, NCB",,,,municipal government,
+BR-L1078,False,,,,urban renewal / basic infrastructure,,,40,U.S. dollars from the Single Currency Facility,,municipal government department (SEINF - Municipal Department of Urban Development and Infrastructure),
+BR-L1081,,,,,water/sanitation and drainage,,,,,,municipal autonomous agencies,
+BR-L1083,False,,,,"favela improvement, mobility, social development infrastructure",,,50,U.S. dollars from the Single Currency Facility of the OC with conversion to reais via Local Currency Facility,,"Subnational government (Município of Curitiba) with implementation through existing municipal agencies (IPPUC, COHAB, FAS) and a technical/administrative management unit to be created",
+BR-L1084,False,,,,"roads, water/sanitation",,,50,U.S. dollars from the Single Currency Facility of the Ordinary Capital; conversion into reais via Local Currency Facility (LCF),,Municipal government (Município of Aracaju); not newly created,
+BR-L1085,,,,,"mobility and transportation, environmental infrastructure, social infrastructure",,,,,,,C
+BR-L1087,False,0,,,roads,,NCB,50,"U.S. dollars from the Single Currency Facility (OC), conversion to reais: LCF",,Municipal government,
+BR-L1088,False,,,,"urban development, water/sanitation, urban mobility",,,50,"U.S. dollars from the Single Currency Facility, conversion to reais via LCF",,subnational government (Município of Manaus),
+BR-L1093,,,,,,,,,,,,
+BR-L1094,False,,,,"environmental reclamation, urban mobility infrastructure",,,50,"U.S. dollars from the SCF of the OC, with conversion to reais via Local Currency Facility",,Município (municipal government) of Londrina,B
+BR-L1096,False,,,,buildings,,direct contracting,10,U.S. dollars from the Single Currency Facility of the Ordinary Capital,,"State government acting through Department of the Treasury (SEFAZ/MS), in coordination with Department of Administration (SAD) and Enterprise Management Agency (AGESUL)",
+BR-L1099,False,0,,,roads and buildings (education and transport infrastructure),,Bank procurement procedures and policies,50,"US dollars from the Single Currency Facility, conversion to reais LCF",,subnational government (Municipality of Ponta Grossa),
+BR-L1102,False,,,,none,,noncompetitive methods,41.65,United States dollars from the Single Currency Facility of the Bank's Ordinary Capital,,national government ministry,
+BR-L1103,False,,,,,,,40,U.S. dollars from the Bank's Single Currency Facility,,State government department (Environment Department - SEMA),
+BR-L1104,False,0,,,urban development (downtown revitalization and urban mobility),,,50,U.S. dollars with conversion to Brazilian reais via LCF,,subnational government (Município of Campo Grande),
+BR-L1117,,,,,,,,,,,,
+BR-L1122,False,,,,buildings,,,50,U.S. dollars from the Single Currency Facility,,subnational (municipal) government,
+BR-L1152,False,,,,water/sanitation and roads,,,40,U.S. dollars from the Single Currency Facility,,State government department (Department of Water Resources and Environment),
+BR-L1160,,,,,,,,,,,,
+BR-L1161,False,0,,,roads,,,35.14,U.S. dollars from the Single Currency Facility,,State government department (São Paulo State Highways Department),B
+BR-L1162,False,,,,rail,,,30.29,U.S. dollars from the Single Currency Facility,,Subnational government (State of São Paulo) through Metropolitan Transportation Department (STM),
+BR-L1163,False,,,,"transportation, urban development, green spaces",,,50,U.S. dollars from the Single Currency Facility of the Ordinary Capital; Conversion to reais: Local Currency Facility,,subnational (Município of Passo Fundo),
+BR-L1164,False,0,,,water/sanitation,,,30,U.S. dollars from the Single Currency Facility,,"subnational government, existing agency",
+BR-L1165,False,0,,,none,,national legislation,32.4,US dollars from the Single Currency Facility,,subnational government (State of Pernambuco through its Finance Secretariat),
+BR-L1166,False,0,,,water/sanitation,,,25,U.S. dollars from the Single Currency Facility,,autonomous SOE,
+BR-L1171,False,,,,water/sanitation,,,50,U.S. dollars from the Single Currency Facility of the Ordinary Capital; conversion to reais via Local Currency Facility,,Municipal government (Município of Catanduva),
+BR-L1174,False,,,,none,,national legislation and direct contracting,18,U.S. dollars from the Single Currency Facility,,subnational government agency,
+BR-L1175,False,0,,,water/sanitation,,Bank's bidding policies and procedures,50,"U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital, conversion into reais via LCF",,Municipal government department (Municipal Housing Department),
+BR-L1176,False,0,,,urban road network,,,37.6,U.S. dollars from the Ordinary Capital,,State government department (Department of Cities in coordination with other state departments and agencies),
+BR-L1177,False,,,,buildings,58,,37.64,U.S. dollars from the Single Currency Facility,,subnational government department,
+BR-L1178,False,0,,,none,,,50,U.S. dollars with conversion to Brazilian reais via Local Currency Facility,,National Economic and Social Development Bank (BNDES),
+BR-L1180,False,0,,,none,,,50,U.S. dollars from the Single Currency Facility with conversion to Brazilian reais via Local Currency Facility,,"National Economic and Social Development Bank (BNDES), autonomous SOE",
+BR-L1181,False,,,,roads,,,37.63,U.S. dollars from the Single Currency Facility,,subnational - state government department,
+BR-L1183,False,,,,water/sanitation,,ICB,50,U.S. dollars with conversion to Brazilian reais via Local Currency Facility,,municipal government with autonomous municipal sanitation service,
+BR-L1187,False,,,,urban and environmental revitalization,,ICB,50,"U.S. dollars from the Single Currency Facility of the Ordinary Capital, conversion to reais via Local Currency Facility",,subnational government (município),
+BR-L1190,False,,,,urban renewal,,,50,"U.S. dollars from the OC, conversion into Brazilian reais via Local Currency Facility (LCF)",,autonomous urban development corporation,
+BR-L1195,False,,,,none,,,40,United States dollars from the Single Currency Facility of the Bank's Ordinary Capital,,national government ministry,
+BR-L1202,,,,,,,,,,,,
+BR-L1204,False,0,,,"multiple infrastructure types (airports, roads, water/sanitation, cultural heritage)",,Bank policies GN-2349-7 and GN-2350-7,40,U.S. dollars from the Single Currency Facility,,subnational government department (State of Ceará Tourism Department - SETUR),
+BR-L1205,False,,,,none,,national legislation on procurement,10.0,US dollars from the Single Currency Facility of the OC; expenses incurred in reais converted using exchange rate the day before disbursement request,,State government (subnational) through State Finance Department (SEFAZ/ES),
+BR-L1206,False,,,,none,,"national legislation on procurement and contracting, direct contracting",33,US dollars from the Single Currency Facility,,subnational government - State Finance Department,
+BR-L1207,False,0,,,buildings,,direct contracting,16.17,U.S. dollars from the Single Currency Facility,,subnational government department,
+BR-L1208,False,,,,buildings,,direct contracting,14.6,U.S. dollars from the Single Currency Facility,,"subnational government (State of Paraíba, acting through its Department of Revenue)",
+BR-L1210,False,,,,tourism infrastructure,,,40,U.S. dollars drawn from the Single Currency Facility,,"Subnational government department - Department of Tourism, Sports, and Leisure of the State of Rio de Janeiro (SETE)",
+BR-L1212,False,0,,,tourism infrastructure,,Bank policies and procedures as established in documents GN-2349-7 and GN-2350-7,40,U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital,,subnational government department (Tourism Department of the State of Pernambuco - SETUR),
+BR-L1215,False,,,,water/sanitation,,ICB (international competitive bidding),40.3,U.S. dollars from the Ordinary Capital,,Autonomous SOE (Federal District Environmental Sanitation Company - CAESB),
+BR-L1217,False,,,,"urban infrastructure, water/sanitation",,,30,U.S. dollars from the Single Currency Facility,,Subnational dedicated unit,
+BR-L1219,False,,,,water/sanitation,,"LPN (national public bidding), SBQC (selection based on qualifications and costs)",40,U.S. dollars from the Ordinary Capital (OC),,subnational government department (Tourism Department of the State of Espírito Santo - SETUR),B
+BR-L1223,False,0,,,none,,,40,United States dollars from the Bank's Ordinary Capital,,national government agency - Controladoria-Geral da União (Office of the Comptroller General),C
+BR-L1224,False,0,,,none,0,,50,U.S. dollars from the Single Currency Facility of the Ordinary Capital,,"National government ministry (Federal Assets Division under Ministry of Planning, Budget, and Management)",C
+BR-L1226,False,,,,"macrodrainage, urban mobility, social development (healthcare, education)",,,55,"U.S. dollars from Ordinary Capital Single Currency Facility, with conversion into Brazilian reais via Local Currency Facility",,subnational government (municipal),
+BR-L1227,True,,,,rail,,ICB,22.9,U.S. dollars from the Single Currency Facility of the Ordinary Capital,,subnational government department,A
+BR-L1230,False,0,,,none,0,Brazilian national legislation; international competitive bidding below specified threshold,30,U.S. dollars from the FFF of the OC,,"Subnational government - State of Alagoas, acting through its Finance Department (SEFAZ/AL)",
+BR-L1231,False,0,,,roads,,,40,U.S. dollars from the Single Currency Facility,,subnational government - state highways department,
+BR-L1233,False,,,,none,,"national competitive bidding, direct contracting",10.23,U.S. dollars from the Single Currency Facility,,"subnational government (State of Goiás), Program Coordination Unit (PCU) to be established",
+BR-L1234,False,,,,none,,"direct contracting, national legislation on procurement and contracting",16.64,U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital,,subnational government department,
+BR-L1235,,,,,,,,,,,,
+BR-L1236,False,,,,none,,,9.09,United States dollars drawn from the Single Currency Facility of the OC,,State government department - State Finance Department (SEF/MG) of State of Minas Gerais,
+BR-L1237,False,,,,none,,international competitive bidding; national legislation on procurement,20,U.S. dollars from the Ordinary Capital's FFF,,subnational government - State of Paraná Finance Department (SEFA/PR),
+BR-L1238,False,,,,none,,direct contracting,9.54,U.S. dollars from the Single Currency Facility of the Ordinary Capital,,subnational government - State Department of Finance (SEFAZ/PI),
+BR-L1239,False,,,,none,,direct contracting,11.4,U.S. dollars from the Single Currency Facility of the Bank's OC,,subnational government department,
+BR-L1240,False,0,,,buildings,,direct contracting,10,U.S. dollars from the Single Currency Facility,,subnational government,
+BR-L1241,False,,,,resettlement/housing,,,65.5,U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital,,subnational government departments (State of São Paulo Housing Department and Environment Department),
+BR-L1242,,,,,,,international competitive bidding (licitación pública internacional),,,,Special Project Coordination and Execution Unit (UCEPE),
+BR-L1243,False,0,,,infrastructure and basic services,,,40,U.S. dollars from the Bank's Ordinary Capital,,State government department (State Tourism Department - SETUR),
+BR-L1245,False,0,,,infrastructure and basic services (tourism),41.1,international competitive bidding,40,U.S. dollars,,subnational government department,
+BR-L1250,,,,,,,NCB,,,,subnational government (Federal District Finance Department),
+BR-L1251,,,,,,,"ICB, NCB, PC (shopping)",,,,,
+BR-L1252,,,,,,,"ICB, NCB, DC",,,,National government - Ministry of Finance with Program Coordination Unit (PCU/MF),
+BR-L1253,,,,,none,,"ICB, NCB",,,,"State government department (State of Roraima Finance Department - SEFAZ/RR), with Program Coordination Unit (PCU)",
+BR-L1254,False,0,,,none,,direct contracting,27.28,U.S. dollars from the Single Currency Facility of the OC,,subnational government department (State of Sergipe Department of the Treasury),
+BR-L1255,,,,,,,,,,,,
+BR-L1256,False,,,,"tourism infrastructure: airport runway expansion, sea walls, tourist piers, highways",,licitación pública internacional (international competitive bidding),40,U.S. dollars from the Bank's Ordinary Capital,,subnational government department (State Tourism Department - SETUR),B
+BR-L1260,,,,,roads,,ICB,,,,subnational government,
+BR-L1268,,,,,,,,,,,,
+BR-L1269,False,0,,,none,,,50,U.S. dollars from the Bank's Ordinary Capital,,National government ministry - Pension Policy Secretariat (SPPS) of the Ministry of Pensions (MPS),C
+BR-L1272,False,,,,"roads, bridges, public transit infrastructure",,,50,"U.S. dollars, Single Currency Facility",,subnational government (municipality) through existing department,
+BR-L1277,False,,,,none,,international competitive bidding (ICB),60,U.S. dollars,,national government agency (Office of the Attorney General - AGU),C
+BR-L1278,False,,,,energy,,,16,US dollars,,autonomous SOE,
+BR-L1282,False,0,,,water/sanitation,,,30,U.S. dollars from the Single Currency Facility,,subnational government (State of Rio de Janeiro Environment Department),
+BR-L1284,True,,,,,,"ICB, NCB",,,,autonomous SOE,
+BR-L1287,False,0,,,none,,,30,U.S. dollars from Single Currency Facility of the Ordinary Capital,,State government department - Secretaria de Estado de Assistência Social e Direitos Humanos (SEASDH),
+BR-L1288,,,,,,,,,,,,
+BR-L1289,,,,,,,,,,,,
+BR-L1290,,,,,,,international competitive bidding,,,,,
+BR-L1295,False,,,,water/sanitation,,,39.39,U.S. dollars from the Ordinary Capital,,"State government department (Department of Water and Energy Resources - SRHE), not newly created",
+BR-L1296,,,,,roads,,,,,,autonomous SOE,
+BR-L1297,,,,,water/sanitation,,"ICB, NCB",,,,,
+BR-L1299,,,,,,,ICB and NCB,,,,,
+BR-L1300,False,,,,tourism infrastructure and basic services,,competitive bidding,40,U.S. dollars from the Bank's Ordinary Capital,,subnational government department - Tourism Department of the State of Bahia (SETUR),
+BR-L1303,,,,,,,,,,,,
+BR-L1314,False,0,,,water/sanitation,,,30,U.S. dollars from the Ordinary Capital,,subnational (município),
+BR-L1315,,,,,roads,,,,,,,
+BR-L1319,,,,,,,"ICB, NCB",,,,,
+BR-L1326,False,0,,,roads,,,20.65,U.S. dollars from the Ordinary Capital,,subnational - State of Ceará Roads Department (DER/CE),
+BR-L1327,False,,,,buildings,35.0,ICB,42.87,U.S. dollars,,subnational government - state secretariat,
+BR-L1328,False,,,,none,,licitación pública internacional,44.6,U.S. dollars,,subnational government secretariat,
+BR-L1329,False,,,,buildings,,"ICB, NCB, direct contracting",50.3,U.S. dollars from the Ordinary Capital,,subnational government (municipal department),
+BR-L1331,,,,,,,,,,,,
+BR-L1333,,,,,roads,,,,,,,
+BR-L1335,,,,,water/sanitation,,,,,,,
+BR-L1336,,,,,roads,,"ICB, LIB, NCB, QBS, QCBS",,,,subnational government department,
+BR-L1343,,,,,,,,,,,,
+BR-L1344,False,0,,,roads and parks,,,50,U.S. dollars from the Single Currency Facility with conversion to reais via Local Currency Facility (LCF),,Municipal government department - Municipal Planning and Urban Development Department (SEPLAN),B
+BR-L1349,,,,,,,licitación pública internacional,,,,national government - Ministry of Finance,
+BR-L1356,False,,,,urban infrastructure,,LPI (International competitive bidding),50,U.S. dollars chargeable to the Ordinary Capital,,"autonomous service entity (Serviçio Social Autônomo Paranácidade) with fiscal agent (Agência de Fomento do Paraná, S.A.)",B
+BR-L1363,False,,,,roads,,licitación pública internacional (international competitive bidding),20,U.S. dollars from the Ordinary Capital (OC),,subnational government - State of Ceará Roads Department (DER/CE),
+BR-L1369,False,,,,"water/sanitation, drainage, roads",,international competitive bidding (ICB),50,U.S. dollars from the Bank's Ordinary Capital,,subnational (municipal government),
+BR-L1372,True,,,,"water/sanitation, buildings",,"ICB, NCB, direct contracting, shopping",10,,,State government; newly created project management unit (UGP),B
+BR-L1373,False,0,,,roads,,LPI,30.02,U.S. dollars from OC,,State of São Paulo Highway Department (DER/SP) - subnational government department,
+BR-L1376,False,0,,,health care buildings/facilities,,"international competitive bidding (LPI), direct contracting, national competitive bidding",28.95,U.S. Dollars from the Ordinary Capital (OC),,subnational government - State of São Paulo Health Department,
+BR-L1377,,,,,,,ICB (International Competitive Bidding),,,,Ministry of Finance Project Coordination Unit (national government),
+BR-L1378,False,,,,buildings,,"SBCC, Subasta, LPN",28.57,U.S. dollars from the Ordinary Capital,,subnational government department,
+BR-L1383,False,0,,,water/sanitation,,,33,U.S. dollars from the Ordinary Capital,,subnational government (Federal District through Infrastructure and Public Utilities Department),
+BR-L1386,False,,,,"urban renewal and social projects, environmental sanitation, transportation infrastructure",,"ICB (international competitive bidding), NCB (national competitive bidding), SBCC (selection based on consultants' qualifications), LPI and LPN (national public bidding)",40,"U.S. dollars from the OC Single Currency Facility, with conversion to Brazilian reais under LCF",,"subnational government (Município of Niterói), not newly created",
+BR-L1387,False,,,,buildings,,,20,U.S. dollars from the Bank's Ordinary Capital (OC),,State government - State Office of Internal Affairs (SEG),B
+BR-L1388,False,0,,,none,,"ICB (international competitive bidding), use of Brazilian federal legislation for works below US$25 million and goods/non-consulting services below US$5 million",10,U.S. dollars from the Bank's OC,,subnational government (State Finance Department),No classification required (ex-ante impact classification not feasible for this loan type)
+BR-L1389,False,,,,buildings,,"LPI (international public bidding), LPN (national public bidding), SBCC (quality and cost-based selection for consulting services), Subasta (auction)",29.82,U.S. dollars from the Bank's Ordinary Capital,,subnational government (State of Bahia Health Department - SESAB),B
+BR-L1392,False,0,,,buildings,70.3,licitación pública internacional,54.4,U.S. dollars from the Ordinary Capital,,subnational government (Municipality of Manaus through the Municipal Education Department),
+BR-L1393,False,0,,,buildings,,LPI,50,United States dollars from the Ordinary Capital,,municipal government department,
+BR-L1401,,,,,roads,,,,,,subnational government - State of São Paulo Highway Department (DER/SP),B
+BR-L1402,False,,,,roads,,LPI,50,U.S. dollars from the Ordinary Capital,,subnational,B
+BR-L1405,False,0,,,energy,,,0,US dollars chargeable to the OC,,autonomous SOE - National Petroleum Corporation (NPC),
+BR-L1406,False,,,,buildings,,Bank's Procurement Policies (LPI),30.0,United States dollars from the Ordinary Capital (OC),,subnational government department,B
+BR-L1407,False,,,,none,,licitación pública internacional (international competitive bidding),,,,subnational government - state-level ministries (SEPLAN and SAEB),C
+BR-L1408,False,0,,,health buildings,,,31.1,U.S. dollars from the Ordinary Capital,,subnational government department (State of Ceará Department of Health),
+BR-L1411,False,0,,,roads and urban infrastructure,,,50,U.S. dollars,,Municipal government,A
+BR-L1412,False,0,,,tourism infrastructure,,,50,U.S. dollars from the Bank's Ordinary Capital,,municipal government department,
+BR-L1414,False,,,,none,,,50,U.S. dollars from the Ordinary Capital,,municipal government (Município of Fortaleza),B
+BR-L1415,False,0,,,buildings,,LPI,50,U.S. dollars from the Bank's Ordinary Capital (OC),,Municipal government (Municipal Health Department),B
+BR-L1417,False,0,,,buildings,,,9,U.S. dollars from the Bank's Ordinary Capital,,Subnational government - State Department of Social Defense (SEDS),B
+BR-L1421,,,,,water/sanitation and urban upgrading,,ICB and NCB,,,,Municipal government,A
+BR-L1422,False,0,,,"urban infrastructure and public spaces (street rehabilitation, walkways, underground utilities)",,,50,U.S. dollars from the Ordinary Capital,,subnational (Municipality of Campo Grande),
+BR-L1429,False,,,,buildings,,"International competitive bidding (ICB), National competitive bidding (NCB)",50,U.S. dollar (from the Ordinary Capital),,Municipal government - Secretaria Municipal de Saúde de São Paulo (Municipal Health Department),B
+BR-L1434,False,,,,roads,89.2,ICB and NCB,46.0,,,subnational government agency - existing (Paraná Roads Department - DER under State Infrastructure and Logistics Department - SEIL),
+BR-L1442,False,,,,energy,,,17,United States dollars,,"autonomous SOE (BNDES - Banco Nacional de Desenvolvimento Econômico e Social), not newly created",B13
+BR-L1445,False,0,,,roads,,,50,U.S. dollars from the Ordinary Capital,,"subnational government (Municipality of Maracanaú, acting through the State Infrastructure Department (SEINFRA)), existing entity with low institutional capacity requiring strengthening",
+BR-L1487,False,,,,water/sanitation,,,50,United States dollars from the Ordinary Capital,,subnational (Salvador Municipal Government via SEINFRA with new PMU),
+BR-L1490,True,,,,none,,"ICB, NCB",,,,FINEP - Financiadora de Estudos e Projetos (Research and Projects Financing Agency),B13
+BR-L1491,False,,,,energy,,"ICB, NCB",26.8,United States dollars from the Ordinary Capital,,autonomous SOE - state-owned electric power distribution company,
+BR-L1492,False,,,,water/sanitation,95.6,,40,U.S. dollars from the Bank's Ordinary Capital,,autonomous SOE,
+BR-L1495,False,,,,water/sanitation,72.9,"ICB, NCB, QCBS",33.33,United States dollar,,autonomous SOE,
+BR-L1497,,,,,urban improvement,,"ICB, NCB",,,,municipal government,B
+BR-L1498,False,,,,none,,"ICB, NCB, QCBS",10.1,United States dollar,,subnational government - State Finance Department,C
+BR-L1499,False,0,,,none,,,10,U.S. dollars,,State government - State Finance Secretariat (SEFA),C
+BR-L1500,False,,,,none,,,10,U.S. dollars,,subnational government department,
+BR-L1501,,,,,,,"ICB, NCB",,,,,
+BR-L1502,False,,,,none,,,9.09,U.S. dollars,,subnational government finance department,C
+BR-L1503,False,,,,"roads, water/sanitation, energy",,"ICB, NCB",,United States dollar,,autonomous SOE,
+BR-L1508,False,0,,,water/sanitation,,"ICB, QCBS",20,U.S. dollars,,subnational,
+BR-L1511,False,0,,,none,,,10,United States dollars,,subnational government - State Department of the Treasury (SEFAZ/MS),C
+BR-L1516,,,,,,,,,,,,
+BR-L1517,True,,,,none,,"ICB, NCB, QCBS",,,,subnational government - state finance department,C
+BR-L1518,False,0,,,buildings,,"ICB, NCB",20,U.S. dollars from the Bank's Ordinary Capital,,subnational government - State Health Department,
+BR-L1519,False,0,,,health buildings,,international competitive bidding (licitação pública internacional),20,U.S. dollars from the Ordinary Capital,,"Municipal government department (Municipal Health Department, SMSA)",B
+BR-L1520,False,0,,,urban infrastructure,,ICB,50,U.S. dollars,,Serviço Social Autônomo and state development agency,B
+BR-L1521,False,,,,none,,,16.7,Dollars of the United States of America,,National development bank (autonomous SOE),
+BR-L1524,False,0,,,roads,,"ICB, NCB, QCBS",20,U.S. dollar,,subnational government department - state roads department,
+BR-L1525,False,0,,,none,,,9,U.S. dollars,,"subnational government, Finance Department of State of Amapá (SEFAZ/AP)",
+BR-L1527,False,0,,,none,,"ICB, NCB",9,U.S. dollar,,subnational government - State of Paraná Finance Department (SEFA/PR),C
+BR-L1528,False,0,,,,,,2.5,United States Dollars,,"national government, Ministry of Agriculture, Livestock and Supply (MAPA)",
+BR-L1529,False,0,,,,,,2.5,United States Dollars,,national government ministry,
+BR-L1532,False,0,,,urban transport infrastructure,,"ICB, NCB, QCBS",20,U.S. dollar,,"Municipal government, acting through newly created Technical-Administrative Management Unit (UTAG)",
+BR-L1534,False,,,,none,,"ICB, NCB",10,U.S. dollar,,subnational government department,C
+BR-L1536,False,,,,water/sanitation,,"ICB, NCB",20.1,U.S. dollar,,subnational autonomous agency,
+CH-L1001,False,0,,,none,,Not applicable,0,United States dollars from the Single Currency Facility,,"Ministry of Economic Affairs, national government",
+CH-L1004,False,0,,,urban rehabilitation,,Bank's current procedures,66,U.S. dollars from the Single Currency Facility,,national government agency (SUBDERE - Regional and Administrative Development Branch),
+CH-L1005,,,,,none,,,,,,national government agency (SENAMA),
+CH-L1006,False,,,,none,,,,,,Finance Ministry,
+CH-L1008,,,,,,,,,,,,
+CH-L1009,False,,,,none,,international public bidding,,,,national government - existing agency,
+CH-L1010,,,,,,,,,,,,
+CH-L1012,False,,,,infrastructure and works management,,International competitive bidding,,,,autonomous agency under Supreme Court (CAPJ - Corporación Administrativa del Poder Judicial),
+CH-L1014,False,0,,,,,,59,U.S. dollars from the Single Currency Facility,,National government autonomous agency - Corporación Nacional de Desarrollo Indígena (CONADI),
+CH-L1018,,,,,,,,,,,,
+CH-L1019,False,0,,,none,,"International competitive bidding for consultancies over US$200,000; national firms for short lists up to US$500,000",50,U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital,,Autonomous SOE - Corporación de Fomento de la Producción (CORFO),
+CH-L1021,False,,,,,,International competitive bidding (ICB),,U.S. Dollars with local currency facility option,,"National Forest Service (CONAF), autonomous entity",
+CH-L1023,False,,,,,,competitive bidding process,38,U.S. dollars from the Single Currency Facility of the Bank's OC,,National Tourism Service (SERNATUR) - national government agency,
+CH-L1024,False,,,,none,,,50,U.S. dollars from the Single Currency Facility with conversion to Chilean pesos via Local Currency Facility,,national government ministry,
+CH-L1025,False,,,,water/sanitation,,PDL operations (GN-2278-2),50,"US$ from the Single Currency Facility, with conversion to Chilean Pesos via Local Currency Facility",,SUBDERE (national government agency),
+CH-L1026,,,,,solid waste management / disposal facilities,,,,local currency,,,
+CH-L1027,,,,,,,,,,,,
+CH-L1031,,,,,,,,,,,,
+CH-L1032,,,,,heritage preservation buildings,,,,Local currency conversion option available,,"National government - Ministry of Public Works, Architecture Division",
+CH-L1033,False,,,,urban development infrastructure,88.4,,52.2,"U.S. dollars from the OC Single Currency Facility, with option of conversion to Chilean pesos: Local Currency Facility",,national government agency (Office of the Deputy Secretary for Regional and Administrative Development - SUBDERE),
+CH-L1047,False,0,,,none,,ICB,21.1,U.S. dollars from the Single Currency Facility with conversion to Chilean pesos via Local Currency Facility,,national government ministry,
+CH-L1053,False,,,,none,0,Bank procedures per GN-2349-7 and GN-2350-7,,United States dollars from the Single Currency Facility,,national government - Ministry of Energy through National Energy Commission (CNE),C
+CH-L1055,False,0,,,none,0,,2.82,"U.S. dollars from the Single Currency Facility, with conversion to local currency",,national government ministry,C
+CH-L1058,False,,,,none,,,20,U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital,,autonomous agency of the Judicial Branch,C
+CH-L1060,False,0,,,none,,,28.7,U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital with a local currency option under the Local Currency Facility,,autonomous state agency (State Defense Council of Chile),
+CH-L1061,False,,,,none,,,31,U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital with conversion to Chilean pesos using the Local Currency Facility,,"National government, Office of the Deputy Secretary of Finance of the Ministry of Finance, with execution unit to be created",
+CH-L1064,False,,,,none,,,34.51,U.S. dollars from the Ordinary Capital,,national government agency - Servicio Nacional de Capacitación y Empleo (SENCE) under Ministry of Labor and Social Welfare,
+CH-L1081,False,,,,none,,"NCB, framework agreements, ChileCompra system",28.6,U.S. dollars from the Bank's Ordinary Capital (OC),,national government ministry (Ministry of Education),
+CH-L1082,False,,,,buildings,81.6,NCB,50,,,autonomous national agency,
+CH-L1084,False,,,,heritage infrastructure and neighborhood physical infrastructure,,International public bidding (licitación pública internacional) for works ≥US$5M and goods/non-consulting services ≥US$350K; National procurement system for amounts below those thresholds,50,U.S. dollars from the Ordinary Capital,,National government - Subsecretaría de Desarrollo Regional y Administrativo (SUBDERE) of the Ministry of Interior,
+CH-L1085,False,0,,,none,,,50,U.S. Dollars from the Ordinary Capital; LIBOR-based interest rate,,National government - Ministry of Finance through the Subsecretariat of Finance (SSH),
+CH-L1098,False,,,,none,,,0.25,U.S. dollars (from the Ordinary Capital),,Corporación de Fomento de la Producción (CORFO) - autonomous national development agency,not classified
+CH-L1105,False,,,,none,,,6.65,U.S. dollars from the Ordinary Capital,,"autonomous SOE - Corporación de Fomento de la Producción (CORFO), not newly created",C
+CH-L1138,False,0,,,none,,,0,U.S. dollars from the Bank's Ordinary Capital,,national government - Office of the Secretary and General Administration of Chile's Ministry of Finance; project execution unit specifically for the program to be created,C
+CH-L1142,False,0,,,none,,ICB,50,U.S. dollar,,"national government - Ministry of the Interior and Public Security (MISP), through the Office of the Deputy Minister of the Interior (SSI); not newly created",C
+CO-L1001,,,,,roads,,,,,,autonomous SOE,
+CO-L1002,False,0,,,infrastructure and service projects related to public service delivery,,,0,United States dollars from the Single Currency Facility with conversion to Colombian pesos via Local Currency Facility,,Autonomous financial development company (Financiera de Desarrollo Territorial S.A. - FINDETER),
+CO-L1003,False,,,,housing,,,25,US dollar,,national government ministry,
+CO-L1005,,,,,energy,,"ICB, NCB",,,,,
+CO-L1008,False,0,,,buildings,,International competitive bidding,30.1,U.S. dollars from the Single Currency Facility,,"National government - Departamento Administrativo Nacional de Estadística (DANE), National Administrative Department of Statistics",
+CO-L1009,False,0,,,,,,0,U.S. dollars from the Single Currency Facility,,"National Federation of Coffee Producers (FNC), an existing entity (not newly created)",
+CO-L1010,False,0,,,buildings,,"ICB, NCB",33.3,U.S. dollars from the Single Currency Facility,,subnational government department - District of Bogota Education Department,
+CO-L1011,False,,,,,,International competitive bidding (ICB),33.3,U.S. dollars from the Single Currency Facility,,Subnational government - Bogotá Distrito Capital (Bogota Capital District),
+CO-L1012,False,0,,,"infrastructure and service projects related to public service delivery, with water and sanitation sector mentioned",,,0,United States dollars from the Single Currency Facility with conversion to Colombian pesos via Local Currency Facility,,"Financiera de Desarrollo Territorial S.A. (FINDETER), territorial development agency",
+CO-L1016,,,,,roads,,,,,,subnational - Physical Infrastructure Secretariat of the Antioquia Governor's Office (departmental),
+CO-L1017,False,0,,,,,,,US dollars from the Single Currency Facility of the Bank's Ordinary Capital,,national government ministry,
+CO-L1018,,,,,neighborhood improvement,,"ICB, NCB",,,,Ministry (national government),
+CO-L1019,False,,,,roads,,,73.89,U.S. dollars from the Single Currency Facility,,national government - Instituto Nacional de Vías (INVIAS),
+CO-L1021,True,,,,none,0,"ICB, QCBS",0,U.S. dollars from the Single Currency Facility,,"Presidential Agency for Social Action and International Cooperation (Acción Social), national government",
+CO-L1022,,,,,,,,,,,,
+CO-L1028,False,0,,,water/sanitation,,,37,U.S. dollars from the Single Currency Facility,,autonomous SOE,
+CO-L1034,False,0,,,water/sanitation,,"International competitive bidding (ICB), competitive dialogue procurement / request for nonbinding proposals",22.6,U.S. dollars from the Single Currency Facility,,Municipal public utility (autonomous),
+CO-L1041,False,,,,none,,,0,U.S. dollars from the Single Currency Facility,,National government - Supreme Judicial Council (SJC) and Ministry of the Interior and Justice (MIJ),C
+CO-L1052,False,0,,,"Multiple sectors including residential public utilities, tourism, education, health, and transportation infrastructure",,"In accordance with Bank policies, as established in the Credit Regulations",0,U.S. dollars from the Single Currency Facility,,Financiera de Desarrollo Territorial S.A. (FINDETER) - regional and local development agency,
+CO-L1059,,,,,,,,,,,,
+CO-L1065,False,,,,none,,,0,US$,,national government,C
+CO-L1076,False,,,,none,,,,Single Currency Facility,,"Subnational government (Bogota, D.C.) with cooperation agreement with Transmilenio S.A.",
+CO-L1078,False,,,,none,,,50,U.S. dollars from the Single Currency Facility; Conversion to Colombian pesos: No,,"Autonomous SOE (Banco de Comercio Exterior de Colombia, S.A. - Bancóldex), not newly created",
+CO-L1082,True,50,,,none,,N/A,50,U.S. dollars from the Single Currency Facility,,"autonomous SOE - Banco de Comercio Exterior de Colombia, S.A. (Bancóldex)",
+CO-L1091,True,6.25,,,public transportation infrastructure,,,,U.S. dollars from the Single Currency Facility of the Ordinary Capital,,national government ministry with support of local management authorities,
+CO-L1092,False,,,,none,,,0,U.S. dollars from the Single Currency Facility of the Ordinary Capital,,national government administrative department,
+CO-L1093,False,0,,,buildings,,,0,"US dollars from the Single Currency Facility, with option to convert to Colombian pesos via Local Currency Facility",,national government,B
+CO-L1094,False,0,,,,,,0,United States dollars,,BANCOLDEX as administrator for PTP (Productive Transformation Program),
+CO-L1096,False,,,,none,,,,U.S. dollars,,autonomous SOE (Bancóldex - second-tier development bank),Not classified (Directive B.13 - second-tier operation)
+CO-L1097,,,,,none,,,,,,,C
+CO-L1098,False,0,,,none,,,0,U.S. dollars from the Single Currency Facility of the IDB Ordinary Capital,,national government agency - Procuraduría General de la Nación (Office of the Attorney General),
+CO-L1101,False,,,,urban mass transit infrastructure,,,30.84,U.S. dollars from the Single Currency Facility of the OC with option for conversion to Colombian pesos via LCF,,National government ministry acting through autonomous SOE (MetroCali S.A.),
+CO-L1102,False,0,,,none,,,0,U.S. dollars from the Ordinary Capital,,"National government agencies: National Planning Department (DNP) acting through the National Citizen Services Program (PNSC), and the National Public Contracting Agency – Colombia Compra Eficiente (ANCP)",
+CO-L1105,False,0,,,water/sanitation,,,0,U.S. dollars from the Ordinary Capital resources,,national government,
+CO-L1109,False,,,,none,0,,0,US dollars,,National government agencies (DNP and MT),
+CO-L1111,False,0,,,none,,,0,U.S. dollars from the Ordinary Capital,,national government - Ministry of Transportation (MoT),
+CO-L1116,,,,,,,,,,,,
+CO-L1119,True,,,,none,,ICB and NCB,,U.S. dollars,,national government,B
+CO-L1124,True,38.4,,,transport,,,24.5,,,,
+CO-L1125,,,,,water/sanitation,,"ICB, NCB",,,,,
+CO-L1126,False,0,,,none,,,75.76,U.S. dollars from the Bank's Ordinary Capital,,national government,
+CO-L1131,False,0,,,none,,,0,U.S. dollars from the Ordinary Capital,,national government - National Planning Department (DNP),
+CO-L1132,False,,,,none,,,50,U.S. dollars from the Bank's Ordinary Capital,,"autonomous SOE - Banco de Comercio Exterior de Colombia S.A. (Bancóldex), not newly created",
+CO-L1133,,,,,"roads, public spaces, housing, public utilities",,"ICB, NCB",,,,autonomous SOE (FINDETER - Financiera de Desarrollo Territorial S.A.),
+CO-L1138,,,,,,,,,,,,
+CO-L1140,,,,,,,,,,,,
+CO-L1154,False,0,,,none,,,0,U.S. dollars from the Ordinary Capital (OC),,national government - autonomous supreme audit institution,
+CO-L1155,False,,,,"urban planning, infrastructure, and services",,international competitive bidding and national legislation for procurement below ICB threshold,,US Dollars from the Bank's Ordinary Capital,,autonomous financial institution (FINDETER - Financiera del Desarrollo Territorial S.A.),"not categorized as A, B, or C (CCLIP does not require environmental category classification)"
+CO-L1156,,,,,water/sanitation and energy,,ICB and NCB,,,,,
+CO-L1161,True,,,,energy,,,,US Dollars,,public bank (second tier),"FI-2 (financial intermediary, medium risk); sub-projects likely Category B"
+CO-L1164,True,,,,none,,ICB,0,U.S. dollar,,"National government agencies - multiple coexecuting agencies including National Planning Department (DNP), Agustín Codazzi Geographic Institute (IGAC), National Land Agency (ANT), and Superintendency of Notary and Registry Offices (SNR)",A
+CO-L1165,False,,,,"urban development, urban transportation, health infrastructure",,"ICB, national legislation below ICB threshold, consultant contracting below US$500,000",,U.S. dollars from the Bank's Ordinary Capital,,FINDETER - autonomous national development finance institution (second-tier bank with direct lending capability),"Not classified - CCLIP operations do not require A, B, or C classification"
+CO-L1166,False,,,,,,"ICB, NCB",,U.S. dollars from the Ordinary Capital,,"National government (Department of the Presidency of the Republic - DAPRE), through the Colombia Peace Fund",
+CO-L1222,,,,,,,,,,,,
+CO-L1225,,,,,,,,,,,,
+CO-L1228,False,,,,none,,,33,United States dollars,,autonomous public development bank,
+CO-L1229,,,,,none,,,,,,national government,C
+CO-L1232,False,0,,,water/sanitation,,"ICB, NCB",0,U.S. dollars,,national government ministry,B
+CO-L1234,True,64.29,,,rail (metro/public transport infrastructure),,"ICB (International competitive bidding), NCB (National competitive bidding)",,U.S. dollars from the Ordinary Capital,,Newly created autonomous SOE (Empresa Metro de Bogotá S.A.),A
+CO-L1236,False,0,,,none,,"ICB, NCB",0,United States dollars,,autonomous national entity with administrative and budgetary autonomy under the National Constitution,C
+CO-L1241,False,,,,none,,"ICB, NCB",0,United States dollar,,national government ministry,
+CO-L1243,False,0,,,none,,,0,United States dollars,,national government,
+CO-L1250,True,9.95,,,none,,"ICB, NCB",0,U.S. dollar,,national government - Ministry of Labor,
+CO-L1251,False,0,,,none,,"ICB, NCB",0,U.S. dollar,,National government agency (autonomous),C
+CR-L1001,,,,,,,,,,,,
+CR-L1009,,,,,energy,,"ICB, NCB",,,,autonomous SOE - Instituto Costarricense de Electricidad (ICE),
+CR-L1023,False,0,,,roads,,,20,"U.S. dollars from the Single Currency Facility, with option of converting to Costa Rican colones via Local Currency Facility",,"national government ministry (Ministry of Public Works and Transportation through the Public Works Division), not newly created",
+CR-L1024,True,53.12,,,water/sanitation,,,24.09,U.S. dollars from the Single Currency Facility,,autonomous SOE,
+CR-L1031,,,,,,,,,,,,
+CR-L1032,True,11.11,,,roads and port infrastructure,,,0,United States dollars,,national government ministry,
+CR-L1043,,,,,,,,,,,,
+CR-L1049,,,,,energy,,"ICB, NCB",,,,autonomous SOE,
+CR-L1065,False,0,,,roads,,,5.3,U.S. dollar,,national government ministry,
+CR-L1066,,,,,border infrastructure,,"ICB, NCB",,,,,
+CR-L1070,,,,,,,,,,,,
+CR-L1135,False,,,,roads and water supply infrastructure,,Policies for the Procurement of Works and Goods Financed by the IDB (document GN-2349-9) and the Policies for the Selection and Contracting of Consultants Financed by the IDB (document GN-2350-9),0,United States dollars from the Bank's Ordinary Capital,,National Risk Prevention and Emergency Response Committee (CNE),
+CR-L1137,False,0,,,buildings,,"ICB, NCB, QCBS",0,U.S. dollar,,National government ministry with newly created deconcentrated agency with budgetary autonomy,B
+CR-L1139,False,,,,roads,,,29.8,U.S. dollars,,national government ministry,
+DR-L1001,True,,,,none,,,,,,Monetary Board (national government coordinating body),
+DR-L1003,False,0,,,none,,"ICB, NCB",17,U.S. Dollars from the Single Currency Facility,,National government - Technical Secretariat of the Office of the President through the National Statistics Office (ONE),
+DR-L1005,,,,,none,,ICB,,,,national government - Ministry of Finance,
+DR-L1008,True,,,,roads,,"ICB, NCB",,,,,B
+DR-L1010,,,,,,,,,,,,
+DR-L1016,False,0,,,none,,,28,U.S. dollars,,autonomous national government agency,
+DR-L1026,True,57.7,,,energy,,,24.1,U.S. dollars from the Single Currency Facility,,"autonomous SOE - Corporación Dominicana de Empresas Eléctricas Estatales (CDEEE), acting through the Suburban and Rural Electrification Unit (UERS)",
+DR-L1029,,,,,,,,,,,,
+DR-L1031,False,,True,,none,,,12.5,U.S. dollars from the Bank's Ordinary Capital Single Currency Facility,,national government - Ministry of Agriculture (MA),
+DR-L1032,False,0,,,school buildings,,,17,U.S. dollars from the Single Currency Facility,,national government ministry,B
+DR-L1034,True,,,,energy,,International competitive bidding (licitación pública internacional),0,U.S. dollars from the Ordinary Capital,,"Autonomous state-owned enterprise (Corporación Dominicana de Empresas Eléctricas Estatales - CDEEE), through a project executing unit",
+DR-L1035,False,0,,,tourism infrastructure,,,3.7,U.S. dollars from the Single Currency Facility,,national government ministry,
+DR-L1036,True,,,,none,,,9,U.S. dollars,,national government,
+DR-L1039,False,0,,,none,,,0,U.S. dollars from the Single Currency Facility,,Social Policy Coordination Council,
+DR-L1041,True,50,,,water/sanitation,,,0,U.S. dollars from the Single Currency Facility,,National government water and sanitation institute (INAPA),
+DR-L1044,False,0,,,none,,,0,U.S. dollars from the Single Currency Facility,,National government - Gabinete de Coordinación de Políticas Sociales [Social Policy Coordination Council] (GCPS),
+DR-L1045,,,,,none,,,,,,,
+DR-L1047,,,,,,,,,,,,
+DR-L1048,False,,,,none,,Bank policies and procedures GN-2349-9 and GN-2350-9,9.1,U.S. dollars from the Single Currency Facility,,National government ministry (Ministry of Agriculture) through existing Project Execution Office,
+DR-L1053,False,0,,,none,,,0,United States dollars,,National government - Gabinete de Coordinación de Políticas Sociales (Social Policy Coordination Council),
+DR-L1054,False,,,,,,,8.33,U.S. dollars from the Bank's Ordinary Capital,,national government - Ministry of Agriculture,
+DR-L1056,False,,,,school infrastructure / buildings,,"ICB, NCB, QCBS",23.08,U.S. dollars from the Bank's Ordinary Capital,,national government ministry,
+DR-L1057,False,,,,water/sanitation,,Bank policies (documents GN-2349-9 and GN-2350-9),0,U.S. dollars from the Bank's Ordinary Capital,,Autonomous water and sewer corporation (CORAASAN),
+DR-L1059,False,0,,,none,,,0,U.S. dollars from the Bank's Ordinary Capital,,National government - Social Policy Coordination Council (GCPS),C
+DR-L1065,False,,,,none,,"LPN (National Public Bidding), CD (Direct Contracting), CP (Price Comparison), LPI (International Public Bidding), CI (Individual Consultant)",12,United States dollars from the Ordinary Capital,,national government ministry (Ministry of Industry and Trade),
+DR-L1067,False,0,,,none,,,0,U.S. dollars from the Bank's Ordinary Capital,,national government ministry,C
+DR-L1068,False,0,,,roads and irrigation/water,,licitación pública internacional (international competitive bidding),8.6,U.S. dollars from the Ordinary Capital,,national government ministries (Ministry of Agriculture and Ministry of Public Works and Communications),
+DR-L1069,False,0,,,buildings,,"LPI, LPN, SD, SBCC",0,U.S. dollars from the Ordinary Capital,,"national government, Ministry of Public Health and Social Welfare (MISPAS)",C
+DR-L1070,False,0,,,none,,,16.7,U.S. dollars from the Bank's Ordinary Capital,,national government - Ministry of Finance,C
+DR-L1077,False,,,,none,,NCB and international competitive bidding,,US dollars,,National government ministry - MINERD's International Cooperation Office (OCI),C
+DR-L1080,False,0,,,buildings,77.57,,0,U.S. dollars,,national government,B
+DR-L1084,False,,,,urban rehabilitation and heritage,,International competitive bidding (licitación pública internacional),,,,,B
+DR-L1116,False,,,,none,,,3.23,US dollars from the SCF,,National government ministry for PBP; autonomous national council for TC Loan,
+DR-L1117,False,0,,,none,,,0,U.S. dollars from the Ordinary Capital,,National government agencies - Dirección General de Impuestos Internos (DGII) for Component I and the Ministry of Finance for Component II,C
+DR-L1122,True,48,,,street lighting infrastructure,,"International competitive bidding (ICB), Quality- and cost-based selection (QCBS)",,,,autonomous SOE - Dominican Corporation of State-owned Electric Power Companies (CDEEE),B
+DR-L1125,,,,,,,,,,,,
+DR-L1127,,,,,,,licitación pública internacional,,,,,
+DR-L1128,False,0,,,energy,,"ICB, NCB",0,United States dollar,,"Autonomous SOE - Corporación Dominicana de Empresas Eléctricas Estatales (CDEEE), Dominican Corporation of State-owned Electricity Companies",B
+DR-L1134,False,,,,roads,29.58,ICB (licitación pública internacional),,,,Technical Execution Unit for Agroforestry Development Projects (UTEPDA) - autonomous unit with multisectoral governance structure,
+DR-L1135,False,,,,roads,29.48,ICB,0,,,Technical Execution Unit for Agroforestry Development Projects (UTEPDA) - autonomous unit with multisectoral governance structure,
+DR-L1137,False,0,,,buildings,,"LPI (International Public Bidding), Direct Contracting, SBCC",0,United States Dollars,,national government ministry,
+EC-L1001,False,0,,,none,0,"international competitive bidding for goods ≥US$350,000 and consulting services ≥US$200,000; national procedures for amounts below thresholds",20.55,U.S. dollar from the single currency facility,,"national government ministry - Ministry of Foreign Trade, Industrialization, Fisheries, and Competitiveness",
+EC-L1003,,,,,,,,,,,,
+EC-L1006,False,0,,,basic infrastructure,,"ICB, LCB",20,Single Currency Facility,,autonomous corporation,
+EC-L1017,,,,,neighborhood upgrading,,,,,,municipal,
+EC-L1018,True,16.2,,,buildings,,"ICB, NCB",0.3,US dollars from the Single Currency Facility,,national government - Ministry of Education,
+EC-L1019,,,,,water/sanitation,,"ICB, NCB",,,,municipal autonomous public company,
+EC-L1021,,,,,urban infrastructure,,,,,,,
+EC-L1022,,,,,water/sanitation,,"ICB, NCB",,,,autonomous SOE,
+EC-L1025,True,50,,,none,,,0,"U.S. dollars, Single Currency Facility",,National government agency - Secretaría Nacional de los Objetivos de Desarrollo del Milenio (SODEM),
+EC-L1045,False,,True,,none,,direct contracting,0.72,U.S. dollars from the Single Currency Facility,,autonomous SOE (state-owned airline),
+EC-L1059,True,65.2,,,artisanal-fishing facilities,,,31.5,U.S. dollar from the Single Currency Facility,,Banco del Estado (state bank),
+EC-L1065,False,,,,roads,,,4.5,U.S. dollars from the Single Currency Facility,,national government ministry,
+EC-L1071,,,,,,,,,,,,
+EC-L1074,False,,,,housing,,,5,U.S. dollars from the Single Currency Facility of the Ordinary Capital,,national government ministry,
+EC-L1075,False,,,,buildings,,Licitación Pública Internacional (LPI) / International Competitive Bidding (ICB),5.7,US dollars from the Single Currency Facility of the Bank's Ordinary Capital,,national government ministry,
+EC-L1076,False,0,,,,,,2.4,U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital,,"National government - Ministry of Public Health (MSP), Undersecretariat for the Extension of Social Protection in Health (SEPSS)",
+EC-L1081,True,33.0,,,water/sanitation,,IDB policies GN-2349-7 and GN-2350-7,17.5,U.S. dollars from the Single Currency Facility,,autonomous SOE (Banco del Estado) with Ministry of Urban Development and Housing as coexecuting agency,
+EC-L1083,False,0,,,buildings,,,16.6,U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital,,"national government directorate (DIGERCIC - Dirección General de Registro Civil, Identificación y Cedulación)",
+EC-L1084,False,,,,none,,,0.7,U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital,,National Preinvestment Institute (INP),
+EC-L1087,False,,,,energy,,"contracts for procurement of works, goods, and services",,USD,,MEER and CONELEC,
+EC-L1094,,,,,,,,,,,,
+EC-L1097,False,0,,,buildings,,,5.4,U.S. dollars from the Single Currency Facility of the Ordinary Capital,,national government ministry,
+EC-L1098,False,0,,,none,,,6,U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital,,national government,
+EC-L1099,False,0,,,"parks and recreation areas, urban infrastructure",,,5,U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital,,national government ministry,
+EC-L1107,,,,,,,,,,,,
+EC-L1110,True,40.1,,,none,,,40.1,U.S. dollars from the Bank's Ordinary Capital,,autonomous SOE,
+EC-L1111,True,,,,rail,,"ICB, NCB",,,,autonomous SOE,A
+EC-L1112,,,,,"basic services infrastructure (water, sanitation, other municipal services)",,ICB,,,,State-owned enterprise (Banco del Estado),B
+EC-L1113,False,0,,,housing/buildings,,,3.85,U.S. dollars from Ordinary Capital,,national government ministry,
+EC-L1116,,,,,border crossing infrastructure,,"ICB, NCB, shopping (comparación de precios)",,,,National government agency (SENAE - National Customs Service),
+EC-L1117,False,,,,energy,96,,11.5,U.S. dollars charged to the Ordinary Capital,,autonomous SOE,B
+EC-L1118,False,0,,,none,,,1.3,U.S. dollars from the Bank's Ordinary Capital,,national government - Ministry of Finance and National Public Administration Department (SNAP),C
+EC-L1119,False,,,,buildings,,Bank policies (documents GN-2349-9 and GN-2350-9),3,U.S. dollars from the Ordinary Capital,,"autonomous technical body with administrative, financial, budgetary, and organizational autonomy",
+EC-L1120,False,0,,,none,,,53.85,U.S. dollars from the Ordinary Capital,,National government agency - Servicio de Rentas Internas (Internal Revenue Service),C
+EC-L1121,False,0,,,irrigation and roads,83.5,ICB and NCB,20.2,U.S. dollars from the Bank's Ordinary Capital,,subnational decentralized autonomous government,
+EC-L1122,True,,,,water/sanitation,,,,,,Banco del Estado,
+EC-L1125,False,0,,,roads,,International Competitive Bidding (LPI),36.58,U.S. dollars from the Ordinary Capital,,"Autonomous state bank (Banco del Estado) and Consortium of Provincial Autonomous Governments (CONGOPE), with provincial Decentralized Autonomous Governments as subexecuting agencies",
+EC-L1128,False,,,,energy,,,3.23,U.S. dollars from the Ordinary Capital,,national government ministry,
+EC-L1129,False,,,,buildings,,"International Competitive Bidding (LPI), National Competitive Bidding (LPN), Price Comparison (CP)",,,,national government - Coordinating Ministry for Social Development (MCDS),B
+EC-L1136,True,,,,energy,,,,,,Strategic Public Enterprise,
+EC-L1147,True,37.5,,,energy - power distribution and transmission,,"LPI, LPN, CP, and various methods for consultants including selection based on qualifications",,USD,,,B
+EC-L1155,False,0,,,none,,"International competitive bidding (LPI/ICB), direct contracting",19,U.S. dollars from the Ordinary Capital,,"National government (Ministry of Finance) with sub-executing agencies: Ministry of Education (MINEDUC), autonomous SOE (UNA-EP), and national institute (INEVAL)",
+EC-L1160,True,,,,energy,,"ICB, NCB, consultant selection",,,,,B
+EC-L1216,,,,,,,,,,,,
+EC-L1218,,,,,"roads, bridges, water/sanitation",,"Licitación Pública Nacional (LPN), Comparación de Precios, Contratación directa",,,,National government ministry (MINFIN) with subsidiary agreements to public enterprise (Empresa Pública Ecuador Estratégico) and national ministry (Ministry of Transportation and Public Works),C
+EC-L1219,,,,,energy,,"ICB, NCB, shopping (price comparison)",,,,,B
+EC-L1221,False,,True,,small-scale civil works,,"ICB, NCB, shopping, direct contracting, QCBS",19,U.S. Dollars from the Bank's Ordinary Capital,,autonomous specialized agency - ECU-911 Integrated Security Service,
+EC-L1223,True,,,,energy,,"LPI (Licitación Pública Internacional / International Competitive Bidding), LPN (Licitación Pública Nacional / National Competitive Bidding), Comparación de Precios (Shopping)",28.8,U.S. dollars,,Ministry of Electricity and Renewable Energy (MEER) - national government ministry,
+EC-L1227,False,,,,none,,,3.06,United States dollars,,national government,C
+EC-L1230,False,0,,,none,,,22,U.S. dollars,,national government (MEF) and autonomous SOE (BDE),B
+EC-L1231,False,,,,energy,,"LPI (International Public Bidding), National Public Bidding, Price Comparison, Short List (consulting services)",26,U.S. dollars (US$),,national government ministry,B
+EC-L1235,False,,,,,,,13,U.S. dollars (US$),,national government ministry,
+EC-L1236,False,0,,,none,0,,11.26,,,national government ministries,C
+EC-L1242,True,18.1,,,water/sanitation,,"ICB, QCBS, QCS, SSS",42.5,U.S. dollar,,autonomous public utility / SOE,
+EC-L1243,False,,,,none,,,9.9,U.S. dollars from the Ordinary Capital,,"National government ministry - Ministry of Production, Foreign Trade, Investment, and Fisheries (MPCEIP), specifically the Office of the Undersecretary for Investment within the Office of the Deputy Minister for Export and Investment Promotion",
+EC-L1245,True,36.33,,,housing/buildings,,"ICB, NCB, QCBS, NICQ",0,,,national government ministry,
+EC-L1248,True,63,,,water/sanitation,,ICB,14,U.S. dollar,,Decentralized Autonomous Municipal Government,
+EC-L1249,False,0,,,none,,"International Competitive Bidding (LPI), Direct Selection, Standard Request for Proposals (SEP) for consulting services",10.7,U.S. dollars,,National government ministry (Ministry of Economy and Finance as executing agency; Office of the Attorney General as subexecuting agency); not newly created,C
+EC-L1250,False,0,,,none,,LPI (Licitación Pública Internacional),10.7,United States dollars; circulation in Ecuador is USD,,"national government - Ministry of Economy and Finance (executing agency), with General Secretariat of the Presidency and Office of the Vice President as subexecuting agencies",C
+EC-L1251,False,,,,,,"ICB (Licitación Pública Internacional/LPI), direct contracting (selección directa)",4.87,United States dollar,,National government (Ministry of Economy and Finance) with multiple subexecuting agencies including autonomous SOEs and line ministries,C
+EC-L1258,False,,False,,none,,,4.22,United States dollar,,national government ministries,
+ES-L1001,False,0,,,roads,,"ICB, LCB",8.0,United States Dollars under the Single Currency Facility,,national government ministry,
+ES-L1002,,,,,basic infrastructure,,"ICB, NCB",,,,,
+ES-L1016,,,,,,,"ICB, NCB",,,,,
+ES-L1017,False,0,,,none,,Bank policies (documents GN-2349-7 and GN-2350-7),17,U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital,,Salvadoran Legislative Assembly (SLA),
+ES-L1022,,,,,,,,,,,,
+ES-L1025,,,,,,,,,,,,B
+ES-L1027,False,,,,buildings,,,31.5,US dollars from the Bank's Ordinary Capital Single Currency Facility,,national government ministry,
+ES-L1044,False,0,,,,,,0,U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital,,National government - Technical Secretariat of the Presidency (STP),
+ES-L1046,True,,,,water/sanitation,,,,,,national government - autonomous agency,
+ES-L1050,False,0,,,transportation/mass transit corridor,,,0,United States dollars from the Single Currency Facility,,"National government ministry (Ministry of Public Works, Transportation, Housing, and Urban Development) through the Office of the Deputy Minister of Transportation",
+ES-L1056,False,0,,,buildings,,,31.5,U.S. dollars from the Single Currency Facility,,"national government - Office of the President of the Republic, through the Social Inclusion Secretariat (SIS), in coordination with FISDL as coexecuting agency",
+ES-L1057,,,,,,,,,,,,
+ES-L1058,,,,,,,,,,,,
+ES-L1063,False,0,,,none,,,0,U.S. dollars from the Ordinary Capital,,National government ministries: Ministry of Labor and Social Welfare (MTPS) and Comisión Nacional de la Micro y Pequeña Empresa (CONAMYPE),
+ES-L1066,False,0,,,tourism attractions and infrastructure,,,0,United States dollars from the Ordinary Capital (OC),,national government ministry - Ministry of Tourism (MITUR),
+ES-L1075,,,,,"roads, piers, boardwalk",,International Competitive Bidding (Licitación Pública Internacional),,,,,
+ES-L1085,,,,,roads,,International Competitive Bidding (LPI),,,,national government ministry,
+ES-L1089,False,0,,,none,,,0,U.S. dollars from the Ordinary Capital,,autonomous development bank (BANDESAL - Banco de Desarrollo de El Salvador),"FI-3 (financial intermediary, not categorized A/B/C)"
+ES-L1092,False,0,,,buildings,,International Competitive Bidding (Licitación Pública Internacional - LPI),0,U.S. dollars from the Ordinary Capital,,"national government - Office of the President of the Republic through the Social Inclusion Secretariat (SIS), in coordination with FISDL as coexecuting agency",
+ES-L1095,False,0,,,buildings,,"Licitación Pública Internacional (International Competitive Bidding), national competitive methods, and various methods for consulting services and minor works",0,U.S. dollars from the Ordinary Capital,,national government ministry,
+ES-L1131,False,0,,,none,,"ICB, QCBS",0,U.S. dollars from the Bank's Ordinary Capital,,"national government, Ministry of Finance through the Deputy Ministry of Revenue, not newly created",
+ES-L1132,True,50,,,none,,,50,United States dollar,,autonomous SOE,
+ES-L1135,False,0,,,none,,,0,U.S. dollars,,national government ministry,
+GU-L1009,,,,,hospital infrastructure,,,,,,Ministry of Public Health and Social Welfare,
+GU-L1018,False,0,,,energy,,,0.29,U.S. dollar from the Single Currency Facility,,autonomous SOE,
+GU-L1031,False,,,,none,,,3.0,United States dollars from the Single Currency Facility,,national government ministry,
+GU-L1037,False,0,,,none,,,20.94,"U.S. dollars, Single Currency Facility",,national government ministry,
+GU-L1039,True,50,,,water/sanitation,,,0,U.S. dollar,,"National government, through existing autonomous agencies (FONAPAZ and INFOM-UNEPAR)",
+GU-L1084,False,,,,energy,,,,United States dollars (US$),,autonomous SOE,
+GU-L1087,False,0,,,buildings,,,0,U.S. dollars charged to the Ordinary Capital,,national government ministry,
+GU-L1095,,,,,,,ICB,,,,,
+GU-L1163,False,0,,,buildings,,,0,U.S. dollar,,national government,
+GU-L1169,False,,,,roads,,international competitive bidding (ICB),0,United States dollars,,"national government - Highway Administration (DGC) within Ministry of Communications, Infrastructure, and Housing (CIV)",
+GY-L1007,False,,,,water/sanitation,,"ICB, NCB, QBS, Price Quotation, direct contracting",4.6,US Dollars,,national government,
+GY-L1008,,,,,roads,,ICB,,,,national government ministry,
+GY-L1019,False,,,,housing/sites with services,88.9,,,US Dollars,,National government ministry through autonomous planning authority,
+GY-L1025,False,,,,water/sanitation,,ICB,5,US Dollar,,autonomous SOE,
+GY-L1027,False,,,,roads,,ICB,0,"USD, with OC portion convertible to SCF",,national government ministry,
+GY-L1028,False,,,,water/sanitation,,,32,,,national government,
+GY-L1030,,,,,roads,,ICB,,,,national government ministry,
+GY-L1031,False,,,,roads,84.06,"ICB, NCB, shopping",4.35,,,"National government ministry unit; Work Services Group (WSG) under the Ministry of Public Works and Communications/Ministry of Public Infrastructure, established in 2002",B
+GY-L1034,False,,,,roads and sanitary landfill,,Bank's new procurement policies and procedures (documents GN-2349-7 and GN-2350-7),0,US Dollar,,national government ministry,
+GY-L1036,False,,,,water/sanitation,,,2.44,US Dollar (Single Currency Facility),,autonomous SOE,
+GY-L1037,False,0,,,energy - distribution network rehabilitation,,"ICB, NCB, shopping (comparación de precios)",9.09,"US$, with SCF conversion option for OC",,Autonomous SOE - Guyana Power and Light Ltd.,
+GY-L1040,,,,,water/sanitation,,,,,,autonomous SOE,B
+GY-L1041,True,41.7,,,energy,,"licitación pública internacional, licitación pública nacional, comparación de precios",,US Dollar and Euro,,state-owned utility,
+GY-L1042,False,,,,none,,,0,US dollars,,national government,C
+GY-L1044,False,,,,,,"International Public Bidding, National Public Bidding, Price Comparison",0,US dollars,,National government ministry,
+GY-L1054,,,,,none,,,,,,,
+GY-L1056,False,,,,buildings,,,1,U.S. Dollar or other currencies for FSO,,national government,
+GY-L1058,False,,,,buildings,,,,,,"national government ministry, existing entity",B
+GY-L1059,False,,,,buildings,,"international competitive bidding (ICB), national competitive bidding (NCB), price comparison",0,US dollars,,national government - Ministry of Business (MoB),
+GY-L1060,,,,,small agricultural infrastructure works,,,,,,national government ministry (Ministry of Agriculture),B
+GY-L1064,False,0,,,none,,"ICB, NCB, shopping",0,Dollars of the United States of America,,national government ministry,
+GY-L1066,False,,,,energy (solar plants and transmission infrastructure),,ICB (International Competitive Bidding),16,Dollars of the United States of America,,Guyana Energy Agency (GEA) and Guyana Power and Light Inc. (GPL); GEA is a government agency and GPL is a state-owned enterprise,B
+HO-L1001,,,,,"water/sanitation, roads, urban infrastructure",,,,,,,
+HO-L1002,False,,,,,,"International competitive bidding (ICB) for goods/services ≥US$350,000 and works ≥US$1 million; ICB for consulting contracts ≥US$200,000",10,United States dollars,,National government ministry (Ministry of Health),
+HO-L1007,,,,,,,"ICB, NCB",,,,,
+HO-L1010,False,,,,,,,15.6,U.S. dollars,,National government agency - National Office for Sustainable Rural Development/National Program for Sustainable Rural Development (DINADERS/PRONADERS),
+HO-L1013,,,,,roads,,,,,,,B
+HO-L1015,,,,,,,National competitive bidding,,,,,C
+HO-L1018,True,45.45,,,roads,73.86,,9.09,United States dollar,,national government ministry,
+HO-L1019,True,,,,energy,,,8.6,U.S. dollars,,autonomous SOE,
+HO-L1020,True,15.79,,,roads,,,9.09,U.S. dollars,,national government,
+HO-L1031,,,,,mitigation and prevention works,,,,,,,
+HO-L1032,,,,,,,,,,,,
+HO-L1033,True,32.47,,,roads,,,2.6,United States dollar,,national government ministry,
+HO-L1037,True,,,,"port infrastructure (dredging, land reclamation, container terminal infrastructure and superstructure)",,"Conventional works contract, EPC (Engineering, Procurement and Construction) contract, international open calls for proposals",50,,,"Autonomous state-owned enterprise (Empresa Nacional Portuaria - ENP, Honduran Port Authority)",
+HO-L1038,,,,,,,,,,,,
+HO-L1039,False,0,,,energy,,,0,US$ from the US$ SCF of the Ordinary Capital,,autonomous SOE,
+HO-L1042,False,,,,none,,,9.09,US dollars from the single currency facility,,national government ministry,
+HO-L1044,,,,,,,,,,,,
+HO-L1055,False,,,,buildings,,"ICB, NCB, PC, CQS",0,U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital,,national government - Ministry of Finance (SEFIN),
+HO-L1059,False,,,,none,,,,U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital,,national government,
+HO-L1061,False,,,,public transport corridor / urban infrastructure,,competitive bidding,9.09,U.S. dollars from the Single Currency Facility,,municipal government,
+HO-L1062,False,,,,minor upgrades in schools,,,3,U.S. dollars from U.S. dollars the Single Currency Facility,,national government departments,C
+HO-L1063,False,,,,buildings,,,6.3,U.S. dollars,,national government - Office of the Secretary of State for Security (Department of Security),
+HO-L1071,False,,,,none,,,9.0,U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital,,Family Allowance Program (PRAF) - national government program,
+HO-L1072,False,,,,health facilities,,GN-2349-9 and GN-2350-9,,United States dollars,,national government - Ministry of Health (SESAL),
+HO-L1087,False,,,,none,,CD (direct contracting) and SD (selection based on qualifications),9.0,U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital; U.S. dollars for FSO,,Family Allowance Program (PRAF) - autonomous entity,C
+HO-L1088,False,,,,urban infrastructure/neighborhood upgrading,,Policies for the procurement of works and goods financed by the IDB (GN-2349-9) and Policies for the selection and contracting of consultants financed by the IDB (GN-2350-9),0,United States dollars (US$),,National government agency (SEFIN - Ministry of Finance and FHIS - Honduran Social Investment Fund),
+HO-L1089,True,8.7,,,roads,,,10.85,US$,,autonomous entity (Millennium Challenge Account – Honduras),
+HO-L1090,False,0,,,,,licitación pública internacional,,United States dollars from the Single Currency Facility of the Bank's Ordinary Capital,,national government - Ministry of Health (SESAL),
+HO-L1093,False,,,,none,,"licitación pública internacional (international competitive bidding), direct contracting",9.1,United States dollars,,national government ministry (Ministry of Development and Social Inclusion - SEDIS),
+HO-L1102,True,,,,energy,,,,,,autonomous SOE,B
+HO-L1104,False,,,,roads,,,,United States dollars,,"autonomous SOE, formerly created to administer MCC projects",
+HO-L1105,False,0,,,none,,"international competitive bidding, short list with international consultants",0,U.S. dollars,,national government departments (SEDIS and SESAL),C
+HO-L1108,,,,,none,,,,,,National government; newly created autonomous entity (SAR) to replace existing DEI,
+HO-L1117,False,,,,buildings,,"International Competitive Bidding (LPI), National Competitive Bidding (LPN), Price Comparison",0,U.S. dollars,,National government ministry (SEDIS through DNCM) and autonomous SOE (INVEST-H) as co-executing agencies,B
+HO-L1121,False,0,,,roads,,direct contracting; procurement through UN procurement agency; consolidated international procurement; joining existing contracts,2.9,U.S. dollars,,autonomous agency - Inversión Estratégica de Honduras (INVEST-H),B
+HO-L1179,False,,,,none,,"ICB, NCB, QCBS",,U.S. dollars,,national government ministry with existing PMU,
+HO-L1186,True,3.1,,,energy,,international competitive bidding,5.6,U.S. dollar,,National Electric Power Company (autonomous SOE),B
+HO-L1187,False,0,,,"neighborhood improvement, police academy building",,,0,U.S. dollars,,national government agencies (Office of the Secretary of State for Security and autonomous institute IDECOAS/FHIS),B
+HO-L1188,,,,,none,,,,,,national government agency - SEDUC (Secretary of Education),
+HO-L1195,,,,,health buildings and hospital infrastructure,,,,,,national government ministry (SESAL),
+HO-L1199,False,,,,buildings,,,,U.S. dollars,,national government - Ministry of Health (SESAL),B
+HO-L1200,True,100,,,none,,"ICB, NCB, QCBS",50,U.S. dollar,,national government - Ministry of Finance,
+HO-L1201,True,38.8,,,,,"ICB, NCB, QCBS",,United States dollar,,Inversión Estratégica de Honduras (INVEST-Honduras),"C for HO-L1211, B13 for HO-L1201"
+HO-L1202,,,,,buildings,,ICB (Licitación Pública Internacional),,,,"national government (SCGG, SEFIN) and municipal government (ASPS)",B
+HO-L1211,True,38.8,,,,,"ICB, NCB, QCBS",,United States dollar,,Inversión Estratégica de Honduras (INVEST-Honduras),
+JA-L1005,False,,,,none,,,0,US$ single currency facility,,national government - Ministry of Education,
+JA-L1009,False,,,,buildings,,NCB,0,US$ Single Currency Facility of OC,,national government,
+JA-L1012,False,,,,none,,,0,Single Currency Facility - US dollars,,National government ministry through autonomous corporation,
+JA-L1015,False,,,,roads,,,0,United States dollar from the Ordinary Capital Single Currency Facility,,autonomous agency under national government ministry,
+JA-L1016,False,0,,,roads,90,competitive basis,0,"US$, single currency facility",,"national government, through autonomous agency (National Works Agency)",
+JA-L1021,True,41.67,,,buildings,100,,0,US$ single currency facility,,national government,
+JA-L1025,False,0,,,none,,"Licitación pública internacional, Licitación pública nacional, Comparación de precios",0,U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital,,national government ministry (Ministry of Energy and Mining),
+JA-L1027,False,,,,roads,,,0,"US$, single currency facility",,Ministry of Transport and Works through the National Works Agency (autonomous agency),
+JA-L1035,False,0,,,water/sanitation,,ICB,0,US Dollar (Single current Facility),,autonomous SOE,
+JA-L1037,False,0,,,none,,"international competitive bidding, national competitive bidding, price comparison, short lists",0,USD chargeable to the Ordinary Capital,,national government ministry - Ministry of Labour and Social Security (MLSS),
+JA-L1039,False,0,,,none,,,0,"US$, single currency facility",,"National government ministry - Project Coordination Unit within Ministry of Finance and Planning, not newly created",
+JA-L1043,,,,,,,competitive procurement,,,,Programme Executing Unit (PEU) under national government ministries,
+JA-L1046,True,,,,none,,"Licitación pública internacional, Licitación pública nacional, Comparación de precios, Selección directa",,,,,
+JA-L1048,False,,,,,,,9.93,Dollars of the United States,,national government ministry,C
+JA-L1049,True,11.3,,,,,Direct contracting (single source selection); international competitive bidding; national competitive bidding; price comparison,38.9,United States dollars,,National government - Ministry of Finance and the Public Service (PBP); Ministry of Health/Ministry of Health and Wellness (Investment Loan),
+JA-L1053,False,0,,,none,0,"Licitación pública internacional, Licitación pública nacional, Comparación de precios",0,US$ (United States Dollar),,"National government ministry (Ministry of Labour and Social Security), existing PATH Unit serving as Project Executing Unit",C
+JA-L1056,True,62.5,,,none,,"Bank Policy for the procurement of Goods and Works (GN-2349-9), Bank Policy for the selection and contracting consultants (GN-2350-9)",,,,autonomous SOE - Petroleum Corporation of Jamaica (PCJ),
+JA-L1069,False,0,,,buildings,,,0,US$ single currency facility,,national government ministry,
+JA-L1072,False,0,,,none,,"licitación pública internacional, licitación pública nacional, comparación de precios, contratación directa",0,United States Dollars,,national government - Office of the Prime Minister,C
+JA-L1073,False,,,,telecommunications infrastructure (fiber optic network),,"Direct contracting, Shopping, Competitive bidding, Single source selection",,United States dollars; conversion to local currency using effect exchange rate,,National government ministries: Ministry of Finance and the Public Service (MOFPS) for PBL; Office of the Prime Minister (OPM) for Investment Loan. Not newly created.,C
+JA-L1074,False,,,,buildings,,"International Competitive Bidding, local competitive procedures",,,,national government ministry,
+JA-L1075,False,0,,,none,0,"International competitive bidding for works >1,500,000 and goods >150,000; national competitive bidding for works 150,000-1,500,000 and goods 25,000-150,000; price comparison for simple works and common goods; consulting services selection via shortlist for >200,000",0,US Dollars chargeable to OC,,"Development Bank of Jamaica (DBJ), existing autonomous development bank",
+JA-L1079,False,0,,,none,0,"CD (direct contracting), SCC (selection of consultants), SBCC, CCIN",,Dollars of the United States of America,,"autonomous agency (Jamaica Promotions Corporation - JAMPRO), not newly created",
+JA-L1085,,,,,none,,"LPN, LPI, SCC, SBCC",,Dollars of the United States of America,,Development Bank of Jamaica Limited (DBJ),
+ME-L1004,True,,,,none,,"standard documents coordinated between the Civil Service Department, the IDB, and the World Bank",50,U.S. dollars from the Single Currency Facility,,national government - Department of Labor and Social Insurance (STPS),C
+ME-L1007,False,,,,none,,sole-sourcing of individual consultants,58,US dollars,,National Coordination of the Oportunidades Program,
+ME-L1012,,,,,productive and social infrastructure,,"ICB, NCB",,,,national government - Secretariat of Social Development (SEDESOL),
+ME-L1017,,,,,,,,,,,,
+ME-L1019,,,,,,,ICB,,,,national government,
+ME-L1033,False,,,,none,,,40,U.S. dollars from the Single Currency Facility; conversion to local currency using exchange rate from last working day of prior month,,National autonomous agency - Consejo Nacional de Fomento Educativo (CONAFE),
+ME-L1039,,,,,,,NCB,,,,,
+ME-L1041,,,,,none,,,,,,"National government agency - ASERCA (Apoyos y Servicios a la Comercialización Agropecuaria), not newly created",
+ME-L1045,False,,,,none,,,28.1,U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital Local Currency Facility,,National government ministry (SAGARPA) with mandate to Nacional Financiera (NAFIN),
+ME-L1047,False,0,,,none,0,,18.74,United States dollars,,national government - Department of Finance,C
+ME-L1050,False,,,,water/sanitation,,,50.0,"U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital, subject to the Operational Framework for Lending in Local Currency",,National government agency (CONAGUA) with BANSEFI as financial agent; not newly created,B
+ME-L1051,,,,,,,,,"U.S. dollars from the Single Currency Facility, with conversion to Mexican pesos via Local Currency Facility",,"Nacional Financiera, S.N.C. (NAFIN) - national development bank",
+ME-L1052,False,,,,,,,0,U.S. dollars from the Single Currency Facility,,national government - Department of Social Development (SEDESOL) through the National Oportunidades Coordination Board,
+ME-L1055,False,,,,none,,,0.4,United States dollars from the Single Currency Facility; conversion to Mexican pesos,,Financiera Rural (autonomous SOE),
+ME-L1059,,,,,"infrastructure (mixed: transport, urban, public services, climate change)",,"ICB (LPI), NCB (LPN), price comparison (comparación de precios)",,,,"National development bank (BANOBRAS - Banco Nacional de Obras y Servicios Públicos, S.N.C.)",
+ME-L1063,False,,,,none,,Bank policies,0,United States dollars from the Single Currency Facility; conversion to Mexican pesos via Local Currency Facility (LCF),,"Sociedad Hipotecaria Federal, SNC (SHF) - existing entity",
+ME-L1065,False,0,,,none,,Bank policies,0,U.S. dollars from the Single Currency Facility with conversion to Mexican pesos via Local Currency Facility,,"Sociedad Hipotecaria Federal, S.N.C. (autonomous SOE)",
+ME-L1067,,,,,,,,,,,,
+ME-L1079,False,0,,,none,,Bank policies,0,"U.S. dollars from the Single Currency Facility, with conversion to Mexican pesos via Local Currency Facility",,"Sociedad Hipotecaria Federal, S.N.C. (SHF) - national government financial institution",
+ME-L1080,False,0,,,none,,,0,"U.S. dollars from the Single Currency Facility, with conversion to Mexican pesos via Local Currency Facility",,National government entity (Department of Social Development through the National Coordination Board for the Oportunidades Human Development Program),C
+ME-L1081,True,33.3,,,energy,,,33.3,U.S. dollars from the Single Currency Facility with conversion to Mexican pesos via Local Currency Facility,,development bank owned and controlled by the Government of Mexico,
+ME-L1084,True,,,,none,,NCB,40,U.S. dollars from the Single Currency Facility,,national government department,
+ME-L1086,False,,,,water/sanitation,,,,USD,,national government agency (INIFED),C
+ME-L1091,False,0,,,none,,,0,U.S. dollars from the Ordinary Capital,,"National government agencies: Department of Social Development (SEDESOL) through the National Coordination Board of the Oportunidades Human Development Program (CNO), and Department of Public Education (SEP)",
+ME-L1098,True,50,,,basic infrastructure and urban equipment,,,50,U.S. dollars from the Single Currency Facility with conversion to Mexican pesos through Local Currency Facility,,National government (SEDESOL) in cooperation with subnational entities (states and municipios),
+ME-L1103,False,0,,,buildings,,,0,U.S. dollars from the Flexible Financing Facility (FFF),,"autonomous SOE (Sociedad Hipotecaria Federal, S.N.C.)",
+ME-L1109,True,33.3,,,energy,,,33.3,US Dollar,,national development bank,B.13
+ME-L1111,False,0,,,public infrastructure,,"ICB, NCB",0,U.S. dollars from the Ordinary Capital,,autonomous SOE - Banco Nacional de Obras y Servicios Públicos (BANOBRAS),
+ME-L1114,,,,,,,,,,,,
+ME-L1115,,,,,,,,,,,,
+ME-L1119,True,,,,energy,,,,U.S. dollars from the Ordinary Capital,,development bank owned and controlled by the Government of Mexico,
+ME-L1120,False,,,,none,,,0,US$,,autonomous SOE,
+ME-L1121,True,,,,buildings,,,,,,autonomous SOE,
+ME-L1128,False,,,,none,0,,57.06,United States dollars,,"national government, deconcentrated agency",C
+ME-L1142,,,,,none,,,,,,national government - Subsecretaría de Educación Media Superior (Office of the Deputy Secretary of Upper Secondary Education),C
+ME-L1145,True,0.57,,,none,,,,U.S. dollars from the Ordinary Capital (OC),,"Agricultural Trust Funds (FIRA), existing government entity",
+ME-L1147,False,0,,,water/sanitation,,,20,U.S. dollars from the Bank's Ordinary Capital,,National government agency - Comisión Nacional del Agua (CONAGUA),B
+ME-L1148,True,4.53,,,energy,,,0.96,,,national development bank,A and High Risk Category B
+ME-L1151,False,0,,,energy,,,0,U.S. dollars from the Bank's Ordinary Capital,,Nacional Financiera S.N.C (national development bank),
+ME-L1158,,,,,,,,,,,,
+ME-L1161,False,,,,none,,,,U.S. dollars from the Ordinary Capital (OC),,"National government financial institution (Financiera Nacional de Desarrollo Agropecuario, Rural, Forestal y Pesquero)",
+ME-L1162,,,,,,,,,,,,
+ME-L1163,False,0,,,buildings,,,0,U.S. dollars from the Bank's Ordinary Capital,,"public-sector development bank (Sociedad Hipotecaria Federal, S.N.C.)",
+ME-L1167,False,0,,,"urban infrastructure, community development centers, water/sanitation",,national legislation procedures,,United States dollars,,national government department in cooperation with states or municipios,
+ME-L1170,False,0,,,none,,,0,U.S. dollars from the Ordinary Capital,,"National government financial institution - Financiera Nacional de Desarrollo Agropecuario, Rural, Forestal y Pesquero (FND)",
+ME-L1171,,,,,,,,,,,,
+ME-L1172,False,0,,,energy,,,0,U.S. dollars from the Ordinary Capital,,public development bank (BANCOMEXT),
+ME-L1176,False,0,,,water/sanitation,97.65,,0,U.S. dollars from the Ordinary Capital (OC),,National government agency (CONAGUA),
+ME-L1190,False,0,,,none,,,0,U.S. dollars from the Ordinary Capital,,"Autonomous trust fund (FIRA - Fideicomisos Instituidos en Relación con la Agricultura / Agricultural Trust Funds), not newly created",
+ME-L1256,False,,,,buildings,,,0,United States dollars from the Ordinary Capital,,national government agency (SAGARPA/SENASICA),B
+ME-L1257,,,,,,,,,,,,C
+ME-L1258,False,0,,,none,,,0,U.S. dollars from the Ordinary Capital (OC),,national government,C
+ME-L1259,False,0,,,,,,0,U.S. dollars,,"national development bank - Financiera Nacional de Desarrollo Agropecuario, Rural, Forestal y Pesquero (FND)",
+ME-L1267,False,0,,,buildings,,,,U.S. dollars from the Ordinary Capital,,National government ministry (Department of Energy - SENER) supported by FIDE as operating unit,B
+ME-L1268,False,,,,,,,,U.S. dollars,,"National government - Department of Environment and Natural Resources (SEMARNAT), with participation of National Forestry Commission (CONAFOR) and National Housing Commission (CONAVI) as implementing agencies",
+ME-L1284,False,0,,,telecommunications,,,0,U.S. dollars,,national development bank (Banco Nacional de Comercio Exterior S.N.C.),
+ME-L1290,,,,,,,,,,,,
+NI-L1001,,,,,,,,,,,national government ministry,
+NI-L1004,False,,,,buildings,,,11.76,United States dollar,,national government ministry,
+NI-L1005,,,,,,,"ICB, NCB",,,,"Multiple national government agencies (IDR, INTUR, MTI) in coordination with subnational entities (Municipios) and other agencies (EAAI, MARENA)",
+NI-L1006,True,17,,,roads,,,1,U.S. dollars,,national government,
+NI-L1008,False,0,,,basic social infrastructure including water/sanitation,,International competitive bidding,9.8,US dollars,,Autonomous social investment fund (FISE) with participation of local governments and community associations,
+NI-L1009,False,0,,,,,direct contracting,10,U.S. dollars from the Fund for Special Operations (FSO),,national government ministry,
+NI-L1010,True,29,,,water/sanitation,,,5,U.S. dollars from the Single Currency Facility (SCF),,"Municipality of Managua, with the municipios of Nindirí, Ticuantepe, El Crucero, and La Concepción",
+NI-L1013,False,,,,housing construction and improvements,,,4.6,US$,,national government agency - Instituto de Vivienda Urbana y Rural (INVUR),
+NI-L1014,,,,,health infrastructure,,"ICB, NCB, QCBS, LCS, Shopping",,,,Ministry of Health (national government),
+NI-L1015,,,,,,,,,,,,
+NI-L1016,False,0,,,none,,"ICB, PC (shopping)",4.2,U.S. dollars,,"National government ministry (MIFIC), with MAGFOR as subexecuting agency and ProNicaragua as subexecuting agency for one subcomponent",
+NI-L1017,True,22,,,water/sanitation,,,2,U.S. dollars from Fund for Special Operations (FSO),,Autonomous state-owned enterprise (Empresa Nicaragüense de Acueductos y Alcantarillados - ENACAL),
+NI-L1020,False,,,,none,,,,U.S. dollars,,national government ministry,
+NI-L1021,True,34.42,,,"energy (transmission, transformation, and rehabilitation of generating plants)",,,4.08,"USD, SCF",,"National government ministry (MEM) and autonomous state-owned enterprises (ENATREL, ENEL/HIDROGESA)",
+NI-L1022,True,31.76,,,energy - hydroelectric plant rehabilitation,,,3.82,U.S. dollars from the Single Currency Facility,,National government ministries and autonomous state-owned enterprises,
+NI-L1029,False,,,,water/sanitation,,,,U.S. dollars from the Single Currency Facility,,Autonomous water and sewerage company (ENACAL),
+NI-L1033,True,55.36,,,none,,,,U.S. dollars,,national government,C
+NI-L1035,True,,,,roads,,,0,United States dollars,,national government - Ministry of Transportation and Infrastructure (MTI),
+NI-L1036,True,31.76,,,"energy (transmission, transformation, and power plant rehabilitation)",74.77,,3.82,U.S. dollars from the Single Currency Facility,,National government ministry and autonomous state-owned enterprises,
+NI-L1039,,,,,,,,,,,,
+NI-L1040,,,,,energy,,,,,,autonomous SOE - ENATREL and ENEL (state-owned electricity transmission and distribution companies),
+NI-L1046,False,,,,none,,,0,U.S. dollars from the Single Currency Facility,,"Financial corporation (sociedad anónima) with majority government interest, regulated by SIBOIF and supervised by the Comptroller General, created by Law 289 of 26 March 1998",
+NI-L1048,True,22.0,,,water collection works and construction of works in critical sites,,,4.4,US$,,national government ministry,
+NI-L1049,True,,,,roads,,,,,,national government (MTI),
+NI-L1050,,,,,energy,,,,,,"Multiple: national government (Ministry of Energy and Mines), and state-owned enterprises (ENATREL, ENEL)",
+NI-L1052,False,,,,roads,,,3.25,,,national government ministry and autonomous fund,
+NI-L1053,True,22.6,,,"housing, water/sanitation, storm drainage, and roads",,,13,U.S. dollars from the U.S. Single Currency Facility,,"National government autonomous agency (INVUR - Urban and Rural Housing Administration), in conjunction with auxiliary entities including municipal governments",C
+NI-L1054,,,,,,,,,,,,
+NI-L1056,False,,,,buildings,,,2,U.S. dollars,,"national government ministry, not newly created",
+NI-L1059,False,,,,none,,,58,,,national government ministry,
+NI-L1063,True,,,,energy,,"ICB, NCB",,Single Currency Facility,,national government ministry (Ministry of Energy and Mining),
+NI-L1067,,,,,,,,,,,,
+NI-L1068,False,,,,buildings,,,6,US$ Single Currency Facility,,national government,
+NI-L1071,False,,,,roads,,"LPI, SBCC, 3CV",2.63,U.S. dollars,,national government (Ministry of Transport and Infrastructure) and autonomous road maintenance fund (FOMAV),
+NI-L1080,False,,,,none,,"ICB, NCB",,U.S. dollars,,"autonomous SOE (Banco de Fomento a la Producción acting as trustee), not newly created",
+NI-L1081,,,,,,,"ICB, NCB",,,,Ministry of Health (MINSA),
+NI-L1082,False,,,,buildings,,competitive bidding,6.2,United States dollars,,national government,
+NI-L1083,True,,,,border crossings infrastructure,,"ICB, QCBS",4.7,US$,,national government ministry unit,
+NI-L1087,False,,,,roads,,,2.0,United States dollars,,national government ministry,
+NI-L1090,,,,,fiber optic cable infrastructure,81,,,,,ENATREL - National Electric Transmission Company (Empresa Nacional de Transmisión Eléctrica),B
+NI-L1091,False,0,,,energy,94.5,,7.0,U.S. dollars,,autonomous SOE,
+NI-L1092,False,,,,roads,,,2.1,United States dollars,,national government ministry,
+NI-L1094,True,,,,energy,,,,,,,A
+NI-L1095,False,0,,,none,,,56.3,United States dollars drawn from the Ordinary Capital; United States dollars drawn from the Fund for Special Operations,,national government - Ministry of Health (MINSA),B
+NI-L1097,False,,,,roads,,"Quality- and cost-based selection (QCBS), International Individual Consultant selection based on Qualifications (IICQ)",3,U.S. dollars from the Single Currency Facility,,national government ministry,A
+NI-L1143,False,,,,roads,,"ICB, NCB",3.62,U.S. dollars,,national government,
+NI-L1145,True,12.1,,,water/sanitation,,,1.5,United States dollars,,autonomous SOE,B
+PE-L1002,,,,,,,,,,,"Office of the Comptroller General of the Republic (CGR), national government entity",
+PE-L1003,,,,,,,,,,,,
+PE-L1005,True,10,,,,,,80,U.S. dollars from the Single Currency Facility with option of conversion to Peruvian nuevos soles,,national government - Ministry of Health (MINSA),
+PE-L1006,,,,,roads,,"ICB, NCB",,,,Special National Transportation Infrastructure Project (autonomous agency under Ministry of Transportation and Communications),
+PE-L1007,,,,,,,"ICB, LCB",,,,National government agency - SENASA (National Agricultural Health Service),
+PE-L1009,False,0,,,none,,Bank procedures,30,US dollars from the Single Currency Facility,,national government - Ministry of Economy and Finance,
+PE-L1011,True,33.3,,,roads,,competitive bidding,33.3,U.S. dollars from the Single Currency Facility,,"national government entity (Ministry of Transportation and Communications, through Provías Rural)",
+PE-L1013,,,,,,,,,,,,
+PE-L1020,False,0,,,water/sanitation,,,0,US dollars (LCF) with option for conversion to local currency disbursements,,autonomous SOE (water and sewer utility company),
+PE-L1023,False,,,,none,,direct contracting (procurement without direct competition),75.24,U.S. dollars from the Single Currency Facility with option to convert to Peruvian nuevos soles via Local Currency Facility,,autonomous national service (SENASA - Servicio Nacional de Sanidad Agraria),
+PE-L1026,False,,,,none,,,50,U.S. dollars from the Ordinary Capital (OC),,National government agency (Ministry of Agriculture and Irrigation through the Agricultural/Rural Productive Development Program),B
+PE-L1028,,,,,,,,,,,,
+PE-L1030,,,,,,,international competitive bidding,,,,national government (MEF),C
+PE-L1031,False,,,,buildings,,,28,"U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital, with conversion option into Peruvian nuevos soles under the Local Currency Facility",,national government ministry,
+PE-L1058,,,,,roads,,"ICB, NCB, QCBS",,,,,B
+PE-L1060,False,,,,water/sanitation,,,39,U.S. dollars from the Single Currency Facility of the Ordinary Capital; Option of converting to nuevos soles: Local Currency Facility (LCF),,autonomous SOE,
+PE-L1062,True,21,,,buildings,,,40,"U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital, with option for conversion to Peruvian nuevos soles via Local Currency Facility",,national government ministry (Ministry of Education),
+PE-L1068,False,,,,none,,"ICB, NCB",65,"US dollars from the Single Currency Facility of the Bank's Ordinary Capital, with the possibility of conversion to Peruvian soles under the Local Currency Facility",,"National government, through existing Project Coordination Unit",
+PE-L1069,True,15.85,,,roads,,,68.3,U.S. dollars from the Single Currency Facility; Option for conversion to Local Currency Facility Peruvian nuevos soles,,national government ministry (Ministry of Transportation and Communications),
+PE-L1070,False,,,,water resource management,,,48.9,US dollars from the Single Currency Facility with Conversion option into Peruvian Nuevos Soles (PEN): Local Currency Facility (LCF),,National government agency (National Water Authority - ANA),
+PE-L1077,True,,,,none,0,"international competitive bidding and/or international calls for proposals for goods valued at or above US$250,000 and consulting services valued at more than US$350,000; procedures agreed with the Bank or established in national legislation for amounts below these thresholds",,,,"Sector Loan Coordination Unit (UCPS) coordinating with Ministry of Housing, Construction, and Sanitation (MVCS) and National Superintendency of Sanitation Services (SUNASS); national government entities",C
+PE-L1087,False,0,,,none,0,"ICB, DC (Direct Contracting), QCBS, LCS, LOI",10.09,"U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital, with option for conversion to Peruvian nuevos soles via Local Currency Facility",,national government - Ministry of Economy and Finance (MEF),C
+PE-L1088,False,,,,none,0,,0,"U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital (OC), subject to the Operational framework for lending in local currency",,"national government - Ministry of Economy and Finance (MEF), through the Sector Loan Coordination Unit (UCPS)",not required classification
+PE-L1092,True,,,,solid waste management infrastructure (sanitary landfills and basic infrastructure),,competitive bidding and request for proposals,18.92,U.S. dollars,,national government ministry,
+PE-L1100,True,29.4,,,none,,,29.4,"U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital, subject to the operational framework for lending in local currency",,national government - Ministry of Economy and Finance,
+PE-L1101,False,,,,,,,60,U.S. dollars from the OC's Single Currency Facility with option to convert to Peruvian nuevos soles under the LCF,,National government - Ministry of Economy and Finance,
+PE-L1106,False,,,,none,,,33,U.S. dollars from the OC,,national government - Ministry of Economy and Finance (MEF),
+PE-L1122,False,,,,none,,,49.83,U.S. dollars from the Ordinary Capital,,National government - Ministry of Agriculture and Irrigation (MINAGRI),C
+PE-L1125,False,0,,,,,,51.33,U.S. dollars from the Bank's Ordinary Capital,,"National government agency (INIA) under Ministry of Agriculture and Irrigation (MINAGRI), with proposal to transform into specialized technical agency",B
+PE-L1130,False,0,,,none,,,79,U.S. dollars from the Ordinary Capital,,National Tax and Customs Administration Authority (SUNAT) - autonomous national government agency,C
+PE-L1132,False,0,,,none,,,50,U.S. dollars from the Bank's Ordinary Capital,,national government autonomous agency,C
+PE-L1135,True,8.3,,,roads,,ICB (international competitive bidding),83.3,U.S. dollars from the Ordinary Capital (OC),,"National government - Ministry of Transportation and Communications (MTC), through Provías Descentralizado (PVD)",
+PE-L1147,,,,,rail,,,,,,,
+PE-L1151,False,0,,,roads,,international competitive bidding,83.8,U.S. dollars from the Bank's Ordinary Capital,,national government agency - PROVIAS Nacional under Ministry of Transportation and Communications,
+PE-L1152,False,0,,,buildings,,licitación pública internacional,23,U.S. dollars from the Ordinary Capital (OC),,national government ministry,C
+PE-L1153,True,,,,waste management / environmental remediation,,international competitive bidding and individual consultant selection,15,U.S. dollars from Ordinary Capital,,national government ministry,
+PE-L1159,False,,,,none,,international competitive bidding (licitación pública internacional),67.7,U.S. dollars from the Ordinary Capital,,national government ministry (Ministry of Foreign Trade and Tourism),
+PE-L1162,False,0,,,,,,60,U.S. dollars from the Ordinary Capital,,national government ministry acting through an execution unit,C
+PE-L1171,False,,,,,,individual consultant selection with comparison of qualifications of at least three candidates; international public bidding with threshold,37.7,U.S. dollars from the Ordinary Capital (OC),,National Identification and Civil Status Registry (RENIEC) - national government autonomous agency,
+PE-L1222,False,0,,,none,,Licitación Pública Internacional (LPI) / International Competitive Bidding (ICB),17.94,U.S. dollars,,national government - Office of the President of the Council of Ministers (PCM),C
+PE-L1224,False,,,,none,,International competitive bidding (ICB) and national competitive bidding,9,United States dollar,,National government ministry,B
+PE-L1226,False,0,,,water/sanitation,,ICB (LPI - Licitación Pública Internacional),21,U.S. dollars from the Ordinary Capital,,"National government program (PNSR) under Ministry of Housing, Construction, and Sanitation (MVCS)",
+PE-L1227,False,,,,buildings,,ICB (international competitive bidding),63,U.S. dollars from the Bank's Ordinary Capital,,national government - Ministry of Education (MINEDU),C
+PE-L1228,True,44.2,,,health infrastructure/buildings,,International Competitive Bidding (ICB),21,U.S. dollars from the Ordinary Capital (OC),,national government - specialized program under ministry,
+PE-L1229,False,0,,,,,international competitive bidding,48.1,United States dollars,,National autonomous service (SENASA - Servicio Nacional de Sanidad Agraria),
+PE-L1230,,,,,buildings,,licitación pública internacional (international competitive bidding),,,,national government ministry,C
+PE-L1231,False,0,,,none,,,12,U.S. dollars,,national government - Ministry of Economy and Finance,C
+PE-L1232,True,,,,none,,licitación pública internacional (ICB),,United States dollars,,National government - National Forest Conservation Program for Climate Change Mitigation (PNCBMCC),A
+PE-L1238,False,0,,,water/sanitation,,ICB,19.1,United States dollars,,national government ministry,
+PE-L1239,False,0,,,none,,,50.7,U.S. dollar,,National Customs and Tax Administration Superintendency (SUNAT) - autonomous national government agency,C
+PE-L1240,False,,,,none,,licitación pública internacional (ICB),50,U.S. dollars,,national government autonomous agency,C
+PE-L1246,True,20,,,historic center rehabilitation/urban improvement,,ICB (international competitive bidding),20,U.S. dollars,,National government ministry with specialized executing unit (UE008),
+PE-L1247,False,0,,,none,,International competitive bidding (ICB),20,U.S. dollar,,National government ministry,C
+PN-L1001,,,,,,,,,,,,
+PN-L1002,False,,,,"water/sanitation, urban roads, and housing renovation",,,4.8,U.S. dollars from the Single Currency Facility,,national government ministry unit (Housing and Urban Development Policy Unit within Ministry of Housing),
+PN-L1003,False,0,,,none,,,10,U.S. dollars from the Single Currency Facility,,national government ministry,
+PN-L1004,,,,,barrio improvement,,"ICB, LCB",,,,Ministry of Housing,
+PN-L1005,,,,,,,,,,,,
+PN-L1007,,,,,,,,,,,,
+PN-L1012,,,,,,,,,,,National Council on Sustainable Development (CONADES) with coexecuting agencies,
+PN-L1013,False,,,,none,0,"ICB, NCB, shopping, direct contracting",,,,National government - autonomous authority,
+PN-L1014,True,9.43,,,none,,,38.02,U.S. dollars from the Single Currency Facility,,National government ministry with support from multiple ministries and agencies,
+PN-L1016,False,0,,,,,,16,U.S. dollars from the Single Currency Facility,,"National government agency (National Council for Sustainable Development - CONADES) under the Ministry of the Presidency, not newly created but reactivated",
+PN-L1017,False,,,,roads,,,20,US dollars from the Single Currency Facility,,"National government, through the National Sustainable Development Council (MP/CONADES)",
+PN-L1018,,,,,,,,,,,,
+PN-L1019,,,,,water/sanitation,,,,,,,
+PN-L1031,False,,,,power transmission,,,50,U.S. dollars from the Single Currency Facility,,autonomous state-owned enterprise (Empresa de Transmisión Eléctrica S.A.),
+PN-L1042,False,,,,water/sanitation,,,20,U.S. dollars,,autonomous SOE (national water and sanitation company),
+PN-L1047,False,,,,roads,,,30,U.S. dollars,,national government,
+PN-L1053,False,,,,water/sanitation,,,23.4,U.S. dollars from the Single Currency Facility,,National government (Ministry of Health through project coordination unit) with participation of autonomous institute (IDAAN),
+PN-L1064,False,0,,,buildings,74.5,NCB,7.42,U.S. dollars from the Single Currency Facility,,national government - Ministry of Education,
+PN-L1066,False,,,,none,0,,9,U.S. dollars from the Single Currency Facility,,"national government, Ministry of Economy and Finance (MEF)",C
+PN-L1068,False,0,,,,,,29,U.S. dollars from the Single Currency Facility of the Ordinary Capital,,national government - Ministry of Health (MINSA),
+PN-L1071,,,,,,,,,,,,
+PN-L1072,False,0,,,buildings,,,12.5,U.S. dollars from the Bank's Ordinary Capital,,national government - Ministry of Education (MEDUCA),B
+PN-L1093,False,0,,,water/sanitation,,,22.19,U.S. dollars from the Ordinary Capital,,national water and sanitation company (IDAAN) and National Sustainable Development Council (CONADES),B
+PN-L1095,True,44.94,,,energy,,,10.11,U.S. dollars from the Ordinary Capital,,national government - Ministry of the Office of the President through the Rural Electrification Office (OER),C
+PN-L1105,False,0,,,buildings,,"LPN (National Public Bidding), SBCC (Selection Based on Consultants' Qualifications), SCC (Selection of Individual Consultants)",17,U.S. dollars,,"national government ministry (Ministry of Social Development - MIDES), not newly created",
+PN-L1107,False,,,,border crossings infrastructure,,,,,,national government ministry,B
+PN-L1109,True,61.52,,,water/sanitation,,,20.91,U.S. Dollars from the Ordinary Capital,,national government ministry (Ministry of Health through the Program Coordinating Unit),
+PN-L1114,False,0,,,none,,"ICB, NCB, QCBS",27,U.S. dollars from the Ordinary Capital (OC),,National Authority for Government Innovation (AIG) - autonomous national government entity,
+PN-L1115,True,,,,,,"ICB, NCB, direct contracting",,,,,B
+PN-L1117,False,,,,none,,,33.33,U.S. dollars from the Ordinary Capital (OC),,"National government - National Department of Science, Technology, and Innovation (SENACYT)",C
+PN-L1121,True,39.0,,,water/sanitation,,NCB,37.6,U.S. dollars from the Ordinary Capital,,national government ministry with program coordination unit,
+PN-L1143,False,0,,,schools - maintenance and equipment,,"ICB, NCB, QCBS",0,United States dollars from the Ordinary Capital,,national government ministry - Ministry of Education (MEDUCA),C
+PN-L1146,False,,,,urban rehabilitation and heritage,,,5.5,U.S. dollars,,National Culture Institute (INAC) for Components I(a) and II; Ministry of the Environment for Components I(b) and III,B
+PN-L1147,False,0,,,roads,,"ICB, NCB",0,United States dollar,,national government ministry,
+PN-L1148,False,,,,water/sanitation,,ICB (international competitive bidding),2.2,United States dollars from the Ordinary Capital,,autonomous national institute (IDAAN - Instituto de Acueductos y Alcantarillados Nacionales),B
+PN-L1150,False,0,,,"flood mitigation works, water/sanitation infrastructure",,ICB,5,U.S. dollar,,Municipal government (Municipio of Panama),
+PN-L1153,False,0,,,none,,,7,U.S. dollars,,national government ministry,C
+PN-L1154,,,,,,,"ICB, NCB, QCBS",,,,Panama Tourism Authority (ATP),
+PN-L1155,True,16.7,,,energy,,International competitive bidding (ICB) and national methods below ICB threshold,8.3,U.S. dollars,,National government office (Rural Electrification Office under Ministry of the Office of the President),B
+PN-L1157,False,0,,,productive infrastructure,,,6.98,United States dollars,,national government,
+PR-L1001,False,,,,,,,10,US dollars from the Single Currency Facility,,national government ministry,
+PR-L1007,,,,,roads,,"ICB, NCB",,,,national government ministry (Ministry of Public Works and Communications),
+PR-L1008,False,,,,none,,,,,,"SFP (national government agency, not newly created)",
+PR-L1010,,,,,,,ICB and NCB,,Ordinary Capital,,National Electricity Administration (autonomous state enterprise),
+PR-L1011,False,,,,none,,single-source selection,27.27,,,INCOOP (National Institute of Cooperativism) - autonomous national agency,
+PR-L1017,False,,,,none,,Government Procurement Act (Law 2051/2003) and its regulations; document AF-200 for financial and operational audit; document GN-2350-7 for independent consulting firm evaluation,9,U.S. dollars,,national government ministry,
+PR-L1018,False,,,,none,,,10,US$,,national government agency - Ministry of Industry and Trade through the Investment and Exports Network (REDIEX),
+PR-L1019,True,46.47,,,roads,,,14.94,"U.S. dollars, SCF",,national government - Ministry of Public Works and Communications (MOPC),
+PR-L1021,False,,,,none,,simplified procedure for nonconsulting services,7.4,U.S. dollar,,"national government agency - Technical Secretariat of Planning (STP) through the Bureau of Statistics, Surveys, and Censuses (DGEEC)",
+PR-L1022,True,66.7,,,water/sanitation,,,13.3,U.S. dollars from the Single Currency Facility,,National Environmental Sanitation Service (SENASA),
+PR-L1024,,,,,none,,,,US$ from the US$ Single Currency Facility,,Agencia Financiera de Desarrollo (AFD),
+PR-L1026,False,,,,,,"ICB, NCB",25,U.S. dollars from the Single Currency Facility,,National government agency - Dirección Nacional de Aduanas (National Customs Administration),
+PR-L1027,False,,,,none,,,41,U.S. dollars from the Single Currency Facility,,national government (Ministry of Finance),C
+PR-L1028,,,,,,,,,,,,
+PR-L1029,,,,,water/sanitation,,,,,,,
+PR-L1030,False,,,,none,,,16.8,Single Currency Facility U.S. dollars,,national government - Environmental Secretariat (SEAM),
+PR-L1032,True,,,,none,,,0,U.S. dollars from the Single Currency Facility for OC; U.S. dollars for FSO,,"Agencia Financiera de Desarrollo (AFD), autonomous financial agency",
+PR-L1035,,,,,,,,,,,,
+PR-L1037,,,,,,,,,,,,
+PR-L1044,True,21.875,,,"urban infrastructure, public transport, buildings",,,21.875,U.S. dollars,,national government ministry,B
+PR-L1046,,,,,roads,,,,,,,B
+PR-L1049,False,,,,none,0,"ICB, NCB, QCBS, QBS, LCS, NICQ, SSS",30,U.S. dollars from the Single Currency Facility,,"national government - Statistics, Surveys, and Census Bureau (DGEEC)",
+PR-L1050,,,,,,,,,,,,
+PR-L1051,False,0,,,none,,,10,U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital,,national government - Ministry of Public Health and Social Welfare,
+PR-L1055,True,,,,water/sanitation,,,,,,,B
+PR-L1058,,,,,energy,,"ICB, NCB",,,,autonomous national electricity administration,
+PR-L1060,,,,,water/sanitation,,,,,,,
+PR-L1061,,,,,,,,,,,,
+PR-L1062,False,,,,none,,,,U.S. dollars from the Single Currency Facility,,Agencia Financiera de Desarrollo (AFD) - autonomous financial agency,
+PR-L1069,,,,,,,,,,,,
+PR-L1070,False,0,,,none,,"ICB, NCB, QCBS, LCO, SBE",0,U.S. dollars from the Bank's Ordinary Capital (OC),,National government agency - Consejo Nacional de Ciencia y Tecnología (CONACYT),C
+PR-L1075,,,,,,,,,,,,
+PR-L1077,,,,,,,"ICB, NCB, DC, QCBS, LCS",,,,,
+PR-L1080,,,,,roads,,ICB,,,,national government - Ministry of Public Works and Communications (MOPC) with dedicated project execution unit,
+PR-L1081,,,,,none,,,,,,Autonomous development finance agency (AFD) for Component I; national government ministry (Office of the Vice Minister for SMEs in the Ministry of Industry and Trade) for Component II,Not classified - financial intermediation operation
+PR-L1082,False,,,,housing and neighborhood improvement,,"ICB, QCBS, SSS",0,U.S. dollars,,National government department,
+PR-L1084,,,,,,,,,,,,
+PR-L1086,True,72.6,,,none,,,,U.S. dollars from the Ordinary Capital,,national government - Ministry of Finance,C
+PR-L1092,False,0,,,roads,,,0,US$ from the Ordinary Capital (OC),,National government ministry division (DCV of MOPC); not newly created,
+PR-L1094,True,33.3,,,water/sanitation,,,,U.S. dollars from the Ordinary Capital (OC),,National government agency - National Environmental Sanitation Service (SENASA),B
+PR-L1095,False,,,,none,,,,U.S. dollars from the Ordinary Capital,,autonomous public entity second-tier bank,
+PR-L1097,False,0,,,none,,"SBCC, SBPF, SBMC, SBC, SCC, LPN (Comparación de Precios), Convocatoria Pública, Concurso por Invitación, Licitación Pública Internacional, Licitación Pública Nacional",0,U.S. dollars from the Ordinary Capital,,national government ministry (Ministry of Education and Culture),
+PR-L1105,,,,,,,,,,,,
+PR-L1139,False,0,,,none,,,,United States dollars,,"National government agency - Ministry of Industry and Trade (MIC), acting through the Investments and Exports Network (REDIEX)",C
+PR-L1140,False,0,,,none,,,0,U.S. dollars from the Ordinary Capital,,autonomous Development Finance Agency,B
+PR-L1145,,,,,roads,,,,,,national government ministry,
+PR-L1146,True,50,,,none,,,50,Dollars of the United States of America,,"autonomous second-tier National Development Bank, not newly created",
+PR-L1147,False,0,,,none,,,0,U.S. dollars from the Ordinary Capital,,national government ministry,
+PR-L1148,False,0,,,,,QCBS,,United States dollars from the Ordinary Capital,,"National Service for Animal Health and Quality (SENACSA), autonomous agency, not newly created",
+PR-L1150,False,0,,,none,,,5,U.S. dollars,,national government - Ministry of Finance,C
+PR-L1152,False,0,,,housing and urban infrastructure,,,0,U.S. dollars from the Ordinary Capital,,national government ministry (Ministry of Public Works and Communications),
+PR-L1153,False,0,,,buildings,,,0,United States dollars,,"national government, National Secretariat of Information and Communication Technologies (SENATICS), not newly created",B
+PR-L1155,False,0,,,infrastructure adaptation,,"ICB, NCB",0,U.S. dollar,,National government agency - National Emergency Management Agency (SEN),
+PR-L1156,False,0,,,energy,,"Subasta electrónica inversa (electronic reverse auction), Convenio Marco (framework agreement), Selección Basada en Calidad y Costo",13.9,U.S. dollars from the Bank's Ordinary Capital,,autonomous SOE - National Electricity Administration (ANDE),B
+PR-L1157,False,0,,,none,,ICB,0,U.S. dollar,,national government - Ministry of Finance,
+PR-L1158,False,0,,,none,,"ICB, NCB",0,U.S. dollar,,national government - Ministry of Finance,
+PR-L1162,,,,,,,,,,,,
+PR-L1164,True,21.28,,,roads,,"ICB, NCB",0,U.S. dollars,,national government ministry,
+PR-L1167,False,0,,,buildings,,,0,U.S. dollars,,national government,B
+PR-L1170,False,0,,,none,,,0,U.S. dollars,,Autonomous SOE - Agencia Financiera de Desarrollo (AFD),B
+SU-L1002,False,0,,,none,,"ICB, NCB",9.09,US$ from Single Currency Facility,,national government,
+SU-L1006,,,,,roads,,,,,,,
+SU-L1009,False,0,,,electricity infrastructure,,"licitación pública internacional, licitación pública nacional, comparación de precios",0,U.S. dollars,,"Energiebedrijven Suriname (EBS), national electricity company and sole concessionary for transmission and distribution",
+SU-L1011,False,,,,basic infrastructure investment projects,,,10,US Dollars,,national government ministry,
+SU-L1013,False,0,,,none,,"International Competitive Bidding, National Competitive Bidding, price comparison",0,US Dollar; accounts will be opened in both Surinamese dollars (SR$) and US dollars at the Central Bank,,National government ministry (Ministry of Social Affairs and Public Housing); Program Management Unit to be created within MOSAPH,
+SU-L1015,True,2.05,,,buildings,,,2.05,US Dollars,,national government ministry through autonomous foundation,
+SU-L1018,False,0,,,water/sanitation,,International Competitive Bidding (ICB),4,US Dollar (Single Currency Facility),,autonomous SOE (Suriname Water Company),
+SU-L1019,False,,,,buildings,,,5.19,US Dollar,,national government ministry,
+SU-L1020,False,,,,"agricultural facilities (quarantine, laboratory, border controls)",,,,US dollars (USD) with local payment in Surinamese dollars (SRD),,"national government ministry (Ministry of Agriculture, Animal Husbandry and Fisheries - LVV), with IICA as contracted Project Execution Unit (PEU)",
+SU-L1021,True,,,,roads,,"Licitación pública internacional, Licitación pública nacional, Comparación de precios",,SRD (Surinamese Dollar) and USD (US Dollar),True,"National government; inter-ministerial arrangement between Ministry of Public Works, Ministry of Finance, and Ministry of Labor, Technical Development and Environment; not newly created",
+SU-L1027,,,,,none,,"Licitación pública internacional, Licitación pública nacional, Comparación de precios",,US dollars and Surinamese dollars,,National government agency (OGE) with UNDP support,
+SU-L1038,False,0,,,buildings,,,0,US dollars,,"national government - Ministry of Education, Science and Culture (MOESC)",
+SU-L1039,False,0,,,energy,,"Licitación pública internacional, Licitación pública nacional, Comparación de precios",0,U.S. Dollars chargeable to the Ordinary Capital,,autonomous SOE - state-owned utility company supervised by Ministry of Natural Resources,B
+SU-L1046,,,,,heritage buildings rehabilitation and reconstruction,,,,,,"National government ministry (Ministry of Education, Science, and Culture) with establishment of a new dedicated Program Implementation Unit (PIU)",B
+SU-L1050,True,,,,none,,"International competitive bidding for goods and services US$350,000 and over; local competitive procedures for lesser amounts; international competitive bidding for consulting services US$200,000 and over",,,,National government ministry - Ministry of Finance (MOF),
+SU-L1052,,,,,irrigation and drainage infrastructure,,"ICB, NCB",,,,national government ministry,B
+SU-L1054,False,0,,,buildings,40.36,,0,Dollars of the United States of America,,national government - Ministry of Health,B
+SU-L1055,False,0,,,energy transmission,,,0,Dollars of the United States of America,,autonomous SOE and national government ministry,
+SU-L1056,False,,,,none,,"Licitación pública internacional, licitación pública nacional, comparación de precios, lista restringida internacional, comparación de calificaciones, selección directa",,United States Dollars,,National government ministry,
+TT-L1003,False,0,,,buildings,,,30.0,US$ Single Currency Facility,,national government,
+TT-L1005,False,,,,buildings,,,20,US$ single currency facility,,national government,
+TT-L1016,,,,,,,,,,,,
+TT-L1018,False,0,,,water/sanitation,,"Licitación Pública Internacional (International Competitive Bidding), Licitación Pública Nacional (National Competitive Bidding), Comparación de precios (Shopping), Selección basada en la calidad y el costo (Quality and Cost Based Selection), Contratación directa (Direct Contracting)",0,US Dollar (Single Currency Facility),,autonomous water and sanitation authority,
+TT-L1026,False,0,,,water/sanitation,95.1,"LPI (international public bidding), SCC/SBCC (consulting services), IIC (individual consultant), direct contracting",0,US Dollar,,autonomous SOE (Water & Sewerage Authority),
+TT-L1034,False,,,,none,,"Licitación pública internacional, Licitación pública nacional, Comparación de precios, Listas cortas",0,US dollars,,National government department (Ministry of Legal Affairs through Registrar General's Department),
+TT-L1036,False,0,,,drainage infrastructure and linear park,,"Licitación pública internacional, Licitación pública nacional, Comparación de precios",0,US Dollars,,National government ministry (Ministry of Environment and Water Resources); not newly created,
+TT-L1038,False,,,,none,,,0,US Dollar,,national government ministry,
+TT-L1039,False,0,,,none,,,0,U.S. dollars from the Ordinary Capital,,national government - Ministry of Health,
+TT-L1042,False,,,,none,,,0,US Dollars,,national government ministry,C
+TT-L1044,False,0,,,none,,"International Competitive Bidding (ICB), National Competitive Bidding (NCB), Shopping or Price Comparison (PC), Limited International Bidding (LIB), Quality-Based Selection (QBS), Quality-and-Cost-Based Selection (QCBS), Selection Based on Consultants' Qualifications (CQS), Least-Cost Selection (LCS), Fixed Budget (FBS), Single Source Selection (SSS)",0,US Dollars,,National government ministry (Ministry of Trade and Industry) through a dedicated Project Implementation Unit,
+UR-L1001,False,0,,,roads,,,30,SCF (dollars),,"National government, Ministry of Transportation and Public Works (MTOP), National Highways Department (DNV)",
+UR-L1004,False,0,,,port infrastructure (wharf construction and dredging),97,,25,U.S. dollars from the Single Currency Facility,,autonomous national authority (Administración Nacional de Puertos - ANP),
+UR-L1005,,,,,water/sanitation,,,,,,,
+UR-L1009,,,,,neighborhood improvement,,,,,,,
+UR-L1015,False,0,,,"urban transportation infrastructure (bus lanes, terminals, roads, bicycle routes, traffic lights)",,,20,U.S. dollars from the Single Currency Facility,,subnational government (Municipality of Montevideo),
+UR-L1016,False,0,,,none,,,5,United States dollar from the Single Currency Facility of the Bank's Ordinary Capital. Option for conversion to Uruguayan pesos: Local Currency Facility.,,national government ministry,
+UR-L1017,True,,,,"water/sanitation, stormwater drainage, roads/paving",,,33,U.S. dollars from the Single Currency Facility; converted to Uruguayan pesos,,Autonomous state-owned enterprise (OSE - National Water Supply and Sanitation Administration); with newly created corporation as subexecuting agency formed by OSE and Municipality of Canelones,
+UR-L1018,False,0,,,tourism infrastructure,,call for proposals,20,US dollars from the Single Currency Facility,,national government ministry,
+UR-L1020,False,0,,,none,,,0,U.S. dollars drawn from the Single Currency Facility of the Ordinary Capital,,national government department - Development Projects Department (DIPRODE) of the Office of Planning and Budget (OPP),
+UR-L1022,False,,,,roads,,,20,U.S. dollars from the Single Currency Facility,,autonomous SOE - Corporación Vial del Uruguay (CVU),
+UR-L1025,False,0,,,"urban transportation infrastructure (exclusive/preferential bus lanes, terminal stations, road network, bicycle routes, traffic lights)",,,20,U.S. dollars from the Single Currency Facility,,subnational (Municipality of Montevideo),
+UR-L1026,False,,,,none,,direct contracting,,,,national government agency,
+UR-L1027,False,0,,,none,,,67.96,U.S. dollars,,national government - Office of Planning and Budget (OPP),
+UR-L1028,,,,,none,,,,,,national government agency (tax administration),
+UR-L1030,False,0,,,buildings,,,0,U.S. dollars from the Single Currency Facility,,autonomous national agency,No category required
+UR-L1031,False,,,,none,,"International competitive bidding (ICB) for amounts above US$250,000; National competitive bidding (NCB) for amounts between US$50,000 and US$250,000; Shopping for amounts below US$50,000",,,,National government executing unit with low fiduciary risk,C
+UR-L1032,False,0,,,none,0,direct contracting,17.6,United States dollars from the Single Currency Facility of the Bank's Ordinary Capital,,autonomous SOE - Banco de Previsión Social (social security bank),C
+UR-L1033,,,,,,,,,,,,
+UR-L1037,False,0,,,none,,,49,U.S. dollars,,National government agency,
+UR-L1042,False,,,,,,,,,,,
+UR-L1044,,,,,,,,,,,,
+UR-L1046,False,,,,none,0,,10,U.S. dollars from the Single Currency Facility of the Ordinary Capital with option to convert to Uruguayan pesos via Local Currency Facility,,national government ministry,C
+UR-L1050,False,0,,,buildings,,,58,U.S. dollars from the Single Currency Facility of the Bank's Ordinary Capital with conversion option to Uruguayan pesos via Local Currency Facility (LCF),,autonomous national agency,
+UR-L1052,False,,,,none,,"ICB, NCB",0,US$ from Single Currency Facility; conversion to Uruguayan pesos via Local Currency Facility,,autonomous SOE (Central Bank of Uruguay),
+UR-L1054,False,0,,,port/maritime infrastructure (wharf construction and dredging),,"EPC (Engineering, Procurement, and Construction) turnkey contract; unit price contract for dredging and pile-driving",35.48,U.S. dollars from the Single Currency Facility,,Autonomous state-owned enterprise (National Ports Authority / ANP),
+UR-L1058,False,0,,,none,,,29.4,U.S. dollars from the Single Currency Facility,,national government ministry (Ministry of Economy and Finance),
+UR-L1063,False,,,,water/sanitation,,Bank policies GN-2349-9 and GN-2350-9,15.0,U.S. dollars from the OC Single Currency Facility,,Municipal Government (subnational),
+UR-L1083,,,,,,,,,,,,
+UR-L1143,,,,,,,,,,,,
+VE-L1017,,,,,,,,,,,,
+AR-L1021,,,,,,,,,,,,
+AR-L1024,,,,,,,,,,,,
+AR-L1034,,,,,,,,,,,,
+AR-L1037,,,,,,,,,,,,
+AR-L1044,,,,,,,,,,,,
+AR-L1046,,,,,,,,,,,,
+AR-L1078,,,,,,,,,,,,
+AR-L1126,,,,,,,,,,,,
+BA-L1011,,,,,,,,,,,,
+BA-L1017,,,,,,,,,,,,
+BH-L1009,,,,,,,,,,,,
+BH-L1040,,,,,,,,,,,,
+BL-L1013,,,,,,,,,,,,
+BO-L1008,,,,,,,,,,,,
+BO-L1065,,,,,,,,,,,,
+BR-L1002,,,,,,,,,,,,
+BR-L1006,,,,,,,,,,,,
+BR-L1023,,,,,,,,,,,,
+BR-L1057,,,,,,,,,,,,
+BR-L1216,,,,,,,,,,,,
+BR-L1263,,,,,,,,,,,,
+CH-L1002,,,,,,,,,,,,
+CH-L1007,,,,,,,,,,,,
+CH-L1011,,,,,,,,,,,,
+CH-L1015,,,,,,,,,,,,
+CH-L1020,,,,,,,,,,,,
+CH-L1029,,,,,,,,,,,,
+CH-L1051,,,,,,,,,,,,
+CR-L1022,,,,,,,,,,,,
+CR-L1053,,,,,,,,,,,,
+DR-L1006,,,,,,,,,,,,
+DR-L1007,,,,,,,,,,,,
+EC-L1040,,,,,,,,,,,,
+EC-L1070,,,,,,,,,,,,
+EC-L1073,,,,,,,,,,,,
+EC-L1124,,,,,,,,,,,,
+ES-L1003,,,,,,,,,,,,
+ES-L1045,,,,,,,,,,,,
+ES-L1061,,,,,,,,,,,,
+GU-L1002,,,,,,,,,,,,
+GU-L1003,,,,,,,,,,,,
+GU-L1006,,,,,,,,,,,,
+GU-L1014,,,,,,,,,,,,
+GU-L1022,,,,,,,,,,,,
+GU-L1023,,,,,,,,,,,,
+GU-L1160,,,,,,,,,,,,
+GY-L1001,,,,,,,,,,,,
+GY-L1004,,,,,,,,,,,,
+GY-L1005,,,,,,,,,,,,
+GY-L1010,,,,,,,,,,,,
+GY-L1011,,,,,,,,,,,,
+HO-L1003,,,,,,,,,,,,
+HO-L1004,,,,,,,,,,,,
+HO-L1006,,,,,,,,,,,,
+NI-L1003,,,,,,,,,,,,
+NI-L1055,,,,,,,,,,,,
+PE-L1001,,,,,,,,,,,,
+PN-L1009,,,,,,,,,,,,
+PN-L1010,,,,,,,,,,,,
+PR-L1002,,,,,,,,,,,,
+PR-L1013,,,,,,,,,,,,
+PR-L1014,,,,,,,,,,,,
+PR-L1015,,,,,,,,,,,,
+PR-L1016,,,,,,,,,,,,
+PR-L1020,,,,,,,,,,,,
+PR-L1036,,,,,,,,,,,,
+PR-L1048,,,,,,,,,,,,
+PR-L1052,,,,,,,,,,,,
+PR-L1056,,,,,,,,,,,,
+PR-L1066,,,,,,,,,,,,
+SU-L1049,,,,,,,,,,,,
+TT-L1004,,,,,,,,,,,,
+TT-L1006,,,,,,,,,,,,
+TT-L1035,,,,,,,,,,,,
+UR-L1008,,,,,,,,,,,,
+UR-L1010,,,,,,,,,,,,
+UR-L1023,,,,,,,,,,,,
+UR-L1024,,,,,,,,,,,,
+UR-L1065,,,,,,,,,,,,
+UR-L1067,,,,,,,,,,,,
+VE-L1001,,,,,,,,,,,,
+VE-L1002,,,,,,,,,,,,
+VE-L1003,,,,,,,,,,,,
+VE-L1005,,,,,,,,,,,,
+VE-L1006,,,,,,,,,,,,
+VE-L1014,,,,,,,,,,,,
+VE-L1015,,,,,,,,,,,,
+VE-L1016,,,,,,,,,,,,
+VE-L1018,,,,,,,,,,,,
+VE-L1021,,,,,,,,,,,,
+VE-L1026,,,,,,,,,,,,
+VE-L1033,,,,,,,,,,,,
+VE-L1035,,,,,,,,,,,,
+VE-L1036,,,,,,,,,,,,
+SU-L1057,,,,,buildings and roads,,"ICB, QCBS, CQS",,USD,,national government ministry with dedicated Program Execution Unit (PEU),B
+UR-L1038,False,0,,,basic services infrastructure,,,18,U.S. dollars from the Single Currency Facility,,national government - Office of Planning and Budget (OPP),
+UR-L1060,False,0,,,none,,,23,U.S. dollars from the Bank's Ordinary Capital,,Investment and Export Promotion Institute (Uruguay XXI),
+UR-L1062,False,0,,,buildings,,,43,U.S. dollars from the Bank's Ordinary Capital,,national government - Ministry of the Interior,
+UR-L1064,False,0,,,,,"ICB, NCB",14.7,U.S. dollars from the Single Currency Facility,,"National government ministry (Ministry of Livestock, Agriculture, and Fisheries)",
+UR-L1066,False,,,,tourism infrastructure,,competitive bidding,20,U.S. dollars from the Single Currency Facility; option to convert into Uruguayan pesos under the Local Currency Facility,,national government ministry,
+UR-L1069,,,,,water/sanitation,,"ICB, NCB",,,,Sanitation Execution Unit (UES),
+UR-L1070,True,,True,,energy,,EPC,,,,National Electricity Generation and Transmission Authority,
+UR-L1071,False,0,,,none,,Bank policies (documents GN-2349-9 and GN-2350-9),0,United States dollars from the Bank's Ordinary Capital,,Agencia Nacional de Investigación e Innovación [National Research and Innovation Agency] (ANII),
+UR-L1074,False,0,,,none,,direct contracting,9,Dollars from the Bank's Ordinary Capital,,national government ministry,C
+UR-L1075,,,,,water/sanitation,,,,,,autonomous SOE,
+UR-L1079,,,,,,,,,,,subnational government,
+UR-L1081,,,,,water/sanitation,,"ICB, NCB, QCBS",,,,autonomous SOE,
+UR-L1082,False,0,,,none,,direct contracting and competitive procedures,14.29,U.S. dollars from the Ordinary Capital,,autonomous agency - Agency for the Development of e-Government and the Information and Knowledge Society (AGESIC),C
+UR-L1084,False,,,,water/sanitation and neighborhood infrastructure,,,30,U.S. dollars from the Ordinary Capital,,"national government ministry - Ministry of Housing, Land Management, and the Environment (MVOTMA)",B
+UR-L1087,False,0,,,none,,,15,United States dollars from the Ordinary Capital,,subnational government (Montevideo City Government),
+UR-L1089,,,,,none,,,,,,national government ministry (MEF),
+UR-L1093,False,0,,,none,0,,13,U.S. dollars from the Ordinary Capital resources,,Centro para el Apoyo a la Educación de la Niñez y la Adolescencia (Centro CEIBAL) - Child and Adolescent Education Support Center,C
+UR-L1094,,,,,water/sanitation,,"ICB, NCB, QCBS",,,,autonomous SOE,B
+UR-L1096,True,28.56,,,none,,,42.88,Dólares Estadounidenses con cargo al Capital Ordinario del Banco,,Autonomous national agency (Agencia Nacional de Investigación e Innovación),C
+UR-L1098,False,0,,,none,,,20,U.S. dollars from the Ordinary Capital,,National government - Ministry of Economy and Finance (MEF) - National Budget Unit (UPN),C
+UR-L1099,False,,,,energy,,,,U.S. dollars from the Ordinary Capital,,autonomous SOE (Banco de la República Oriental del Uruguay),
+UR-L1107,False,,,,roads,,"ICB, NCB",15,U.S. dollars drawn from the Bank's Ordinary Capital (OC) resources,,National Corporation for Development (CND) and Road Corporation of Uruguay (CVU),
+UR-L1109,False,,,,none,,,12.5,U.S dollars from the Ordinary Capital,,autonomous agency under national government,C
+UR-L1110,False,0,,,buildings,,,23,U.S. dollars from the Ordinary Capital,,national government ministries and autonomous institute,
+UR-L1111,,,,,,,,,,,,
+UR-L1112,False,,,,,,,25,U.S. dollars from the Bank's Ordinary Capital,,national government - Ministry of the Interior,
+UR-L1113,False,,,,tourism infrastructure,,competitive bidding,20,U.S. dollars from the Ordinary Capital,,national government ministry,
+UR-L1114,False,,,,roads,,ICB,42.31,United States dollars,,national government - Office of Planning and Budget (OPP) under the Office of the President,
+UR-L1115,False,0,,,roads and rail,,,0,U.S. dollar,,autonomous SOE - state-owned bank,B
+UR-L1116,False,,,,buildings,,,33.1,U.S. dollars from the Ordinary Capital,,autonomous national public education administration,
+UR-L1135,False,,,,none,,"ICB, NCB",5,U.S. dollars from the Bank's Ordinary Capital,,national government ministry,
+UR-L1136,False,0,,,water/sanitation,,"ICB, NCB",14,U.S. dollars from the Ordinary Capital (OC),,subnational (Municipal Government of Montevideo),
+UR-L1141,False,0,,,none,,,0,United States dollars from the Ordinary Capital,,autonomous center for educational support (Centro CEIBAL),
+UR-L1142,False,0,,,none,,,0,U.S. dollars,,autonomous national agency,B.13
+UR-L1146,False,,,,buildings and urban infrastructure,,ICB and NCB,2.61,U.S. dollars,,National government ministry (MVOT) using existing PCU from related loan,
+UR-L1147,False,0,,,,,,11,United States dollars; conversion to local currency planned at payment date exchange rate,,National government ministry,
+UR-L1149,False,0,,,water/sanitation,,,0,"U.S. dollars from Ordinary Capital, with conversion to local currency (pesificación)",,"National government - Office of Planning and Budget (OPP), acting through the Directorate of Decentralization and Public Investment (DDIP)",
+UR-L1150,False,,,,none,,,33,U.S. dollars from the Bank's Ordinary Capital,,"Autonomous agency - Centro CEIBAL para el Apoyo a la Educación de la Niñez y la Adolescencia (CEIBAL Center for Educational Support for Children and Teens), with ANII as subexecuting agency",
+UR-L1151,False,0,,,none,,,15,U.S. dollars; conversion to local currency at date of payment,,national government ministry (Ministry of Economy and Finance),C
+UR-L1152,False,,,,none,,,20,U.S. dollars; conversion to local currency at payment date exchange rate,,National government autonomous agency (AGESIC - Agency for the Development of e-Government Management and the Information and Knowledge Society),
+UR-L1153,False,,,,roads,,,16,U.S. dollars,,autonomous SOE,B
+UR-L1155,False,0,,,tourism infrastructure,,"ICB, NCB",17,United States Dollars,,national government ministry with departmental government subexecuting agencies,
+UR-L1157,False,0,,,none,,"ICB, NCB",27.6,U.S. dollars from the Ordinary Capital,,"National government ministry (MVOTMA), with a program execution unit to be created",
+UR-L1158,False,0,,,small-scale works related to research infrastructure,,,,United States dollar,,National Research and Innovation Agency,
+UR-L1159,False,0,,,none,0,,16.67,U.S. dollars,,autonomous agency under national government,
+UR-L1161,False,0,,,none,,"ICB, NCB, QCBS",15.8,U.S. dollars; payments in local currency converted to loan currency at date of payment,,autonomous state entity (Government Health Services Administration - ASSE),
+UR-L1162,False,0,,,none,,,24.5,U.S. dollars with conversion to local currency (pesificación),,"National government entities: Secretariat of Productive Transformation and Competitiveness (STPC) and Office on Planning and Budget (OPP), not newly created",
+VE-L1027,False,0,,,water/sanitation,,,33.3,U.S. dollars from the Single Currency Facility,,"state-owned enterprise (Compañía Anónima Hidrológica Venezolana - HIDROVEN), not newly created",
+VE-L1030,False,,,,water/sanitation,,,20,United States dollars from the Single Currency Facility of the Bank's Ordinary Capital,,State-owned enterprise attached to the People's Ministry of the Environment,B
+VE-L1031,False,0,,,"waste management infrastructure (landfills, transfer stations, processing plant)",89,,20,U.S. dollars from the Single Currency Facility,,National government ministry executing through specialized unit (People's Ministry for the Environment acting through the Solid Waste Execution Unit of the Office of the Vice Minister for Environmental Conservation),
+VE-L1037,False,,,,water/sanitation,,,18.92,U.S. dollars from the Ordinary Capital,,national government ministry,
