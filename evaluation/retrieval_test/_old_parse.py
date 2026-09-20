@@ -24,7 +24,6 @@ import json
 import re
 import sys
 import time
-import unicodedata
 from pathlib import Path
 
 import pdfplumber
@@ -65,82 +64,17 @@ def _ensure_downloaded(path: str, attempts: int = 4, base_delay: float = 1.5) ->
         f"'Always keep on this device', then re-run."
     ) from last_exc
 PARA_RE = re.compile(r"^(\d{1,2}\.\d{1,2})\s+(.*)")
-# Retrieval keywords, matched against accent-stripped lowercase text, so
-# "licitación" and "licitacion" both hit "licitacion". The corpus is mostly
-# Spanish and Portuguese, so every group carries English, Spanish, and
-# Portuguese terms. Terms are chosen to avoid false substrings: "imported",
-# not "import", which would also match "important".
 SECTION_KEYWORDS = {
-    "financing": [
-        "financing instruments", "cost and financing", "financing structure",
-        "public and private financing", "parallel financing", "cofinancing",
-        "co-financing", "counterpart", "currency",
-        "costo y financiamiento", "costos y financiamiento", "estructura de financiamiento",
-        "cofinanciamiento", "cofinanciacion", "financiamiento paralelo",
-        "aporte local", "contrapartida", "moneda",
-        "custo e financiamento", "estrutura de financiamento", "cofinanciamento",
-        "financiamento paralelo", "moeda",
-    ],
-    "procurement": [
-        "procurement", "competitive bidding", "threshold amounts",
-        "adquisiciones", "licitacion", "contrataciones", "contratacion directa",
-        "aquisicoes", "licitacao", "contratacoes",
-    ],
-    "risks": [
-        "other risks", "fiduciary risks", "environmental and social risks",
-        "medium risk", "high risk", "risk classification", "mitigation action", "main risks",
-        "riesgos de contexto", "riesgos fiduciarios", "riesgos especificos",
-        "riesgos de capacidad", "principales riesgos", "mitigacion",
-        "riscos fiduciarios", "principais riscos", "mitigacao",
-    ],
-    "execution": [
-        "execution mechanism", "implementation arrangements", "executing agency",
-        "mecanismo de ejecucion", "esquema de ejecucion", "organismo ejecutor",
-        "unidad ejecutora", "agencia ejecutora",
-        "mecanismo de execucao", "orgao executor", "unidade executora",
-    ],
-    "disbursement": [
-        "disbursements", "disbursement schedule", "projected disbursements",
-        "disbursement period",
-        "desembolso",
-    ],
-    "safeguards": [
-        "environmental and social considerations", "safeguard",
-        "salvaguardia", "salvaguarda", "ambiental y social", "socioambiental",
-        "ambiental e social",
-    ],
-    "works": [
-        "civil works", "construction works",
-        "obras civiles", "obras de infraestructura", "construccion de",
-        "obras civis", "construcao de",
-    ],
-    "imports": [
-        "imported", "imports", "import of", "import duties", "importation",
-        "importado", "importada", "importacion", "insumos importados",
-        "importacao", "importados",
-    ],
-    "price_adjustment": [
-        "price adjustment", "price escalation", "price variation", "escalation clause",
-        "price redetermination",
-        "redeterminacion", "reajuste", "ajuste de precios", "variacion de precios",
-        "formula polinomica", "formulas polinomicas", "formulas parametricas",
-        "reajuste de precos", "ajuste de precos",
-    ],
+    "financing": ["financing instruments", "cost and financing", "financing structure",
+                  "public and private financing", "parallel financing", "cofinancing"],
+    "procurement": ["procurement", "competitive bidding", "threshold amounts"],
+    "risks": ["other risks", "fiduciary risks", "environmental and social risks",
+              "medium risk", "high risk", "risk classification", "mitigation action",
+              "main risks"],
+    "execution": ["execution mechanism", "implementation arrangements", "executing agency"],
+    "disbursement": ["disbursements", "disbursement schedule", "projected disbursements"],
+    "safeguards": ["environmental and social considerations", "safeguard"],
 }
-
-# Groups serving fields that appear in only a few paragraphs of a document.
-# They are weighted up so that, when a document has more relevant text than
-# the character budget allows, these paragraphs are kept first.
-TAG_WEIGHTS = {"imports": 3, "price_adjustment": 3, "works": 2}
-
-
-def _norm(text: str) -> str:
-    """Lowercase and strip diacritics, so matching is accent-insensitive."""
-    decomposed = unicodedata.normalize("NFKD", text.lower())
-    return "".join(ch for ch in decomposed if not unicodedata.combining(ch))
-
-
-_NORM_KEYWORDS = {tag: [_norm(k) for k in kws] for tag, kws in SECTION_KEYWORDS.items()}
 
 
 def extract_paragraphs(pdf_path: str):
@@ -225,8 +159,8 @@ def tag_sections(paragraphs):
     still kept (e.g. background/rationale) but deprioritized."""
     tagged = []
     for p in paragraphs:
-        low = _norm(p["text"])
-        hits = [tag for tag, kws in _NORM_KEYWORDS.items() if any(k in low for k in kws)]
+        low = p["text"].lower()
+        hits = [tag for tag, kws in SECTION_KEYWORDS.items() if any(k in low for k in kws)]
         tagged.append({**p, "tags": hits})
     return tagged
 
@@ -235,35 +169,19 @@ def build_retrieval_bundle(tagged_paragraphs, max_chars=12000, source_name=None)
     """Stage-1 output: paragraphs matching ANY schema-relevant tag, concatenated
     with citations, capped so Stage 2's prompt stays small and cheap.
 
-    When the relevant paragraphs exceed the budget, they are selected by
-    relevance score rather than by position. Earlier versions kept paragraphs
-    in document order until the budget ran out, which silently dropped the
-    back half of long documents -- typically the risk, execution, and
-    fiduciary sections. Selected paragraphs are still emitted in document
-    order so the excerpt reads naturally.
-
     source_name, if given, is prefixed to every citation so that when multiple
     documents are combined (loan proposal + annexes) each fact can still be
     traced back to the specific file it came from."""
-    relevant = [(i, p) for i, p in enumerate(tagged_paragraphs) if p["tags"]]
-
-    def chunk_for(p):
+    relevant = [p for p in tagged_paragraphs if p["tags"]]
+    bundle, used = [], 0
+    for p in relevant:
         cite = f"{source_name} ¶{p['para_id']}" if source_name else f"¶{p['para_id']}"
-        return f"[{cite}, p.{p['page']}] {p['text']}"
-
-    def score(p):
-        return sum(TAG_WEIGHTS.get(t, 1) for t in p["tags"])
-
-    ranked = sorted(relevant, key=lambda ip: (-score(ip[1]), ip[0]))
-    chosen, used = [], 0
-    for i, p in ranked:
-        chunk = chunk_for(p)
+        chunk = f"[{cite}, p.{p['page']}] {p['text']}"
         if used + len(chunk) > max_chars:
-            continue
-        chosen.append((i, chunk))
+            break
+        bundle.append(chunk)
         used += len(chunk)
-    chosen.sort()
-    return "\n\n".join(c for _, c in chosen), len(relevant)
+    return "\n\n".join(bundle), len(relevant)
 
 
 def build_project_bundle(doc_paths, max_chars_per_doc=8000, max_chars_total=24000):

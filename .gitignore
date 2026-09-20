@@ -30,3 +30,6 @@ Thumbs.db
 .current_batch.txt
 batch*.txt
 *.log
+
+# test run artifacts
+*.log

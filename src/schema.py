@@ -11,8 +11,12 @@ FIELD_DEFS = [
     ("cofinancing_share_pct", "number or null",
      "Co-financed amount as a percent of total project cost, if computable from the text."),
     ("imported_inputs_present", "boolean or null",
-     "Does the document explicitly state that equipment/materials will be imported? "
-     "Use null if the document is silent on this."),
+     "Does the document explicitly state that goods, equipment, or materials financed by "
+     "THIS project will be imported from outside the borrowing country? Only a statement "
+     "about the project's own inputs counts. Do NOT count: exclusion lists (e.g. the "
+     "project will not finance the import of pesticides), procurement-method or "
+     "bidding-threshold rules such as international competitive bidding, delays, or "
+     "outsourced services. Use null if the document is silent on this."),
     ("imported_share_est", "string or null",
      "Estimated share of procurement that is imported, if stated (else null)."),
     ("civil_works_type", "string or null",
@@ -26,7 +30,11 @@ FIELD_DEFS = [
     ("fx_denomination", "string or null",
      "Currency the loan is approved/disbursed in, and whether conversion to local currency is planned."),
     ("price_escalation_clause", "boolean or null",
-     "Does the contract include an explicit price-adjustment/escalation clause for input costs? "
+     "Does the document state that works or supply contracts include (or will include) an "
+     "explicit price-adjustment, price-escalation, or price-redetermination mechanism for "
+     "input costs? Spanish and Portuguese equivalents include 'redeterminación de precios', "
+     "'fórmula polinómica', 'fórmulas paramétricas', 'reajuste de precios', and "
+     "'reajuste de preços'. A mechanism proposed as a risk mitigation action counts. "
      "Distinguish from generic 'risk allocation in the contract' language."),
     ("executing_agency_type", "string or null",
      "Type of executing agency (national government, subnational, autonomous SOE, etc.) and whether newly created."),
