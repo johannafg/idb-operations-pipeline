@@ -1,0 +1,31 @@
+Operations in audit log: 1217
+
+FIELD STATUS
+field                             found  absent  not_st  found%
+cofinancing_present                 811       6     254   66.6%
+cofinancing_share_pct               431     325     314   35.4%
+imported_inputs_present               7       0    1063    0.6%
+imported_share_est                    0       0    1070    0.0%
+civil_works_type                    907       6     157   74.5%
+construction_share_pct               70       9     991    5.8%
+procurement_modality                442       6     622   36.3%
+counterpart_funding_share_pct       748       2     320   61.5%
+fx_denomination                     808       0     262   66.4%
+price_escalation_clause               1       0    1069    0.1%
+executing_agency_type               955       0     115   78.5%
+safeguards_category                 262       3     805   21.5%
+
+PARSING AND RETRIEVAL
+  paragraphs parsed      p25=   134  median=   230  p75=   762  max=  7268
+  paragraphs relevant    p25=    20  median=    30  p75=    42  max=   497
+  bundle characters      p25=  5952  median=  7588  p75=  9540  max= 24000
+  operations with 0 paragraphs parsed   :   97 ( 8.0%)
+  operations with 0 relevant paragraphs :  145 (11.9%)
+  operations at the 24,000-char cap  :   45 ( 3.7%)
+
+INGESTION
+  documents that failed to open: 22 across 13 operations
+
+RETRIEVAL BY BORROWER LANGUAGE
+  English-language     n=  122  relevant/parsed= 10.4%  fields found per op=4.93  zero-relevant=11.5%
+  Spanish/Portuguese   n= 1095  relevant/parsed=  5.2%  fields found per op=4.42  zero-relevant=12.0%
