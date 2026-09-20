@@ -75,7 +75,7 @@ in extractable form.
 
 | field | operations with a value | share |
 |---|---:|---:|
-| `executive_agency_type` | 955 | 78.5% |
+| `executing_agency_type` | 955 | 78.5% |
 | `civil_works_type` | 926 | 76.1% |
 | `cofinancing_present` | 865 | 71.1% |
 | `fx_denomination` | 808 | 66.4% |
