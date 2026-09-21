@@ -1,0 +1,21 @@
+operation_number,cofinancing_present,cofinancing_share_pct,imported_inputs_present,imported_share_est,civil_works_type,construction_share_pct,procurement_modality,counterpart_funding_share_pct,fx_denomination,price_escalation_clause,executing_agency_type,safeguards_category,disbursement_period_years
+AR-L1436,False,0,,,"roads, bridges, and hydraulic works",,,0,Dólares de los Estados Unidos de América,True,subnational - Unidad Ejecutora Provincial (UEP),B,8
+BA-L1004,False,,,,none,,,15.97,US$ Single Currency Facility,,"national government - Ministry of Finance, Economic Affairs and Energy",C,5
+BA-L1012,,,True,,energy,,,,,,autonomous SOE,,
+BL-L1020,False,,True,,buildings,,"National Competitive Bidding (NCB), Price Comparison, Direct Contracting, Individual Consultancy, Consultancy Firm",3,US Dollar from Ordinary Capital; exchange rate for reporting/reimbursement uses Central Bank of Belize (CBB) rate at date of expenditure,,"National government ministry (Ministry of Health for health response; Ministry of Tourism, Culture and Civil Aviation for tourism components); not newly created",B,5
+BR-L1235,False,,,,buildings,,direct contracting,10,US dollar from single-currency facility of Ordinary Capital,,"subnational government (state-level), coordinated through State Secretariats and state enterprise",,4
+CO-L1076,False,0,,,none,,,26.6,Dólares Estadounidenses de la Facilidad Unimonetaria,,Secretaría Distrital de Movilidad (subnational government),,3
+CO-L1222,False,0,True,,,,private sector practices,50,USD with conversion to Colombian pesos,,autonomous SOE - sociedad de economía mixta del orden nacional (Banco de Comercio Exterior de Colombia S.A. - Bancóldex),B,5
+DR-L1031,False,0,False,,none,0,,12.5,U.S. dollars from the Bank's Ordinary Capital Single Currency Facility,,national government ministry (Ministry of Agriculture),,5
+DR-L1080,False,0,,,buildings,,shopping,0,U.S. dollars,,national government - Social Policy Coordination Office (GCPS),B,5
+EC-L1045,False,0,True,,none,,direct contracting,0.72,U.S. dollars from the Single Currency Facility,,administratively autonomous public corporation (existing),,2
+EC-L1121,False,,,,irrigation and roads,83.5,,20.2,U.S. dollars from the Bank's Ordinary Capital,,"subnational (provincial) government, not newly created",B,4
+GY-L1030,False,0,,,roads,,international competitive bidding,9.09,"US$, Single Currency Facility (Facilidad Unimonetaria)",,national government ministry,,5
+PR-L1037,False,,,,none,0,procedimientos simplificados,11.76,Dólares de los EEUU de la Facilidad Unimonetaria,,"national government agency under the Secretaría Técnica de Planificación - Dirección General de Estadística, Encuestas y Censos (DGEEC) with a designated Unidad Ejecutora del Programa (UEP)",,1.5
+PR-L1060,True,68.2,,,water/sanitation,,,9.1,"U.S. dollars, Single Currency Facility",,national government ministry,,5
+PR-L1084,True,,,,"roads, bridges",,"Licitación Pública Internacional, Licitación Pública Nacional, SBCC",,,,National government ministry (MOPC),,5.6
+SU-L1021,True,,,,roads,88.48,"International Competitive Bidding, National Competitive Bidding, Shopping",25.65,US$ from Ordinary Capital; bank accounts in both Surinamese Dollars (SRD) and US Dollars (USD) at the Centrale Bank van Suriname,True,National government - Ministry of Finance (MOF) and Ministry of Public Works (MPW); not newly created,,3
+UR-L1005,False,0,,,water/sanitation,,,15,US dollars from the Single Currency Facility,,subnational (municipal government),,6
+UR-L1032,False,,,,none,,direct contracting,17.6,United States dollars,,autonomous SOE (Banco de Previsión Social),C,3
+UR-L1070,True,33.7,True,,energy,,"EPC (Engineering, Procurement and Construction) turnkey",39.3,US$ from Ordinary Capital,,autonomous state-owned enterprise (UTE - Administración Nacional de Usinas y Trasmisiones Eléctricas),,5
+UR-L1112,False,0,,,none,0,"LPI (Licitación Pública Internacional), LPN (Licitación Pública Nacional), selection procedures for individual consultants",25,U.S. dollars from the Bank's Ordinary Capital,,national government - Ministry of the Interior,C,5
