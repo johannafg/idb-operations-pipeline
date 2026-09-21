@@ -1,0 +1,1146 @@
+{
+  "AR-L1436": {
+    "stats": {
+      "operation_number": "AR-L1436",
+      "n_documents": 1,
+      "n_paragraphs_total": 67,
+      "n_paragraphs_relevant": 39,
+      "bundle_chars": 23930,
+      "n_documents_failed": 0,
+      "failed_documents": []
+    },
+    "fields": [
+      {
+        "field": "cofinancing_present",
+        "value": false,
+        "status": "found",
+        "citation_para": "¶2.4, p.20",
+        "quote": "El monto total de la operación es de hasta US$280 millones, los cuales serán financiados con recursos provenientes del Capital Ordinario del Banco."
+      },
+      {
+        "field": "cofinancing_share_pct",
+        "value": null,
+        "status": "stated_absent",
+        "citation_para": "¶2.4, p.20",
+        "quote": "El monto total de la operación es de hasta US$280 millones, los cuales serán financiados con recursos provenientes del Capital Ordinario del Banco."
+      },
+      {
+        "field": "imported_inputs_present",
+        "value": true,
+        "status": "found",
+        "citation_para": "¶1.2, p.9",
+        "quote": "Estas actividades dependen casi exclusivamente del transporte carretero14 para la movilización de insumos y productos finales, donde los insumos importados ingresan mayoritariamente por el paso de frontera de Gualeguaychú"
+      },
+      {
+        "field": "imported_share_est",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "¶1.2, p.9",
+        "quote": ""
+      },
+      {
+        "field": "civil_works_type",
+        "value": "roads",
+        "status": "found",
+        "citation_para": "¶2.1, p.20",
+        "quote": "Componente I. Ingeniería, obras, inspección, y compensaciones socioambientales (US$273 millones). Financiará: (i) obras de rehabilitación y reconstrucción de rutas provinciales; construcción de nuevas variantes para la circunvalación de tránsito pesado; rehabilitación de puentes y otras obras hidráulicas"
+      },
+      {
+        "field": "construction_share_pct",
+        "value": 97.5,
+        "status": "found",
+        "citation_para": "¶2.4, p.20",
+        "quote": "Componente I. Ingeniería, obras, inspección, y compensaciones socioambientales 273 273 97,50"
+      },
+      {
+        "field": "procurement_modality",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "¶page-40, p.40",
+        "quote": ""
+      },
+      {
+        "field": "counterpart_funding_share_pct",
+        "value": 0,
+        "status": "found",
+        "citation_para": "¶2.4, p.20",
+        "quote": "Cuadro 2. Costos estimados del Programa54 (US$ millones) Componentes BID Total % Componente I. Ingeniería, obras, inspección, y compensaciones 273 273 97,50 socioambientales Componente II. Fortalecimiento 3 3 1,07 Institucional Auditoría y administración del programa 4 4 1,43 Total 280 280 100"
+      },
+      {
+        "field": "fx_denomination",
+        "value": "USD approved; conversion to local currency planned at effective exchange rate on date of conversion",
+        "status": "found",
+        "citation_para": "¶page-39, p.39",
+        "quote": "Tasa de Cambio Para efectos de lo estipulado en el Artículo 4.10 de las Normas Generales, las Partes acuerdan que la tasa de cambio aplicable será la indicada en el inciso (b)(i) de dicho Artículo, que es la tasa de cambio efectiva en la fecha de conversión de la moneda del desembolso a la moneda local del país."
+      },
+      {
+        "field": "price_escalation_clause",
+        "value": true,
+        "status": "found",
+        "citation_para": "¶3.1, p.23",
+        "quote": "Se identificó un riesgo de contexto medio-alto, vinculado a cambios en el contexto macroeconómico de Argentina, que podrían afectar los procesos de licitación y generar desfasajes en los presupuestos de obra, repercutiendo en demoras en la ejecución. La acción propuesta para lograr su mitigación es incluir en los contratos de obra fórmulas paramétricas específicas de redeterminación de precios."
+      },
+      {
+        "field": "executing_agency_type",
+        "value": "Subnational executing unit (UEP) dependent on the Secretary General of the Provincial Government; existing entity created in 2001",
+        "status": "found",
+        "citation_para": "¶4.1, p.26",
+        "quote": "El OE será la Unidad Ejecutora Provincial (UEP) dependiente de la Secretaría General de la Gobernación de la PdER59, que será responsable de la gestión integral del programa, incluyendo los aspectos de planificación estratégica, coordinación interinstitucional, gestión operativa, financiera y presupuestaria, y la rendición de cuentas. La UEP fue creada en el 2001 por decreto provincial, y es responsable de ejecutar diversos programas sectoriales con financiamiento externo y nacional."
+      },
+      {
+        "field": "safeguards_category",
+        "value": "B",
+        "status": "found",
+        "citation_para": "¶3.6, p.25",
+        "quote": "En correspondencia con el MPAS y con base en los estudios socioambientales preliminares de los proyectos de la muestra, la operación se clasifica como de categoría de impacto B, debido a que las actividades a desarrollar generarán impactos ambientales y sociales negativos moderados, localizados y de corto plazo, que cuentan con medidas de mitigación viables y conocidas."
+      },
+      {
+        "field": "disbursement_period_years",
+        "value": 8,
+        "status": "found",
+        "citation_para": "¶2.4, p.20",
+        "quote": "El período de desembolso de los recursos del préstamo será de ocho años a partir de la entrada en vigor del contrato de préstamo."
+      }
+    ]
+  },
+  "BA-L1012": {
+    "stats": {
+      "operation_number": "BA-L1012",
+      "n_documents": 10,
+      "n_paragraphs_total": 1220,
+      "n_paragraphs_relevant": 100,
+      "bundle_chars": 23934,
+      "n_documents_failed": 0,
+      "failed_documents": []
+    },
+    "fields": [
+      {
+        "field": "cofinancing_present",
+        "value": true,
+        "status": "found",
+        "citation_para": "¶docx-p6, p.n/a",
+        "quote": "The OM guides the Inter-American Development Bank (IDB), the National Petroleum Corporation (CDB), Barbados National Oil Company Limited (BNOCL) and other donors providing co-financing, in executing the program."
+      },
+      {
+        "field": "cofinancing_share_pct",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "¶page-5, p.5",
+        "quote": "Fuente Monto (US$) % BID (Capital Ordinario): (c) 34.000.000 100 Total: 34.000.000 100"
+      },
+      {
+        "field": "imported_inputs_present",
+        "value": true,
+        "status": "found",
+        "citation_para": "¶page-5, p.5",
+        "quote": "Los objetivos específicos incluyen: (i) mejorar la infraestructura de gas natural existente para asegurar la continuidad del servicio; (ii) incrementar las aplicaciones de eficiencia energética y energía renovable en las operaciones de National Petroleum Corporation (NPC) y Barbados National Oil Company Limited (BNOCL) con vistas a reducir las emisiones de gases de efecto invernadero; (iii) facilitar la ejecución de un proyecto de asociación público-privada para importar y suministrar gas natural licuado para generar electricidad"
+      },
+      {
+        "field": "imported_share_est",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "¶page-5, p.5",
+        "quote": ""
+      },
+      {
+        "field": "civil_works_type",
+        "value": "energy infrastructure (natural gas infrastructure, renewable energy installations)",
+        "status": "found",
+        "citation_para": "¶page-5, p.5",
+        "quote": "Los objetivos específicos incluyen: (i) mejorar la infraestructura de gas natural existente para asegurar la continuidad del servicio; (ii) incrementar las aplicaciones de eficiencia energética y energía renovable en las operaciones de National Petroleum Corporation (NPC) y Barbados National Oil Company Limited (BNOCL)"
+      },
+      {
+        "field": "construction_share_pct",
+        "value": 88.09,
+        "status": "found",
+        "citation_para": "¶1.27, p.20",
+        "quote": "Componente 3. Servicios de asesoramiento técnico (US$4,05 millones)."
+      },
+      {
+        "field": "procurement_modality",
+        "value": "Licitación pública internacional (LPI), Licitación pública nacional (LPN), Selección basada en la calidad (SBC), Selección basada en la calidad y el costo (SBCC)",
+        "status": "found",
+        "citation_para": "¶page-4, p.4",
+        "quote": "LPI Licitación pública internacional LPN Licitación pública nacional SBC Selección basada en la calidad SBCC Selección basada en la calidad y el costo"
+      },
+      {
+        "field": "counterpart_funding_share_pct",
+        "value": 0,
+        "status": "found",
+        "citation_para": "¶page-5, p.5",
+        "quote": "Fuente Monto (US$) % BID (Capital Ordinario): (c) 34.000.000 100 Total: 34.000.000 100"
+      },
+      {
+        "field": "fx_denomination",
+        "value": "Dólar estadounidense (US$) con cargo al Capital Ordinario",
+        "status": "found",
+        "citation_para": "¶page-5, p.5",
+        "quote": "Dólar estadounidense (US$) con cargo al Capital Ordinario Moneda:"
+      },
+      {
+        "field": "price_escalation_clause",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "¶page-5, p.5",
+        "quote": ""
+      },
+      {
+        "field": "executing_agency_type",
+        "value": "National government autonomous corporation (National Petroleum Corporation - NPC)",
+        "status": "found",
+        "citation_para": "¶3.1, p.27",
+        "quote": "Prestatario y organismo ejecutor. El prestatario será el Gobierno de Barbados y el organismo ejecutor será NPC."
+      },
+      {
+        "field": "safeguards_category",
+        "value": "B",
+        "status": "found",
+        "citation_para": "¶docx-p79, p.n/a",
+        "quote": "The Project, based on the nature of scope of works as described above has been classified as Category B for its potential mostly local and short term negative environmental and associated social impacts."
+      },
+      {
+        "field": "disbursement_period_years",
+        "value": 6,
+        "status": "found",
+        "citation_para": "¶2.2, p.23",
+        "quote": "Se prevé que el préstamo financiado con recursos del Capital Ordinario del Banco tenga un período de desembolso de seis años. Los recursos del préstamo deberán haberse desembolsado en 72 meses a partir de la fecha de entrada en vigor del acuerdo del préstamo."
+      }
+    ]
+  },
+  "BL-L1020": {
+    "stats": {
+      "operation_number": "BL-L1020",
+      "n_documents": 13,
+      "n_paragraphs_total": 2860,
+      "n_paragraphs_relevant": 212,
+      "bundle_chars": 23957,
+      "n_documents_failed": 0,
+      "failed_documents": []
+    },
+    "fields": [
+      {
+        "field": "cofinancing_present",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "N/A",
+        "quote": ""
+      },
+      {
+        "field": "cofinancing_share_pct",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "N/A",
+        "quote": ""
+      },
+      {
+        "field": "imported_inputs_present",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "N/A",
+        "quote": ""
+      },
+      {
+        "field": "imported_share_est",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "N/A",
+        "quote": ""
+      },
+      {
+        "field": "civil_works_type",
+        "value": "cultural infrastructure (plaza) and health facilities (small construction works)",
+        "status": "found",
+        "citation_para": "¶2.35, p.20",
+        "quote": "Será necesario comunicarse con los interesados porque una de las obras de infraestructura previstas (plaza cultural de Corozal) para el programa ya no se financiará."
+      },
+      {
+        "field": "construction_share_pct",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "N/A",
+        "quote": ""
+      },
+      {
+        "field": "procurement_modality",
+        "value": "direct contracting (contratación directa), price comparison (comparación de precios), shopping, national competitive bidding, international competitive bidding, individual consultants",
+        "status": "found",
+        "citation_para": "¶2.37, p.20",
+        "quote": "uso de métodos simplificados para las adquisiciones, como contratación directa para bienes incluidos en la lista de la OMS (equipo de protección personal, respiradores, artículos termómetros digitales) o comparación de precios"
+      },
+      {
+        "field": "counterpart_funding_share_pct",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "N/A",
+        "quote": ""
+      },
+      {
+        "field": "fx_denomination",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "N/A",
+        "quote": ""
+      },
+      {
+        "field": "price_escalation_clause",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "N/A",
+        "quote": ""
+      },
+      {
+        "field": "executing_agency_type",
+        "value": "National government ministry (Ministry of Tourism and Civil Aviation, Ministry of Health)",
+        "status": "found",
+        "citation_para": "¶2.42, p.22",
+        "quote": "Se propone que el Ministerio de Salud, por medio de la Unidad de Políticas, Planificación y Gestión de Proyectos, ejecute las actividades de respuesta inmediata de salud."
+      },
+      {
+        "field": "safeguards_category",
+        "value": "B",
+        "status": "found",
+        "citation_para": "¶2.35, p.20",
+        "quote": "El Programa de Turismo Sostenible BL-L1020 sigue siendo de categoría B."
+      },
+      {
+        "field": "disbursement_period_years",
+        "value": 5,
+        "status": "found",
+        "citation_para": "docx-p144, p.n/a",
+        "quote": "Disbursements are to begin gradually in 2016 with the last disbursement in 2020. The disbursement schedule is 6.67% in the first year, 16.67% in the second year, 26.67% in the third year, 33.33% in the fourth year and 16.67% in the final year."
+      }
+    ]
+  },
+  "CO-L1222": {
+    "stats": {
+      "operation_number": "CO-L1222",
+      "n_documents": 6,
+      "n_paragraphs_total": 311,
+      "n_paragraphs_relevant": 63,
+      "bundle_chars": 23942,
+      "n_documents_failed": 0,
+      "failed_documents": []
+    },
+    "fields": [
+      {
+        "field": "cofinancing_present",
+        "value": false,
+        "status": "stated_absent",
+        "citation_para": "¶1.3, p.27",
+        "quote": "El programa no incluye financiamiento de otros multilaterales y el plazo de ejecución será de cinco años."
+      },
+      {
+        "field": "cofinancing_share_pct",
+        "value": 0,
+        "status": "stated_absent",
+        "citation_para": "¶1.3, p.27",
+        "quote": "El programa no incluye financiamiento de otros multilaterales y el plazo de ejecución será de cinco años."
+      },
+      {
+        "field": "imported_inputs_present",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "¶page-5, p.5",
+        "quote": ""
+      },
+      {
+        "field": "imported_share_est",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "¶page-5, p.5",
+        "quote": ""
+      },
+      {
+        "field": "civil_works_type",
+        "value": "none",
+        "status": "found",
+        "citation_para": "¶docx-p27, p.n/a",
+        "quote": "Adquisiciones Principales. No se contemplan adquisiciones por parte del OE quien opera en todos los casos como banco de segundo piso."
+      },
+      {
+        "field": "construction_share_pct",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "¶page-5, p.5",
+        "quote": ""
+      },
+      {
+        "field": "procurement_modality",
+        "value": "prácticas del sector privado",
+        "status": "found",
+        "citation_para": "¶5.1, p.28",
+        "quote": "Los subprestatarios tramitarán los procesos de adquisiciones utilizando prácticas del sector privado."
+      },
+      {
+        "field": "counterpart_funding_share_pct",
+        "value": 50,
+        "status": "found",
+        "citation_para": "¶2.1, p.18",
+        "quote": "El presente programa es el cuarto y último de una serie de programas de la CCLIP ejecutada por Bancóldex, tratándose de un préstamo de inversión que utiliza la modalidad de Global de Crédito por hasta US$90.735.000 financiado por el Capital Ordinario (CO) del BID y con un período de desembolso de cinco años. Por su parte, Bancóldex pondrá una contraparte por el mismo monto, es decir US$90.735.000 adicionales para conformar un proyecto total de US$181.470.000."
+      },
+      {
+        "field": "fx_denomination",
+        "value": "Dólares de los Estados Unidos de América",
+        "status": "found",
+        "citation_para": "¶page-5, p.5",
+        "quote": "Moneda de aprobación: Dólares de los Estados Unidos de América"
+      },
+      {
+        "field": "price_escalation_clause",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "¶page-5, p.5",
+        "quote": ""
+      },
+      {
+        "field": "executing_agency_type",
+        "value": "Banco de segundo piso / autonomous SOE",
+        "status": "found",
+        "citation_para": "¶3.1, p.20",
+        "quote": "Prestatario, Organismo Ejecutor (OE) y Garante. Bancóldex será el prestatario y el OE del préstamo y proveerá las funciones administrativas, fiduciarias y de control necesarias para mantener una gestión efectiva del programa."
+      },
+      {
+        "field": "safeguards_category",
+        "value": "B.13",
+        "status": "found",
+        "citation_para": "¶5.2, p.23",
+        "quote": "Clasificación de los riesgos ambientales y sociales B.13"
+      },
+      {
+        "field": "disbursement_period_years",
+        "value": 5,
+        "status": "found",
+        "citation_para": "¶page-5, p.5",
+        "quote": "Período de desembolso: 5 años"
+      }
+    ]
+  },
+  "DR-L1031": {
+    "stats": {
+      "operation_number": "DR-L1031",
+      "n_documents": 2,
+      "n_paragraphs_total": 126,
+      "n_paragraphs_relevant": 38,
+      "bundle_chars": 23895,
+      "n_documents_failed": 0,
+      "failed_documents": []
+    },
+    "fields": [
+      {
+        "field": "cofinancing_present",
+        "value": false,
+        "status": "found",
+        "citation_para": "page-5, p.5",
+        "quote": "Source Amount (US$) % IDB (Ordinary Capital) 30,000,000 87.5 ... Local 4,300,000 12.5 Total 34,300,000 100.0"
+      },
+      {
+        "field": "cofinancing_share_pct",
+        "value": 0,
+        "status": "found",
+        "citation_para": "page-5, p.5",
+        "quote": "Source Amount (US$) % IDB (Ordinary Capital) 30,000,000 87.5 ... Local 4,300,000 12.5 Total 34,300,000 100.0"
+      },
+      {
+        "field": "imported_inputs_present",
+        "value": false,
+        "status": "stated_absent",
+        "citation_para": "¶2.7, p.14",
+        "quote": "The program will not finance the purchase or importation of invasive species, nor the purchase of pesticides, except those permitted in organic certification."
+      },
+      {
+        "field": "imported_share_est",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "¶2.7, p.14",
+        "quote": ""
+      },
+      {
+        "field": "civil_works_type",
+        "value": "none",
+        "status": "stated_absent",
+        "citation_para": "¶2.7, p.14",
+        "quote": "El programa no financiará la construcción de obras de infraestructura, solamente financiará la implantación de pequeños sistemas de riego, sistemas rústicos para cultivos protegidos e inversiones para mejorar el manejo post-cosecha."
+      },
+      {
+        "field": "construction_share_pct",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "¶2.7, p.14",
+        "quote": ""
+      },
+      {
+        "field": "procurement_modality",
+        "value": "SBCC (Selección Basada en la Calidad y el Costo)",
+        "status": "found",
+        "citation_para": "¶4.4, p.26",
+        "quote": "Firmas Consultoras: SBCC: Selección Basada en la Calidad y el Costo; SBC: Selección Basada en la Calidad; SBPF: Selección Basada en Presupuesto Fijo; SBMC: Selección Basada en el Menor Costo; SCC: Selección Basada en las Calificaciones de los Consultores; SD: Selección Directa"
+      },
+      {
+        "field": "counterpart_funding_share_pct",
+        "value": 12.5,
+        "status": "found",
+        "citation_para": "page-5, p.5",
+        "quote": "Source Amount (US$) % IDB (Ordinary Capital) 30,000,000 87.5 Local 4,300,000 12.5 Total 34,300,000 100.0"
+      },
+      {
+        "field": "fx_denomination",
+        "value": "U.S. dollars from the Bank's Ordinary Capital Single Currency Facility",
+        "status": "found",
+        "citation_para": "page-5, p.5",
+        "quote": "Currency: U.S. dollars from the Bank's Ordinary Capital Single Currency Facility"
+      },
+      {
+        "field": "price_escalation_clause",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "page-5, p.5",
+        "quote": ""
+      },
+      {
+        "field": "executing_agency_type",
+        "value": "national government (Ministry of Agriculture)",
+        "status": "found",
+        "citation_para": "page-5, p.5",
+        "quote": "Executing agency: Ministry of Agriculture (MA)"
+      },
+      {
+        "field": "safeguards_category",
+        "value": "B",
+        "status": "found",
+        "citation_para": "¶2.6, p.14",
+        "quote": "Siguiendo las orientaciones de la Política de Salvaguardias y Medio Ambiente del Banco (OP-703 y OP-765) el equipo de proyecto clasificó la operación a través del Filtro de Salvaguardias como categoría \"B\"."
+      },
+      {
+        "field": "disbursement_period_years",
+        "value": 5,
+        "status": "found",
+        "citation_para": "page-5, p.5",
+        "quote": "Disbursement period: 5 years"
+      }
+    ]
+  },
+  "DR-L1080": {
+    "stats": {
+      "operation_number": "DR-L1080",
+      "n_documents": 25,
+      "n_paragraphs_total": 1142,
+      "n_paragraphs_relevant": 185,
+      "bundle_chars": 23789,
+      "n_documents_failed": 0,
+      "failed_documents": []
+    },
+    "fields": [
+      {
+        "field": "cofinancing_present",
+        "value": false,
+        "status": "not_stated",
+        "citation_para": "REPUBLICA DOMINICANA. Ciudad Mujer. Propuesta de Préstamo.pdf ¶2.1, p.16",
+        "quote": "El proyecto se financiará a través de un préstamo de inversión específica. El período de desembolso es de cinco años53. El monto de financiamiento es de US$20 millones, con cargo al Capital Ordinario del Banco."
+      },
+      {
+        "field": "cofinancing_share_pct",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "REPUBLICA DOMINICANA. Ciudad Mujer. Propuesta de Préstamo.pdf ¶2.1, p.16",
+        "quote": ""
+      },
+      {
+        "field": "imported_inputs_present",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "DOMINICAN REPUBLIC. Ciudad Mujer. Loan Proposal.pdf ¶1.27, p.16",
+        "quote": ""
+      },
+      {
+        "field": "imported_share_est",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "DOMINICAN REPUBLIC. Ciudad Mujer. Loan Proposal.pdf ¶1.27, p.16",
+        "quote": ""
+      },
+      {
+        "field": "civil_works_type",
+        "value": "buildings",
+        "status": "found",
+        "citation_para": "DOMINICAN REPUBLIC. Ciudad Mujer. Loan Proposal.pdf ¶1.27, p.16",
+        "quote": "Financing will be provided for: (i) activities to expand the supply of employment, sexual and reproductive health, treatment and prevention of intimate partner violence and adolescent pregnancy services, including: (a) consulting services for the design of engineering works for two CCMs; (b) works, equipment, and fixtures for two CCMs; and (c) specialized consulting services on the subject of the environment and infrastructure to monitor the construction of CCMs"
+      },
+      {
+        "field": "construction_share_pct",
+        "value": 77.6,
+        "status": "found",
+        "citation_para": "REPUBLICA DOMINICANA. Ciudad Mujer. Propuesta de Préstamo.pdf ¶2.1, p.16",
+        "quote": "Componente 5. Construcción y equipamiento de los CCM y fortalecimiento institucional 15.513.107 77,6%"
+      },
+      {
+        "field": "procurement_modality",
+        "value": "International competitive bidding (ICB) and national competitive bidding (NCB)",
+        "status": "found",
+        "citation_para": "DOMINICAN REPUBLIC. Ciudad Mujer. Loan Proposal.pdf ¶5.1, p.35",
+        "quote": "Procurement processes subject to international competitive bidding (ICB) will use the standard bidding documents issued by the Bank. Procurement processes subject to national competitive bidding (NCB) will use the national bidding documents agreed upon with the Bank (or satisfactory to the Bank)."
+      },
+      {
+        "field": "counterpart_funding_share_pct",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "REPUBLICA DOMINICANA. Ciudad Mujer. Propuesta de Préstamo.pdf ¶2.1, p.16",
+        "quote": ""
+      },
+      {
+        "field": "fx_denomination",
+        "value": "US dollars",
+        "status": "found",
+        "citation_para": "REPUBLICA DOMINICANA. Ciudad Mujer. Propuesta de Préstamo.pdf ¶2.1, p.16",
+        "quote": "El monto de financiamiento es de US$20 millones, con cargo al Capital Ordinario del Banco."
+      },
+      {
+        "field": "price_escalation_clause",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "DOMINICAN REPUBLIC. Ciudad Mujer. Loan Proposal.pdf ¶5.1, p.35",
+        "quote": ""
+      },
+      {
+        "field": "executing_agency_type",
+        "value": "National government - Gabinete de Coordinación de Políticas Sociales (GCPS) through the Technical Directorate with support from UTP; a new Ciudad Mujer Program Management Unit (CMPMU) will be created",
+        "status": "found",
+        "citation_para": "DOMINICAN REPUBLIC. Ciudad Mujer. Loan Proposal.pdf ¶6.7, p.38",
+        "quote": "The executing agency for the operation is the GCPS through the Technical Directorate with support from the UTP. The executing agency will be the GCPS through the Technical Directorate, which will create a CMPMU that will be responsible for the institutional and technical coordination of the operation."
+      },
+      {
+        "field": "safeguards_category",
+        "value": "B",
+        "status": "found",
+        "citation_para": "Informe de Gestión Ambiental y Social (IGAS). Enlace requerido.pdf ¶page-4, p.4",
+        "quote": "En cumplimiento de la OP-703, y por tratarse de una operación de categoría B, se ha desarrollado un análisis ambiental y social y un plan de gestión de los impactos ambientales y sociales (AAS/PGAS) para el CCM de Santo Domingo, y otro para el CCM de Santiago."
+      },
+      {
+        "field": "disbursement_period_years",
+        "value": 5,
+        "status": "found",
+        "citation_para": "REPUBLICA DOMINICANA. Ciudad Mujer. Propuesta de Préstamo.pdf ¶2.1, p.16",
+        "quote": "El período de desembolso es de cinco años"
+      }
+    ]
+  },
+  "EC-L1045": {
+    "stats": {
+      "operation_number": "EC-L1045",
+      "n_documents": 2,
+      "n_paragraphs_total": 149,
+      "n_paragraphs_relevant": 37,
+      "bundle_chars": 23738,
+      "n_documents_failed": 0,
+      "failed_documents": []
+    },
+    "fields": [
+      {
+        "field": "cofinancing_present",
+        "value": false,
+        "status": "found",
+        "citation_para": "¶1.31, p.12",
+        "quote": "The cost of the operation will be US$62.7 million, 99.2% of which will be financed by the Bank."
+      },
+      {
+        "field": "cofinancing_share_pct",
+        "value": 0,
+        "status": "found",
+        "citation_para": "¶1.31, p.12",
+        "quote": "The cost of the operation will be US$62.7 million, 99.2% of which will be financed by the Bank."
+      },
+      {
+        "field": "imported_inputs_present",
+        "value": true,
+        "status": "found",
+        "citation_para": "¶1.24, p.9",
+        "quote": "although a public corporation, TAME pays taxes to the national treasury (VAT, import duties, etc.)"
+      },
+      {
+        "field": "imported_share_est",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "¶1.27, p.10",
+        "quote": ""
+      },
+      {
+        "field": "civil_works_type",
+        "value": "none",
+        "status": "stated_absent",
+        "citation_para": "¶page-25, p.25",
+        "quote": "Works procurement: N/A"
+      },
+      {
+        "field": "construction_share_pct",
+        "value": 0,
+        "status": "stated_absent",
+        "citation_para": "¶page-25, p.25",
+        "quote": "Works procurement: N/A"
+      },
+      {
+        "field": "procurement_modality",
+        "value": "Direct contracting, QCBS (Quality-and-cost-based selection)",
+        "status": "found",
+        "citation_para": "¶page-25, p.25",
+        "quote": "Goods procurement: Direct contracting will be used to procure two Embraer ERJ-190AR aircraft... Procurement of consulting services: Consulting services will be required for institutional strengthening studies. The appropriate method will be used to evaluate proposals for the selection of consulting firms, from among the following: Quality-based selection (QBS); Quality-and-cost-based selection (QCBS); Least-cost selection (LCS); and Selection under a fixed budget (FBS)."
+      },
+      {
+        "field": "counterpart_funding_share_pct",
+        "value": 0.8,
+        "status": "found",
+        "citation_para": "¶1.31, p.12",
+        "quote": "The cost of the operation will be US$62.7 million, 99.2% of which will be financed by the Bank."
+      },
+      {
+        "field": "fx_denomination",
+        "value": "US dollars from the Single Currency Facility",
+        "status": "found",
+        "citation_para": "¶page-5, p.5",
+        "quote": "Moneda: Dólares de la Facilidad Unimonetaria"
+      },
+      {
+        "field": "price_escalation_clause",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "¶page-25, p.25",
+        "quote": ""
+      },
+      {
+        "field": "executing_agency_type",
+        "value": "Administratively autonomous public corporation (SOE), not newly created",
+        "status": "found",
+        "citation_para": "¶1.24, p.9",
+        "quote": "Several points should be noted in relation to the sector's specific features: (i) as an administratively autonomous entity, TAME has a separate budget subject to external audit; (ii) TAME receives no government subsidies; it is responsible for its own business and financial obligations and repays loans out of its operational earnings... (iv) although a public corporation, TAME pays taxes to the national treasury"
+      },
+      {
+        "field": "safeguards_category",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "¶2.1, p.13",
+        "quote": ""
+      },
+      {
+        "field": "disbursement_period_years",
+        "value": 2,
+        "status": "found",
+        "citation_para": "¶2.1, p.13",
+        "quote": "The execution and disbursement period will be two years."
+      }
+    ]
+  },
+  "EC-L1121": {
+    "stats": {
+      "operation_number": "EC-L1121",
+      "n_documents": 4,
+      "n_paragraphs_total": 269,
+      "n_paragraphs_relevant": 111,
+      "bundle_chars": 23890,
+      "n_documents_failed": 0,
+      "failed_documents": []
+    },
+    "fields": [
+      {
+        "field": "cofinancing_present",
+        "value": false,
+        "status": "found",
+        "citation_para": "page-5, p.5",
+        "quote": "Fuente Monto (US$ Millones) BID (CO) 15,0 Local 3,8 Total 18,8"
+      },
+      {
+        "field": "cofinancing_share_pct",
+        "value": null,
+        "status": "stated_absent",
+        "citation_para": "page-5, p.5",
+        "quote": "Fuente Monto (US$ Millones) BID (CO) 15,0 Local 3,8 Total 18,8"
+      },
+      {
+        "field": "imported_inputs_present",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "¶5.3, p.32",
+        "quote": ""
+      },
+      {
+        "field": "imported_share_est",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "¶5.3, p.32",
+        "quote": ""
+      },
+      {
+        "field": "civil_works_type",
+        "value": "irrigation infrastructure and roads",
+        "status": "found",
+        "citation_para": "page-5, p.5",
+        "quote": "Componente 1. Construcción, mejoramiento y rehabilitación de sistemas de riego. (US$7,3 millones) con tres subcomponentes: Subcomponente 1.1: Infraestructura de riego; Subcomponente 1.2: Apoyo a las juntas de usuarios de riego; Subcomponente 1.3: Protección de micro cuencas; y Componente 2. Mejoramiento y rehabilitación vial. (US$8,4 millones)."
+      },
+      {
+        "field": "construction_share_pct",
+        "value": 83.51,
+        "status": "found",
+        "citation_para": "page-5, p.5",
+        "quote": "Componente 1. Construcción, mejoramiento y rehabilitación de sistemas de riego. (US$7,3 millones) con tres subcomponentes: Subcomponente 1.1: Infraestructura de riego; Subcomponente 1.2: Apoyo a las juntas de usuarios de riego; Subcomponente 1.3: Protección de micro cuencas; y Componente 2. Mejoramiento y rehabilitación vial. (US$8,4 millones)."
+      },
+      {
+        "field": "procurement_modality",
+        "value": "international competitive bidding (ICB)",
+        "status": "found",
+        "citation_para": "¶5.5, p.32",
+        "quote": "The threshold for determining the use of international competitive bidding (ICB) will be made available to the GADPCH at the website http://www.iadb.org/procurement. Below this threshold, the selection method will be determined based on the complexity and characteristics of the procurement, which will be reflected in the procurement plan that has received the Bank's no objection."
+      },
+      {
+        "field": "counterpart_funding_share_pct",
+        "value": 20.21,
+        "status": "found",
+        "citation_para": "page-5, p.5",
+        "quote": "Fuente Monto (US$ Millones) BID (CO) 15,0 Local 3,8 Total 18,8"
+      },
+      {
+        "field": "fx_denomination",
+        "value": "US Dollars from the Bank's Ordinary Capital",
+        "status": "found",
+        "citation_para": "page-5, p.5",
+        "quote": "Moneda: Dólares de los EEUU del Capital Ordinario del Banco."
+      },
+      {
+        "field": "price_escalation_clause",
+        "value": true,
+        "status": "found",
+        "citation_para": "¶9.7, p.20",
+        "quote": "Se está procesando la contratación de consultoría para revisión del costeo, utilizando una fórmula polinómica."
+      },
+      {
+        "field": "executing_agency_type",
+        "value": "subnational decentralized autonomous government (provincial)",
+        "status": "found",
+        "citation_para": "¶3.1, p.18",
+        "quote": "The borrower will be the Decentralized Autonomous Government of the Province of Chimborazo (GADPCH), which will act as the executing agency with the sovereign guarantee of the Republic of Ecuador for payment obligations."
+      },
+      {
+        "field": "safeguards_category",
+        "value": "B",
+        "status": "found",
+        "citation_para": "¶2.11, p.16",
+        "quote": "De conformidad con la Política de Medio Ambiente y Cumplimiento de Salvaguardias del Banco (OP-703), esta operación se clasificó en la Categoría \"B\"."
+      },
+      {
+        "field": "disbursement_period_years",
+        "value": 4,
+        "status": "found",
+        "citation_para": "page-5, p.5",
+        "quote": "Período de desembolso: 4 años"
+      }
+    ]
+  },
+  "SU-L1021": {
+    "stats": {
+      "operation_number": "SU-L1021",
+      "n_documents": 3,
+      "n_paragraphs_total": 244,
+      "n_paragraphs_relevant": 153,
+      "bundle_chars": 23996,
+      "n_documents_failed": 0,
+      "failed_documents": []
+    },
+    "fields": [
+      {
+        "field": "cofinancing_present",
+        "value": true,
+        "status": "found",
+        "citation_para": "¶1.9, p.8",
+        "quote": "Table 1: Civil Works Contracts Summary (OL#9) Civil Works Contracts Forecast Lot Section Length (km) Contracts Commencemen final cost Funding Amount signature date t date US$ 1 Meerzorg Tammanerdjo 20.5 EU May 20, 2010 July 20, 2010 €17,993,236 35,237,115 2A Tammanredjo Wanhati 43.6 and 5 bridges IDB Aug. 26, 2009 Nov. 2, 2009 US$34,164,433 45,232,982 2B Wanhati Moengo 31.5 and 1 bridge IDB Oct. 26, 2009 Dec. 2, 2009 US$27,879,125 35,961,453 2C Stolkertsijver Bridge 0.35 (1 bridge) IDB Not awarded n/a n/a n/a 3 Moengo Albina 42.3 and 6 bridges IDB/AFD Oct. 28, 2009 Jan. 4, 2010 US$31,250,000 44,255,574"
+      },
+      {
+        "field": "cofinancing_share_pct",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "¶1.9, p.8",
+        "quote": "While the document shows EU and AFD cofinancing in the civil works contracts table, no total project cost breakdown is provided that would allow computation of the cofinancing share as a percent of total project cost."
+      },
+      {
+        "field": "imported_inputs_present",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "¶1.28, p.12",
+        "quote": ""
+      },
+      {
+        "field": "imported_share_est",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "¶1.28, p.12",
+        "quote": ""
+      },
+      {
+        "field": "civil_works_type",
+        "value": "roads",
+        "status": "found",
+        "citation_para": "¶1.9, p.8",
+        "quote": "MACRP road design. A pre-feasibility study was carried out in 2007 and feasibility studies completed in 2008 (¶1.7). The MOF supervised implementation of final designs with an average cost per km originally estimated for the MACRP of US$834,663. Current average forecast cost at constant prices for the MACRP is estimated at US$1,053,662. Table 1: Civil Works Contracts Summary (OL#9)"
+      },
+      {
+        "field": "construction_share_pct",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "¶1.9, p.8",
+        "quote": ""
+      },
+      {
+        "field": "procurement_modality",
+        "value": "Licitación pública internacional, Licitación pública nacional, Comparación de precios, Lista de seleccionados",
+        "status": "found",
+        "citation_para": "¶6.16, p.39",
+        "quote": "Umbral de país: Cuadro (miles de US$) www.iadb.org/procurement Umbrales (miles de US$) Servicios de Obras Bienes consultoría Licitación Licitación Licitación Lista únicamente Licitación pública Comparación Comparación pública pública pública de nacionales internacional de precios de precios nacional internacional nacional seleccionados"
+      },
+      {
+        "field": "counterpart_funding_share_pct",
+        "value": 25.7,
+        "status": "found",
+        "citation_para": "¶page-6, p.6",
+        "quote": "Fuente Monto Comisión de inspección y vigilancia: ** BID (Capital Ordinario) US$40 millones Tasa de interés: Basada en LIBOR Aporte local US$13,8 millones Comisión de crédito: ** Total US$53,8 millones Moneda: US$ con cargo al Capital Ordinario"
+      },
+      {
+        "field": "fx_denomination",
+        "value": "US$",
+        "status": "found",
+        "citation_para": "¶page-6, p.6",
+        "quote": "Moneda: US$ con cargo al Capital Ordinario"
+      },
+      {
+        "field": "price_escalation_clause",
+        "value": true,
+        "status": "found",
+        "citation_para": "¶1.20, p.10",
+        "quote": "it would be advisable to retain the price adjustment clause in FIDIC works contracts, even for contracts of duration less than 18 months."
+      },
+      {
+        "field": "executing_agency_type",
+        "value": "National government: Ministry of Finance (financial matters) and Ministry of Public Works (technical matters)",
+        "status": "found",
+        "citation_para": "¶3.1, p.19",
+        "quote": "Borrower and Executing Agencies. The Borrower will be the Republic of Suriname, and the Executing Agencies will be: the MOF that will be responsible for all financial matters (Financial Executing Agency); and the MPW that will be responsible for all technical aspects of the project (Technical Executing Agency)."
+      },
+      {
+        "field": "safeguards_category",
+        "value": "B",
+        "status": "found",
+        "citation_para": "¶2.2, p.22",
+        "quote": "Habida cuenta de que la presente operación causará impactos ambientales y sociales locales a corto plazo, para los cuales ya se dispone de medidas de mitigación, el equipo de proyecto ha clasificado la operación dentro de la categoría B."
+      },
+      {
+        "field": "disbursement_period_years",
+        "value": 3,
+        "status": "found",
+        "citation_para": "¶2.1, p.16",
+        "quote": "The planned disbursement period of this operation is 36 months. Table 5 shows the tentative disbursement schedule, in Ms of US Dollar. Table 5: Disbursement schedule Source Year 1 Year 2 Year 3 Total"
+      }
+    ]
+  },
+  "UR-L1032": {
+    "stats": {
+      "operation_number": "UR-L1032",
+      "n_documents": 2,
+      "n_paragraphs_total": 59,
+      "n_paragraphs_relevant": 22,
+      "bundle_chars": 23970,
+      "n_documents_failed": 0,
+      "failed_documents": []
+    },
+    "fields": [
+      {
+        "field": "cofinancing_present",
+        "value": false,
+        "status": "stated_absent",
+        "citation_para": "page-2, p.2",
+        "quote": "No other bilateral or multilateral organization is currently supporting the BPS in this area."
+      },
+      {
+        "field": "cofinancing_share_pct",
+        "value": null,
+        "status": "stated_absent",
+        "citation_para": "page-2, p.2",
+        "quote": "No other bilateral or multilateral organization is currently supporting the BPS in this area."
+      },
+      {
+        "field": "imported_inputs_present",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "page-6, p.6",
+        "quote": ""
+      },
+      {
+        "field": "imported_share_est",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "page-6, p.6",
+        "quote": ""
+      },
+      {
+        "field": "civil_works_type",
+        "value": "none",
+        "status": "found",
+        "citation_para": "1.25, p.11",
+        "quote": "El Programa financiará servicios de consultoría, actividades de capacitación, asistencia técnica y adquisición de equipo informático (software y hardware) así como los impuestos correspondientes, excepto las tarifas de importación por encima del 28%."
+      },
+      {
+        "field": "construction_share_pct",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "1.25, p.11",
+        "quote": ""
+      },
+      {
+        "field": "procurement_modality",
+        "value": "Licitación Pública Internacional (LPI), Licitación Pública Nacional (LPN), comparación de precios, contratación directa",
+        "status": "found",
+        "citation_para": "3.6, p.15",
+        "quote": "En las adquisiciones de bienes y servicios (diferentes de consultoría) que tengan un costo estimado igual o mayor a US$250.000, se utilizará la Licitación Pública Internacional (LPI), mientras que en las que tengan un costo estimado que sea igual o mayor a US$50.000 y menor a US$250.000 se realizará por Licitación Pública Nacional (LPN) y por debajo de US$50.000 podrá realizarse por comparación de precios... Direct contracting will be used for three institutions."
+      },
+      {
+        "field": "counterpart_funding_share_pct",
+        "value": 17.6,
+        "status": "found",
+        "citation_para": "1.24, p.11",
+        "quote": "El costo de la operación se estima en US$3.899.385. El financiamiento con recursos del Banco sería equivalente a US$3.212.783 que se financiarán a través de Capital Ordinario (CO). La contrapartida local sería de US$686.602."
+      },
+      {
+        "field": "fx_denomination",
+        "value": "United States dollars from the Single Currency Facility of the Bank's Ordinary Capital",
+        "status": "found",
+        "citation_para": "page-1, p.1",
+        "quote": "Currency: United States dollars from the Single Currency Facility of the Bank's Ordinary Capital"
+      },
+      {
+        "field": "price_escalation_clause",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "page-2, p.2",
+        "quote": ""
+      },
+      {
+        "field": "executing_agency_type",
+        "value": "autonomous SOE (Banco de Previsión Social)",
+        "status": "found",
+        "citation_para": "page-1, p.1",
+        "quote": "Executing agency: Banco de Previsión Social"
+      },
+      {
+        "field": "safeguards_category",
+        "value": "C",
+        "status": "found",
+        "citation_para": "page-2, p.2",
+        "quote": "There are no environmental or social risks associated with the activities planned under this operation. Under the Environment and Safeguards Compliance Policy, the project has been classified as category \"C.\""
+      },
+      {
+        "field": "disbursement_period_years",
+        "value": 3,
+        "status": "found",
+        "citation_para": "page-1, p.1",
+        "quote": "Disbursement period: 3 years"
+      }
+    ]
+  },
+  "UR-L1070": {
+    "stats": {
+      "operation_number": "UR-L1070",
+      "n_documents": 2,
+      "n_paragraphs_total": 132,
+      "n_paragraphs_relevant": 70,
+      "bundle_chars": 23724,
+      "n_documents_failed": 0,
+      "failed_documents": []
+    },
+    "fields": [
+      {
+        "field": "cofinancing_present",
+        "value": true,
+        "status": "found",
+        "citation_para": "¶1.20, p.13",
+        "quote": "El costo total del Proyecto se estima en US$741,2 millones, de los cuales US$200 millones (27,0%) serán cubiertos por el BID. Adicionalmente US$180 millones (24,3%) serán provistos por la CAF; US$70 millones (9,4%) por Kreditanstalt für Wiederaufbau (KfW), y US$291,2 millones (39,3%) por la UTE, todos ellos en concepto de contrapartida."
+      },
+      {
+        "field": "cofinancing_share_pct",
+        "value": 33.7,
+        "status": "found",
+        "citation_para": "¶1.20, p.13",
+        "quote": "El costo total del Proyecto se estima en US$741,2 millones, de los cuales US$200 millones (27,0%) serán cubiertos por el BID. Adicionalmente US$180 millones (24,3%) serán provistos por la CAF; US$70 millones (9,4%) por Kreditanstalt für Wiederaufbau (KfW)"
+      },
+      {
+        "field": "imported_inputs_present",
+        "value": true,
+        "status": "found",
+        "citation_para": "¶1.24, p.14",
+        "quote": "Adicionalmente, se han previsto US$75 millones (15% del valor de las obras) para imprevistos como contrapartida, y US$2,0 millones del financiamiento del BID para cubrir gastos financieros del préstamo del BID... Gastos de importación e IVA 95.267"
+      },
+      {
+        "field": "imported_share_est",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "¶1.24, p.14",
+        "quote": ""
+      },
+      {
+        "field": "civil_works_type",
+        "value": "energy",
+        "status": "found",
+        "citation_para": "¶1.21, p.13",
+        "quote": "El Componente I incluye el diseño final de ingeniería, suministro de equipos y materiales, construcción de obras civiles, eléctricas y electromecánicas y puesta en marcha de la planta de ciclo combinado (530-MW)."
+      },
+      {
+        "field": "construction_share_pct",
+        "value": 64.9,
+        "status": "found",
+        "citation_para": "¶1.24, p.14",
+        "quote": "CONCEPTO Contrapartida TOTAL BID (Miles de US$) CAF * KfW * UTE Componente I. Obras de Infraestructura 481.391... TOTAL 741.203"
+      },
+      {
+        "field": "procurement_modality",
+        "value": "EPC (Engineering, Procurement and Construction), direct contracting",
+        "status": "found",
+        "citation_para": "¶1.21, p.13",
+        "quote": "Se trata de una licitación llave en mano, o Engineering, Procurement and Construction (EPC)."
+      },
+      {
+        "field": "counterpart_funding_share_pct",
+        "value": 39.3,
+        "status": "found",
+        "citation_para": "¶1.20, p.13",
+        "quote": "El costo total del Proyecto se estima en US$741,2 millones, de los cuales US$200 millones (27,0%) serán cubiertos por el BID. Adicionalmente US$180 millones (24,3%) serán provistos por la CAF; US$70 millones (9,4%) por Kreditanstalt für Wiederaufbau (KfW), y US$291,2 millones (39,3%) por la UTE, todos ellos en concepto de contrapartida."
+      },
+      {
+        "field": "fx_denomination",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "¶2.1, p.14",
+        "quote": ""
+      },
+      {
+        "field": "price_escalation_clause",
+        "value": null,
+        "status": "not_stated",
+        "citation_para": "¶1.21, p.13",
+        "quote": ""
+      },
+      {
+        "field": "executing_agency_type",
+        "value": "autonomous SOE",
+        "status": "found",
+        "citation_para": "¶2.6, p.16",
+        "quote": "El Organismo Ejecutor (OE) será la propia UTE, quien tiene amplia experiencia con organismos multilaterales, y está familiarizado con procedimientos y normas similares a las del BID."
+      },
+      {
+        "field": "safeguards_category",
+        "value": "A",
+        "status": "found",
+        "citation_para": "¶2.2, p.15",
+        "quote": "El Proyecto ha sido clasificado como Categoría A en el marco de la Política OP-703 de Medio Ambiente y Cumplimiento de Salvaguardias."
+      },
+      {
+        "field": "disbursement_period_years",
+        "value": 5,
+        "status": "found",
+        "citation_para": "¶2.1, p.14",
+        "quote": "El período de desembolso se estima en cinco años de acuerdo al cronograma tentativo (ver Tabla 3)."
+      }
+    ]
+  }
+}

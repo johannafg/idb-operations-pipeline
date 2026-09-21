@@ -332,42 +332,6 @@ _TAG_ORDER = ["price_adjustment", "imports", "works", "disbursement", "safeguard
               "procurement", "execution", "financing", "risks"]
 
 
-# The project summary page at the front of every loan proposal states the
-# financing terms (amount, sources, currency, disbursement period) in one
-# place. It is unnumbered and long, so ordinary ranking pushes it down; it is
-# selected first instead.
-# The financing-terms block is what identifies the real summary page; the
-# words "project summary" alone also appear in the table of contents.
-_SUMMARY_MARKERS = [_norm(t) for t in [
-    "financial terms and conditions", "terminos y condiciones financieras",
-    "termos e condicoes financeiras",
-]]
-
-
-def _is_summary_page(text: str) -> bool:
-    head = _norm(text[:800])
-    return any(m in head for m in _SUMMARY_MARKERS) and not _is_toc(text)
-
-
-# Some "paragraphs" run to tens of thousands of characters, when a numbered
-# paragraph absorbs the unnumbered annex text that follows it. One of these
-# can consume the whole budget. Long paragraphs are cut to a window around
-# their first keyword match, keeping the citation id.
-MAX_PARA_CHARS = 2500
-
-
-def _window(text: str, tags) -> str:
-    if len(text) <= MAX_PARA_CHARS:
-        return text
-    low = _norm(text)
-    positions = [low.find(k) for t in tags for k in _NORM_KEYWORDS.get(t, []) if k in low]
-    start = max(0, min(positions) - 400) if positions else 0
-    # _norm can shift offsets slightly (combining marks removed); the window
-    # is generous enough that this does not matter.
-    piece = text[start:start + MAX_PARA_CHARS]
-    return ("[...] " if start else "") + piece + " [...]"
-
-
 def select_across_documents(candidates, max_chars):
     """Choose paragraphs from ALL of a project's documents under one budget.
 
@@ -375,8 +339,7 @@ def select_across_documents(candidates, max_chars):
 
     Selection is tag-balanced: each round takes the next best paragraph for
     every tag in turn, so every schema-relevant section gets space before any
-    section gets a second paragraph. The project summary page, if found, is
-    taken before anything else (only the first, since proposals often come in two languages). Within a tag, paragraphs from a document
+    section gets a second paragraph. Within a tag, paragraphs from a document
     dedicated to that topic come first (see _DOC_TYPE_HINTS), then those matching more of
     that tag's keywords come first, then numbered paragraphs (the body of the
     loan proposal) over unnumbered annex text, then earlier documents.
@@ -394,13 +357,7 @@ def select_across_documents(candidates, max_chars):
                                            -candidates[i].get("hits", {}).get(t, 1),
                                            not candidates[i]["numbered"],
                                            candidates[i]["doc_idx"], candidates[i]["pos"]))
-    chosen, used = set(), 0
-    for i in sorted((i for i, c in enumerate(candidates) if c.get("pinned")),
-                    key=lambda i: (candidates[i]["doc_idx"], candidates[i]["pos"]))[:1]:
-        if used + len(candidates[i]["chunk"]) + 2 <= max_chars:
-            chosen.add(i)
-            used += len(candidates[i]["chunk"]) + 2
-    active = list(order)
+    chosen, used, active = set(), 0, list(order)
     while active:
         still = []
         for t in active:
@@ -456,17 +413,15 @@ def build_project_bundle(doc_paths, max_chars_per_doc=None, max_chars_total=2400
             continue
         total_paras += len(paras)
         for pos, p in enumerate(tag_sections(paras)):
-            pinned = _is_summary_page(p["text"])
-            if not p["tags"] and not pinned:
+            if not p["tags"]:
                 continue
             total_relevant += 1
             candidates.append({
                 "doc_idx": doc_idx, "pos": pos, "tags": p["tags"],
                 "hits": p.get("tag_hits", {}),
                 "doc_hints": _doc_hints(name),
-                "pinned": pinned,
                 "numbered": bool(_NUMBERED_RE.match(str(p["para_id"]))),
-                "chunk": f"[{name} ¶{p['para_id']}, p.{p['page']}] {_window(p['text'], p['tags'] or ['financing'])}",
+                "chunk": f"[{name} ¶{p['para_id']}, p.{p['page']}] {p['text']}",
             })
     if skipped:
         print(f"[note] {len(skipped)} file(s) not parsed (unsupported type): {', '.join(skipped)}",
