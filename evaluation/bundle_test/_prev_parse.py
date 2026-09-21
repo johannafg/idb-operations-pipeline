@@ -74,7 +74,7 @@ SECTION_KEYWORDS = {
     "financing": [
         "financing instruments", "cost and financing", "financing structure",
         "public and private financing", "parallel financing", "cofinancing",
-        "co-financing", "counterpart", "currency", "loan currency", "united states dollars",
+        "co-financing", "counterpart", "currency",
         "costo y financiamiento", "costos y financiamiento", "estructura de financiamiento",
         "cofinanciamiento", "cofinanciacion", "financiamiento paralelo",
         "aporte local", "contrapartida", "moneda",
@@ -83,9 +83,6 @@ SECTION_KEYWORDS = {
     ],
     "procurement": [
         "procurement", "competitive bidding", "threshold amounts",
-        "international competitive bidding", "national competitive bidding",
-        "licitacion publica internacional", "licitacion publica nacional",
-        "licitacao publica internacional", "licitacao publica nacional",
         "adquisiciones", "licitacion", "contrataciones", "contratacion directa",
         "aquisicoes", "licitacao", "contratacoes",
     ],
@@ -104,21 +101,16 @@ SECTION_KEYWORDS = {
     ],
     "disbursement": [
         "disbursements", "disbursement schedule", "projected disbursements",
-        "disbursement period", "periodo de desembolso", "plazo de desembolso",
+        "disbursement period",
         "desembolso",
     ],
     "safeguards": [
         "environmental and social considerations", "safeguard",
-        "impact category", "environmental category", "classified as category",
-        "category a", "category b", "category c",
-        "clasificacion ambiental", "clasificado como categoria", "categoria a", "categoria b",
-        "categoria c", "classificado como categoria",
         "salvaguardia", "salvaguarda", "ambiental y social", "socioambiental",
         "ambiental e social",
     ],
     "works": [
-        "civil works", "construction works", "investment in infrastructure",
-        "infrastructure investment", "inversion en infraestructura", "investimento em infraestrutura",
+        "civil works", "construction works",
         "obras civiles", "obras de infraestructura", "construccion de",
         "obras civis", "construcao de",
     ],
@@ -227,47 +219,15 @@ def extract_paragraphs_any(doc_path: str):
                       f"are parsed for text; this file's content will not be included")
 
 
-# Table-of-contents and index lines ("Financiación de importaciones.......6")
-# carry keywords but no content. They are never tagged, so never retrieved.
-_TOC_RE = re.compile(r"(\.{5,}|…{2,}|_{5,})\s*\d")
-
-# A paragraph mentioning imports is only relevant to the imported-inputs
-# fields if it also refers to goods, equipment, materials, or their purchase.
-# Without this, retrieval surfaces imported COVID-19 cases, national trade
-# statistics, and economic-analysis assumptions.
-_GOODS_TERMS = [_norm(t) for t in [
-    "equipment", "equipo", "equipamento", "materials", "materiales", "materiais",
-    "goods", "bienes", "bens", "machinery", "maquinaria", "vehicle", "vehiculo",
-    "aircraft", "aeronave", "inputs", "insumos", "supplies", "suministro",
-    "procurement", "adquisicion", "aquisicao", "purchase", "compra",
-    "customs", "aduana", "aduaneir", "import duties", "gastos de importacion",
-]]
-_IMPORT_EXCLUDE = [_norm(t) for t in [
-    "shadow price", "precio sombra", "precios sombra", "preco sombra",
-    "imported case", "casos importados", "casos importado",
-]]
-
-
-def _is_toc(text: str) -> bool:
-    return bool(_TOC_RE.search(text))
-
-
 def tag_sections(paragraphs):
     """Cheap keyword match to bucket paragraphs into candidate sections.
     A paragraph can match more than one bucket; unmatched paragraphs are
     still kept (e.g. background/rationale) but deprioritized."""
     tagged = []
     for p in paragraphs:
-        if _is_toc(p["text"]):
-            tagged.append({**p, "tags": []})
-            continue
         low = _norm(p["text"])
-        counts = {tag: sum(1 for k in kws if k in low) for tag, kws in _NORM_KEYWORDS.items()}
-        counts = {t: c for t, c in counts.items() if c}
-        if "imports" in counts and (not any(g in low for g in _GOODS_TERMS)
-                                    or any(x in low for x in _IMPORT_EXCLUDE)):
-            del counts["imports"]
-        tagged.append({**p, "tags": list(counts), "tag_hits": counts})
+        hits = [tag for tag, kws in _NORM_KEYWORDS.items() if any(k in low for k in kws)]
+        tagged.append({**p, "tags": hits})
     return tagged
 
 
@@ -306,88 +266,21 @@ def build_retrieval_bundle(tagged_paragraphs, max_chars=12000, source_name=None)
     return "\n\n".join(c for _, c in chosen), len(relevant)
 
 
-_NUMBERED_RE = re.compile(r"^\d{1,2}\.\d{1,2}$")
-
-# Annexes dedicated to one topic are the best source for that topic's fields:
-# the safeguard screening form states the environmental category, the
-# procurement plan states the methods, and so on. A paragraph from such a
-# document is ranked first within the matching tag.
-_DOC_TYPE_HINTS = {
-    "safeguards": ["safeguard", "spf", "esmr", "esms", "igas", "ambiental", "environmental"],
-    "procurement": ["procurement", "adquisicion", "aquisic", "fiduciar"],
-    "disbursement": ["disbursement", "desembolso"],
-    "financing": ["financial", "financier", "costo", "cost"],
-    "works": ["economic analysis", "analisis economico", "cost benefit", "costo beneficio",
-              "evaluacion economica", "analise economica"],
-}
-
-
-def _doc_hints(filename: str):
-    low = _norm(filename)
-    return {t for t, kws in _DOC_TYPE_HINTS.items() if any(k in low for k in kws)}
-
-# Sparse fields are served first in each selection round, so that their few
-# paragraphs are never crowded out by the dense financing and risk sections.
-_TAG_ORDER = ["price_adjustment", "imports", "works", "disbursement", "safeguards",
-              "procurement", "execution", "financing", "risks"]
-
-
-def select_across_documents(candidates, max_chars):
-    """Choose paragraphs from ALL of a project's documents under one budget.
-
-    candidates: list of dicts with keys doc_idx, pos, tags, chunk.
-
-    Selection is tag-balanced: each round takes the next best paragraph for
-    every tag in turn, so every schema-relevant section gets space before any
-    section gets a second paragraph. Within a tag, paragraphs from a document
-    dedicated to that topic come first (see _DOC_TYPE_HINTS), then those matching more of
-    that tag's keywords come first, then numbered paragraphs (the body of the
-    loan proposal) over unnumbered annex text, then earlier documents.
-
-    This replaces an earlier scheme that capped each document separately and
-    then truncated the concatenation by position, which dropped whole
-    sections from later documents whenever the total exceeded the budget."""
-    queues = {}
-    for i, c in enumerate(candidates):
-        for t in c["tags"]:
-            queues.setdefault(t, []).append(i)
-    order = [t for t in _TAG_ORDER if t in queues] + sorted(t for t in queues if t not in _TAG_ORDER)
-    for t in order:
-        queues[t].sort(key=lambda i, t=t: (t not in candidates[i].get("doc_hints", ()),
-                                           -candidates[i].get("hits", {}).get(t, 1),
-                                           not candidates[i]["numbered"],
-                                           candidates[i]["doc_idx"], candidates[i]["pos"]))
-    chosen, used, active = set(), 0, list(order)
-    while active:
-        still = []
-        for t in active:
-            q = queues[t]
-            while q and (q[0] in chosen or used + len(candidates[q[0]]["chunk"]) + 2 > max_chars):
-                q.pop(0)
-            if q:
-                i = q.pop(0)
-                chosen.add(i)
-                used += len(candidates[i]["chunk"]) + 2
-                if q:
-                    still.append(t)
-        active = still
-    return sorted(chosen, key=lambda i: (candidates[i]["doc_idx"], candidates[i]["pos"]))
-
-
-def build_project_bundle(doc_paths, max_chars_per_doc=None, max_chars_total=24000):
+def build_project_bundle(doc_paths, max_chars_per_doc=8000, max_chars_total=24000):
     """Run Stage 1 across every document belonging to one project (loan
-    proposal + annexes -- PDF and DOCX alike) and select the most relevant
-    paragraphs across all of them under a single character budget (see
-    select_across_documents). Files of an unsupported type are skipped with a
-    note at the top of the bundle rather than silently dropped. Returns
+    proposal + annexes -- PDF and DOCX alike) and concatenate their retrieval
+    bundles, budget-capped per document so one long annex can't crowd out
+    the others. Files of an unsupported type (e.g. .xlsx procurement plans,
+    .ppt slides also filed under the same 'Loan Proposal' category) are
+    skipped with a note in the bundle rather than silently dropped, so a
+    reviewer scanning the bundle sees exactly what wasn't read. Returns
     (combined_text, total_paras, total_relevant, failed_documents) -- the
     last one is a list of {file, error} for anything that raised while
-    parsing, so a caller can tell "genuinely no relevant paragraphs" apart
-    from "this document was never actually read."
-
-    max_chars_per_doc is accepted for backward compatibility and ignored."""
-    notes, candidates, total_paras, total_relevant, skipped, failed = [], [], 0, 0, [], []
-    for doc_idx, doc_path in enumerate(doc_paths):
+    parsing (as opposed to being an intentionally-unsupported type), so a
+    caller can tell "genuinely no relevant paragraphs" apart from "this
+    document was never actually read."""
+    parts, total_paras, total_relevant, skipped, failed = [], 0, 0, [], []
+    for doc_path in doc_paths:
         name = Path(doc_path).name
         try:
             size_mb = Path(doc_path).stat().st_size / (1024 * 1024)
@@ -395,8 +288,9 @@ def build_project_bundle(doc_paths, max_chars_per_doc=None, max_chars_total=2400
             size_mb = 0
         if size_mb > MAX_FILE_SIZE_MB:
             skipped.append(name)
-            notes.append(f"[{name}] -- skipped, {size_mb:.0f} MB exceeds the "
-                         f"{MAX_FILE_SIZE_MB} MB parsing limit")
+            parts.append(f"[{name}] -- skipped, {size_mb:.0f} MB exceeds the "
+                          f"{MAX_FILE_SIZE_MB} MB parsing limit (see MAX_FILE_SIZE_MB in "
+                          f"parse_loan_proposal.py)")
             print(f"[note] {name}: {size_mb:.0f} MB exceeds MAX_FILE_SIZE_MB "
                   f"({MAX_FILE_SIZE_MB}) -- skipping to avoid the OOM risk large scanned "
                   f"PDFs pose", file=sys.stderr)
@@ -405,35 +299,27 @@ def build_project_bundle(doc_paths, max_chars_per_doc=None, max_chars_total=2400
             paras = extract_paragraphs_any(doc_path)
         except ValueError as e:
             skipped.append(name)
-            notes.append(f"[{name}] -- skipped, not parsed for text: {e}")
+            parts.append(f"[{name}] -- skipped, not parsed for text: {e}")
             continue
         except Exception as e:
             failed.append({"file": name, "error": str(e)})
-            notes.append(f"[{name}] -- could not parse: {e}")
+            parts.append(f"[{name}] -- could not parse: {e}")
             continue
+        tagged = tag_sections(paras)
+        chunk, n_rel = build_retrieval_bundle(tagged, max_chars=max_chars_per_doc, source_name=name)
         total_paras += len(paras)
-        for pos, p in enumerate(tag_sections(paras)):
-            if not p["tags"]:
-                continue
-            total_relevant += 1
-            candidates.append({
-                "doc_idx": doc_idx, "pos": pos, "tags": p["tags"],
-                "hits": p.get("tag_hits", {}),
-                "doc_hints": _doc_hints(name),
-                "numbered": bool(_NUMBERED_RE.match(str(p["para_id"]))),
-                "chunk": f"[{name} ¶{p['para_id']}, p.{p['page']}] {p['text']}",
-            })
+        total_relevant += n_rel
+        if chunk:
+            parts.append(chunk)
     if skipped:
         print(f"[note] {len(skipped)} file(s) not parsed (unsupported type): {', '.join(skipped)}",
               file=sys.stderr)
     if failed:
         print(f"[warn] {len(failed)} file(s) FAILED to parse (see stats.failed_documents): "
               f"{', '.join(f['file'] for f in failed)}", file=sys.stderr)
-    header = "\n".join(notes)
-    budget = max_chars_total - len(header) - 2
-    picked = select_across_documents(candidates, budget)
-    body = "\n\n".join(candidates[i]["chunk"] for i in picked)
-    combined = f"{header}\n\n{body}" if header and body else (header or body)
+    combined = "\n\n".join(parts)
+    if len(combined) > max_chars_total:
+        combined = combined[:max_chars_total]
     return combined, total_paras, total_relevant, failed
 
 

@@ -16,7 +16,9 @@ FIELD_DEFS = [
      "about the project's own inputs counts. Do NOT count: exclusion lists (e.g. the "
      "project will not finance the import of pesticides), procurement-method or "
      "bidding-threshold rules such as international competitive bidding, delays, or "
-     "outsourced services. Use null if the document is silent on this."),
+     "outsourced services, assumptions in an economic analysis (e.g. shadow prices of "
+     "imported fuel), trade statistics, or imported disease cases. Use null if the "
+     "document is silent on this."),
     ("imported_share_est", "string or null",
      "Estimated share of procurement that is imported, if stated (else null)."),
     ("civil_works_type", "string or null",
@@ -81,6 +83,7 @@ Rules:
   and quote may be empty, but you must still call the tool for that field.
 - citation_para must be one of the bracketed ids from the excerpt, not invented.
 - Do not guess or infer beyond what the text supports.
+- Never use a table-of-contents entry, heading, index line, or annex title as evidence.
 
 FIELDS:
 {field_list}
