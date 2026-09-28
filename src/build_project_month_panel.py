@@ -9,9 +9,9 @@ directly; this is the missing step between them and an actual regression.
 
 WHAT THIS DOES, per project:
 
-  1. Spell start = eligibility_date if populated, else approval_date (falls
+  1. Spell start = eligibility_date_stated if populated, else approval_date (falls
      back silently, per docs/Methodology_Hazard_LP_ShiftShare.tex Section 1
-     -- eligibility_date is a schema.py field added 2026-09-21 and isn't
+     -- eligibility_date_stated is a schema.py field added 2026-09-21 and isn't
      backfilled in the panel yet as of this writing, so every project is
      currently on the fallback; re-run this script once it is).
 
@@ -177,7 +177,7 @@ def build_project_spell(row: pd.Series, tx_by_op: dict, data_cutoff_ym: tuple, t
     from the main loop so a single project's edge cases can be unit-tested
     without needing the full panel loaded."""
     op = row["operation_number"]
-    eligibility = parse_date_cell(row.get("eligibility_date"))
+    eligibility = parse_date_cell(row.get("eligibility_date_stated"))
     approval = parse_date_cell(row.get("approval_date"))
     spell_start = eligibility or approval
     if spell_start is None:

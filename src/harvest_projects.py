@@ -16,28 +16,22 @@ Verified directly (by fetching real pages, not assumed):
     to apply the paper's sample filter without an internal/authenticated data
     source.
 
-NOT verified live (no browser access in the environment this was built in):
-  - The exact query-string parameters the public search page
-    (https://www.iadb.org/en/project-search) uses for country / instrument /
-    year / status filtering, or whether its pager uses a simple ?page=N. The
-    --scrape-search mode below assumes the common Drupal-Views convention
-    (0-indexed ?page=N, one HTML <table> of results per page) and is written
-    defensively (stops on an empty or duplicate page rather than looping), but
-    it should be smoke-tested with --limit 5 before a full run.
-  - RECOMMENDED ALTERNATIVE: the search page has a "Download Project
-    Information (.xlsx)" button. Clicking that yourself and pointing
-    --project-list at the file sidesteps the scraping guesswork entirely and
-    is the more robust path for the full ~1,100-project harvest -- both modes
-    converge on the same per-project download logic below.
+The project list comes from the search page's "Download Project Information
+(.xlsx)" button, passed with --project-list, or from an explicit list of
+operation numbers passed with --only-operations. Both converge on the same
+per-project download logic below.
+
+A third mode once paginated the public search table directly. It was removed on
+28 September 2026: it raised against the live site, and it had produced none of
+the corpus.
 
 Usage:
-    # Mode A (recommended): filter an official bulk export you downloaded
+    # Mode A: filter an official bulk export you downloaded
     python3 harvest_projects.py --project-list "Project Information.xlsx" \
         --corpus-root ../corpus --start-year 1998 --end-year 2026
 
-    # Mode B (fallback): scrape the public search results directly
-    python3 harvest_projects.py --scrape-search --corpus-root ../corpus \
-        --start-year 1998 --end-year 2026 --limit 5   # smoke test first
+    # Mode B: harvest an explicit list of operation numbers
+    python3 harvest_projects.py --only-operations ops.txt --corpus-root ../corpus
 
 --end-year defaults to the current year (see DEFAULT_END_YEAR below), not a
 fixed cutoff -- 2026-08-14: switched away from a hardcoded --end-year 2019
@@ -174,50 +168,6 @@ def load_project_list(path: str, start_year: int, end_year: int) -> list:
     return sorted(candidates)
 
 
-# --------------------------------------------------------------- Mode B ---
-def scrape_search_results(session: requests.Session, start_year: int, end_year: int,
-                           delay: float, max_pages: int = 500) -> list:
-    """Fallback: paginate the public search-results table directly. Assumes
-    the common Drupal-Views 0-indexed ?page=N convention; stops defensively
-    on an empty or repeated page rather than trusting that assumption blindly.
-    Country/instrument/status filtering happens per-project on the detail
-    page (get_project_detail), since this listing table doesn't expose
-    Lending Instrument."""
-    import pandas as pd
-    candidates, seen_first_rows = [], set()
-
-    for page in range(max_pages):
-        resp = polite_get(SEARCH_URL, session, delay, params={"page": page})
-        try:
-            tables = pd.read_html(resp.text)
-        except ValueError:
-            break  # no tables on this page -- past the end of results
-        if not tables:
-            break
-        table = tables[0]
-        if table.empty:
-            break
-
-        first_row_fingerprint = tuple(table.iloc[0].astype(str))
-        if first_row_fingerprint in seen_first_rows:
-            print(f"[warn] page={page} repeats a prior page's first row -- "
-                  f"pagination parameter may not be advancing as assumed; stopping.", file=sys.stderr)
-            break
-        seen_first_rows.add(first_row_fingerprint)
-
-        col = next((c for c in table.columns if "project number" in str(c).lower()), table.columns[0])
-        nums = table[col].astype(str).str.strip()
-        matched = nums[nums.str.match(OP_NUMBER_RE)].tolist()
-        candidates.extend(matched)
-
-        if "Approval Date" in table.columns:
-            years = pd.to_datetime(table["Approval Date"], errors="coerce").dt.year
-            if years.notna().any() and years.max() < start_year:
-                break  # assuming reverse-chronological order; harmless if wrong, just less efficient
-
-    return sorted(set(candidates))
-
-
 # ------------------------------------------------------- Per-project core ---
 def get_project_detail(op_number: str, session: requests.Session, delay: float) -> dict:
     """Fetch one project page and return its metadata plus every document
@@ -346,8 +296,6 @@ def main():
     src.add_argument("--only-operations", help="plain text file, one operation number per line. "
                                                "Harvests exactly these, bypassing the year and "
                                                "lending-instrument filters (the list is trusted).")
-    src.add_argument("--scrape-search", action="store_true", help="paginate the live search results instead "
-                                                                     "(smoke-test with --limit first)")
     ap.add_argument("--corpus-root", default="../corpus")
     ap.add_argument("--start-year", type=int, default=1998)
     ap.add_argument("--end-year", type=int, default=DEFAULT_END_YEAR)
@@ -365,10 +313,8 @@ def main():
     if args.only_operations:
         with open(args.only_operations, encoding="utf-8") as fh:
             candidates = sorted({ln.strip() for ln in fh if ln.strip() and not ln.startswith("#")})
-    elif args.project_list:
-        candidates = load_project_list(args.project_list, args.start_year, args.end_year)
     else:
-        candidates = scrape_search_results(session, args.start_year, args.end_year, args.delay)
+        candidates = load_project_list(args.project_list, args.start_year, args.end_year)
 
     if args.limit:
         candidates = candidates[: args.limit]

@@ -109,7 +109,7 @@ COLUMN_WIDTHS = {
     "operation_number": 14, "country": 16, "country_iso3": 14, "is_regional": 12,
     "lending_instrument": 20,
     "project_status": 14, "bulk_status": 14, "terminal_state": 20, "approval_date": 14,
-    "eligibility_date": 16, "first_disbursement_date": 20, "totally_disbursed_date": 20,
+    "eligibility_date_stated": 16, "first_disbursement_date": 20, "totally_disbursed_date": 20,
     "current_disbursement_expiration_date": 24, "iati_instrument_type": 18,
     "last_updated": 16,
     "project_name": 44, "sector": 34, "modality": 16, "total_musd": 14,

@@ -66,7 +66,7 @@ FIELD_DEFS = [
      "'adquisiciones anticipadas', 'contratação antecipada'. Distinguish from retroactive "
      "financing, which concerns reimbursement of expenditure rather than the timing of "
      "procurement. Use null if not addressed."),
-    ("eligibility_date", "string (YYYY-MM-DD) or null",
+    ("eligibility_date_stated", "string (YYYY-MM-DD) or null",
      "The date on which the loan becomes eligible for the borrower to request the first "
      "disbursement -- distinct from the Board approval date (the date the loan is authorized) "
      "and the signature/contract date (the date the legal agreement is signed). Look for "

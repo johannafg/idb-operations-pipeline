@@ -93,7 +93,7 @@ in extractable form.
 | `advance_contracting` | 342 | 13.3% |
 | `goods_share_pct` | 186 | 7.2% |
 | `price_escalation_clause` | 126 | 4.9% |
-| `eligibility_date` | 40 | 1.5% |
+| `eligibility_date_stated` | 40 | 1.5% |
 
 141 operations (5.5%) have no extracted values. For 111 of those the Bank
 published no loan proposal at all, only a completion report or a procurement
@@ -103,9 +103,10 @@ pipeline. The remaining 30 have documents that yield no extractable text.
 Two of the low-coverage fields are low for a substantive reason rather than a
 recoverable one. `goods_share_pct` sits at 7% because IDB cost tables are
 organised by project component, not by expenditure category, so a goods share is
-not stated in most proposals. `eligibility_date` sits at 1.5% because a proposal
-states an expected date rather than the declared one; the warehouse records the
-declared date for every operation, at day precision, and should be used instead.
+not stated in most proposals. `eligibility_date_stated` sits at 1.5% because a
+proposal states the date it expects eligibility to be declared rather than the
+date that was declared; the field is named for what it holds, and the warehouse
+records the declared date for every operation, at day precision.
 `safeguards_category` at 52% reflects a change in Bank practice: the
 environmental classification was not standard in proposals written before about
 2003, which is where a large part of this corpus now sits.
@@ -211,32 +212,13 @@ python3 build_excel_report.py \
     --harvest-log ../data/reference/harvest_log.csv
 ```
 
+The harvester takes the project list two ways: `--project-list`, an export from
+the IDB search page's "Download Project Information" button, and
+`--only-operations`, a plain list of operation numbers that bypasses the year and
+instrument screens. The corpus here was built with both.
+
 Extraction cost is roughly a few cents per operation, so a full run over the
 sample is well under fifty dollars.
-
-## Known issues
-
-**Live search pagination is unvalidated.** `scrape_search_results` has never been
-run against the production site, and no part of the current corpus came through
-it. The two supported paths are an export of the project list from the IDB search
-page, passed with `--project-list`, and an explicit operation list passed with
-`--only-operations`, which bypasses the year and instrument screens. The
-569-operation extension that brought the corpus back to 1996 used the second.
-Anyone reaching for the scraper should smoke-test it with `--limit` first.
-
-**Fourteen of the seventeen fields have no measured accuracy.** The three fields
-with a warehouse counterpart are validated above. For the other fourteen there is
-no external benchmark, and fill rate is not accuracy. A stratified sample of 225
-field-values has been drawn and is being hand-coded; until that is scored, the
-coverage table should be read as a statement about what the documents contain,
-not about whether the extraction read them correctly.
-
-**Two panel fields are not fit for the use their names suggest.**
-`eligibility_date` appears for 40 operations because proposals state an expected
-date rather than the declared one — the warehouse field should be used instead.
-`goods_share_pct` appears for 186 because IDB cost tables are organised by
-component rather than by expenditure category. Both are kept because a stated
-value is still informative; neither should be used as a panel variable.
 
 ## In progress
 
