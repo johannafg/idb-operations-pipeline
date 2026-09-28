@@ -24,13 +24,29 @@ Usage:
     # optionally enrich with project metadata (country, project name,
     # sector, modality, financing amounts, cofinancing agency/amount,
     # borrower, executing agency, env. category, sovereign guarantee,
-    # project status, approval date, and lending instrument for verified
+    # bulk_status, approval date, and lending instrument for verified
     # modality codes) from the bulk "Download Project Information" export:
         --data-xlsx data.xlsx
 
+Two different status taxonomies exist and don't map cleanly onto each other:
+data.xlsx's bulk Status field only distinguishes EXITED/ACTIVE (kept here as
+bulk_status, deliberately NOT named project_status, so it can't silently
+shadow the richer field below when both --data-xlsx and --harvest-log are
+passed together -- an earlier version of this script used the same column
+name for both, which meant harvest_log's project_status was always dropped
+whenever --data-xlsx was also given, since load_panel()'s extra_cols check
+treats a name already in enriched_cols as already covered). harvest_log.csv's
+project_status (scraped per-project) uses Closed/Cancelled/Implementation --
+Cancelled is a real, meaningful category that bulk_status cannot express.
+terminal_state (see derive_terminal_state, and load_panel() below) combines
+the two, preferring harvest_log's project_status whenever it's populated and
+falling back to bulk_status only for the active/exited distinction; an EXITED
+project with no harvest_log corroboration is left "unknown" for manual
+review rather than guessed. See the Pipeline Fixes Punch List, item 3.
+
 Cofinancing agency/amount ARE derivable from the bulk export, but only
 partially: data.xlsx has one row per funding source per project, and for
-47 of 1217 projects in this corpus a second row names a real external
+179 of the 2,581 projects in this corpus a second row names a real external
 co-financier (e.g. China Co-Financing Fund, Korea Infrastructure
 Development Co-Financing, Clean Technology Fund) with its own approved
 amount. idb_musd/cofinancing_musd/counterpart_musd are computed by summing
@@ -90,8 +106,12 @@ FIELD_TYPES = {name: typ for name, typ, _ in FIELD_DEFS}
 # Reasonable column widths for known fields; anything else (enriched columns
 # like country, or a field added to the schema later) gets a generic width.
 COLUMN_WIDTHS = {
-    "operation_number": 14, "country": 16, "lending_instrument": 20,
-    "project_status": 14, "approval_date": 14,
+    "operation_number": 14, "country": 16, "country_iso3": 14, "is_regional": 12,
+    "lending_instrument": 20,
+    "project_status": 14, "bulk_status": 14, "terminal_state": 20, "approval_date": 14,
+    "eligibility_date": 16, "first_disbursement_date": 20, "totally_disbursed_date": 20,
+    "current_disbursement_expiration_date": 24, "iati_instrument_type": 18,
+    "last_updated": 16,
     "project_name": 44, "sector": 34, "modality": 16, "total_musd": 14,
     "idb_musd": 14, "cofinancing_musd": 16, "cofinancing_agency": 34,
     "counterpart_musd": 16, "borrower": 34, "executing_agency": 34,
@@ -157,8 +177,9 @@ MODALITY_TO_VERIFIED_INSTRUMENT = {
     "IRF": "Investment Loan", "LBR": "Investment Loan", "INO": "Investment Loan",
 }
 
-# data.xlsx has ONE ROW PER FUNDING SOURCE, not one row per project -- 47 of
-# 1217 projects in this corpus have 2+ rows (confirmed 2026-08-13: e.g.
+# data.xlsx has ONE ROW PER FUNDING SOURCE, not one row per project -- 179 of
+# the 2,581 projects in this corpus have 2+ rows (recounted 2026-09-27; the
+# earlier figure of 47 of 1,217 predates the old-numbering harvest: e.g.
 # BO-L1191 has an ORC-Ordinary Capital row for $50M AND a KIF-Korea
 # Infrastructure Development Co-Financing row for $25M, both against the
 # same $75M Total Cost). Naively taking the first row per operation_number
@@ -168,6 +189,26 @@ MODALITY_TO_VERIFIED_INSTRUMENT = {
 # cofinancing -- everything else is a genuine external fund/agency co-
 # financing the operation alongside IDB.
 IDB_OWN_CAPITAL_SOURCE_PREFIXES = {"ORC", "FSO", "BLD"}
+
+# data.xlsx's Project Country is free text, not a code -- and for regional /
+# multi-country operations it's a single cell listing every IDB member
+# country involved, semicolon-joined (confirmed 2026-09-21: rows listing all
+# 26 borrowing members at once). This crosswalk covers every single-country
+# value actually observed in this export (checked exhaustively against the
+# full 28,656-row sheet, not just this corpus's 2,581 projects); "Regional"
+# and "Not Defined" are real values in the export but aren't countries, so
+# they're deliberately left unmapped (country_iso3 stays null) rather than
+# assigned a code. See load_bulk_metadata() below for how is_regional and
+# country_iso3 are derived from this. Pipeline Fixes Punch List, item 5.
+ISO3_BY_COUNTRY = {
+    "Argentina": "ARG", "Bahamas": "BHS", "Barbados": "BRB", "Belize": "BLZ",
+    "Bolivia": "BOL", "Brazil": "BRA", "Chile": "CHL", "Colombia": "COL",
+    "Costa Rica": "CRI", "Dominican Republic": "DOM", "Ecuador": "ECU",
+    "El Salvador": "SLV", "Guatemala": "GTM", "Guyana": "GUY", "Haiti": "HTI",
+    "Honduras": "HND", "Jamaica": "JAM", "Mexico": "MEX", "Nicaragua": "NIC",
+    "Panama": "PAN", "Paraguay": "PRY", "Peru": "PER", "Suriname": "SUR",
+    "Trinidad and Tobago": "TTO", "Uruguay": "URY", "Venezuela": "VEN",
+}
 
 
 def load_bulk_metadata(data_xlsx: str) -> pd.DataFrame:
@@ -209,6 +250,14 @@ def load_bulk_metadata(data_xlsx: str) -> pd.DataFrame:
     out = pd.DataFrame(index=first.index)
     out["operation_number"] = out.index
     out["country"] = _get("Project Country", first)
+    # A semicolon-joined country string means a regional/multi-country
+    # operation -- flag it explicitly rather than leave it silently mixed
+    # into a single-country field. country_iso3 is left null for those (and
+    # for "Regional"/"Not Defined") rather than guessed at which member is
+    # "the" country.
+    country_str = out["country"].fillna("").astype(str)
+    out["is_regional"] = country_str.str.contains(";")
+    out["country_iso3"] = out["country"].where(~out["is_regional"]).map(ISO3_BY_COUNTRY)
     out["project_name"] = _get("Project Name", first)
     sector = _get("Sector", first).fillna("")
     subsector = _get("Sub-Sector", first).fillna("")
@@ -232,16 +281,92 @@ def load_bulk_metadata(data_xlsx: str) -> pd.DataFrame:
     out["sovereign_guarantee"] = lending_type.astype(str).str.strip().eq("Sovereign Guaranteed")
 
     status = _get("Status", first).fillna("")
-    out["project_status"] = status.astype(str).str.strip().str.title().replace("", None)
+    out["bulk_status"] = status.astype(str).str.strip().str.title().replace("", None)
     approval_dt = pd.to_datetime(_get("Approval Date", first), errors="coerce")
     out["approval_date"] = approval_dt.dt.strftime("%Y-%m-%d")
+    # No true cancellation date exists anywhere in the pipeline (Pipeline
+    # Fixes Punch List, item 13) -- Last Updated is a proxy: whenever the
+    # bulk record last changed, not necessarily the cancellation event
+    # itself. Used only for terminal_state=="cancelled" rows in
+    # build_project_month_panel.py, and only as a better-than-nothing
+    # right-censoring point, not a validated cancellation date.
+    last_updated_dt = pd.to_datetime(_get("Last Updated", first), errors="coerce")
+    out["last_updated"] = last_updated_dt.dt.strftime("%Y-%m-%d")
     out["lending_instrument"] = code.map(lambda c: MODALITY_TO_VERIFIED_INSTRUMENT.get(str(c).strip()))
 
     out = out.reset_index(drop=True)
     return out.dropna(subset=["operation_number"]).drop_duplicates("operation_number")
 
 
-def load_panel(csv_path: str, harvest_log: str = None, data_xlsx: str = None) -> pd.DataFrame:
+def derive_terminal_state(hl_status, bulk_status):
+    """Resolves harvest_log.csv's project_status (Closed/Cancelled/
+    Implementation -- the only source with a real Cancelled category) against
+    data.xlsx's bulk_status (EXITED/ACTIVE -- coarser, can't distinguish a
+    normal completion from a cancellation) into one terminal_state used by
+    the hazard model's competing-risks treatment of cancellation. harvest_log
+    wins whenever it's populated; bulk_status is a fallback for the active/
+    exited distinction only. An EXITED project with no harvest_log
+    corroboration is left "unknown" rather than guessed -- see the Pipeline
+    Fixes Punch List, item 3, for why this can't be resolved more precisely
+    from what the pipeline currently captures."""
+    # pandas hands missing cells back as float('nan'), which is TRUTHY, so
+    # `x or ""` does not catch it and .strip() then blows up. Seen 2026-09-27 on
+    # the full 2,581-operation panel, where some operations have no status in
+    # harvest_log. Coerce anything that is not a string to "".
+    def _s(x):
+        return x.strip() if isinstance(x, str) else ""
+    hl = _s(hl_status)
+    bulk = _s(bulk_status)
+    if hl == "Cancelled":
+        return "cancelled"
+    if hl == "Closed":
+        return "disbursed_complete"
+    if hl == "Implementation":
+        return "still_active"
+    if bulk == "Active":
+        return "still_active"
+    if bulk == "Exited":
+        return "unknown"
+    return "unknown"
+
+
+def load_iati_dates(path: str) -> pd.DataFrame:
+    """first_disbursement_date and totally_disbursed_date aren't in data.xlsx
+    at all (Tenor/Guarantee Length is a different concept, and Disbursed
+    Amount is a single snapshot, not a date) -- they only exist in the IATI
+    general-project-details export, which covers 1,103 of this corpus's 2,581
+    operations (confirmed 2026-09-21). Also pulls current_disbursement_
+    expiration_date (useful as a right-censoring reference point) and IATI's
+    own instrument type as iati_instrument_type, kept separate from (not
+    merged into) lending_instrument -- a genuine cross-check between the two
+    independently-sourced instrument labels is more useful than silently
+    overwriting one with the other. Pipeline Fixes Punch List, item 4."""
+    raw = pd.read_csv(path, dtype=str, keep_default_na=False)
+    raw.columns = [c.strip() for c in raw.columns]
+    if "Operation number" not in raw.columns:
+        return pd.DataFrame(columns=["operation_number"])
+    raw = raw[raw["Operation number"].str.strip() != ""].copy()
+    raw["operation_number"] = raw["Operation number"].str.strip()
+
+    out = pd.DataFrame()
+    out["operation_number"] = raw["operation_number"]
+    for src_col, out_col in (
+        ("First disbursement date", "first_disbursement_date"),
+        ("Totally disbursed date", "totally_disbursed_date"),
+        ("Current disbursement expiration date", "current_disbursement_expiration_date"),
+    ):
+        if src_col in raw.columns:
+            dt = pd.to_datetime(raw[src_col], errors="coerce")
+            out[out_col] = dt.dt.strftime("%Y-%m-%d")
+        else:
+            out[out_col] = None
+    out["iati_instrument_type"] = raw["Instrument type"] if "Instrument type" in raw.columns else None
+
+    return out.drop_duplicates("operation_number")
+
+
+def load_panel(csv_path: str, harvest_log: str = None, data_xlsx: str = None,
+                iati_project_details: str = None) -> pd.DataFrame:
     df = pd.read_csv(csv_path, dtype=str, keep_default_na=False)
     df.columns = [c.strip() for c in df.columns]
     for name, _, _ in FIELD_DEFS:
@@ -251,9 +376,16 @@ def load_panel(csv_path: str, harvest_log: str = None, data_xlsx: str = None) ->
     enriched_cols = []
 
     if data_xlsx and Path(data_xlsx).exists():
+        n_before = len(df)
         meta = load_bulk_metadata(data_xlsx)
         meta_cols = [c for c in meta.columns if c != "operation_number"]
         df = df.merge(meta, on="operation_number", how="left")
+        assert len(df) == n_before, (
+            f"data.xlsx merge fanned out: {n_before} rows in -> {len(df)} rows out. "
+            f"load_bulk_metadata() is supposed to already be deduplicated on "
+            f"operation_number -- check for whitespace-inconsistent operation "
+            f"numbers surviving drop_duplicates as distinct strings."
+        )
         enriched_cols += meta_cols
 
     if harvest_log and Path(harvest_log).exists():
@@ -261,12 +393,39 @@ def load_panel(csv_path: str, harvest_log: str = None, data_xlsx: str = None) ->
         log.columns = [c.strip() for c in log.columns]
         # country/approval_date may already be filled in from --data-xlsx --
         # don't overwrite those or duplicate the column, just add what's new.
+        # project_status is deliberately NOT excluded here even though
+        # data.xlsx also has a status-like column: that column is named
+        # bulk_status (see load_bulk_metadata), specifically so it can't
+        # collide with harvest_log's project_status the way it used to.
         extra_cols = [c for c in ("country", "lending_instrument", "project_status", "approval_date")
                       if c in log.columns and c not in enriched_cols]
         if extra_cols:
+            n_before = len(df)
             df = df.merge(log[["operation_number"] + extra_cols].drop_duplicates("operation_number"),
                            on="operation_number", how="left")
+            assert len(df) == n_before, (
+                f"harvest_log merge fanned out: {n_before} rows in -> {len(df)} rows out. "
+                f"Check for whitespace-inconsistent or duplicate operation numbers in harvest_log.csv."
+            )
             enriched_cols += extra_cols
+
+    if iati_project_details and Path(iati_project_details).exists():
+        iati = load_iati_dates(iati_project_details)
+        iati_cols = [c for c in iati.columns if c != "operation_number"]
+        n_before = len(df)
+        df = df.merge(iati, on="operation_number", how="left")
+        assert len(df) == n_before, (
+            f"IATI general-project-details merge fanned out: {n_before} rows in -> {len(df)} rows out. "
+            f"load_iati_dates() is supposed to already be deduplicated on operation_number."
+        )
+        enriched_cols += iati_cols
+
+    if "project_status" in df.columns or "bulk_status" in df.columns:
+        hl_col = df["project_status"] if "project_status" in df.columns else pd.Series([None] * len(df), index=df.index)
+        bulk_col = df["bulk_status"] if "bulk_status" in df.columns else pd.Series([None] * len(df), index=df.index)
+        df["terminal_state"] = [derive_terminal_state(h, b) for h, b in zip(hl_col, bulk_col)]
+        if "terminal_state" not in enriched_cols:
+            enriched_cols.append("terminal_state")
 
     if enriched_cols:
         # put the enriched columns right after operation_number
@@ -294,6 +453,9 @@ def style_header(ws, columns):
     ws.freeze_panes = "A2"
 
 
+SCHEMA_FIELD_NAMES = {name for name, _, _ in FIELD_DEFS}
+
+
 def build_panel_sheet(wb: Workbook, df: pd.DataFrame):
     ws = wb.create_sheet("Microdata Panel")
     ws.sheet_view.showGridLines = False
@@ -304,7 +466,15 @@ def build_panel_sheet(wb: Workbook, df: pd.DataFrame):
         for c_i, col in enumerate(columns, start=1):
             val = getattr(row, col) if hasattr(row, col) else row[c_i - 1]
             if val is None or (isinstance(val, float) and pd.isna(val)):
-                cell = ws.cell(row=r_i, column=c_i, value="not stated")
+                # "not stated" is only a meaningful label for the actual
+                # LLM-extracted schema fields -- it means the retrieved LP
+                # text never addressed that field. For an enriched/merged
+                # column (first_disbursement_date, country_iso3, etc.), blank
+                # means "this project has no matching row in that external
+                # source," a completely different kind of missingness that
+                # was being mislabeled identically before this fix.
+                label = "not stated" if col in SCHEMA_FIELD_NAMES else "no source match"
+                cell = ws.cell(row=r_i, column=c_i, value=label)
                 cell.font = Font(name=FONT, size=10, italic=True, color="808080")
                 cell.fill = NULL_FILL
             elif isinstance(val, (bool, np.bool_)):
@@ -325,9 +495,12 @@ def build_panel_sheet(wb: Workbook, df: pd.DataFrame):
 
     note_row = len(df) + 3
     c = ws.cell(row=note_row, column=1,
-                value="\"not stated\" = the field was not addressed in the retrieved text (not the same as a "
+                value="\"not stated\" = the field was not addressed in the retrieved LP text (not the same as a "
                       "confirmed absence -- see the Citations & Audit sheet for the found / stated_absent / "
-                      "not_stated flag behind every cell). _pct columns are percentage points (64.3 = 64.3%), "
+                      "not_stated flag behind every cell); applies only to the LLM-extracted schema fields. "
+                      "\"no source match\" = this column comes from an external bulk source (data.xlsx or the "
+                      "IATI export), not LP text extraction, and this project has no matching row there -- not "
+                      "a statement about the document. _pct columns are percentage points (64.3 = 64.3%), "
                       "not fractions.")
     c.font = Font(name=FONT, size=9, italic=True, color="595959")
     ws.merge_cells(start_row=note_row, start_column=1, end_row=note_row, end_column=len(columns))
@@ -438,14 +611,15 @@ def build_readme_sheet(wb: Workbook, df: pd.DataFrame, n_audit_rows: int, panel_
                         "Information' export (--data-xlsx), not from LP text extraction -- no citation exists "
                         "for them in the Citations & Audit sheet. cofinancing_musd/cofinancing_agency are only "
                         "populated where the export itself shows a second funding-source row for that project "
-                        "(47 of 1217 projects) -- blank does not necessarily mean there's no cofinancing, only "
+                        "(179 of 2,581 projects) -- blank does not necessarily mean there's no cofinancing, only "
                         "that none is visible in this particular export. lending_instrument is filled only for "
                         "modality codes verified against real scraped data (see build_excel_report.py).")
     r = rm(r, panel_desc, top_pad=0)
     r = rm(r, "\"Citations & Audit\" -- one row per project-field: the paragraph citation and verbatim quote "
               "behind every value in the panel, plus the status flag (found / stated_absent / not_stated), "
               "for spot-checking against the source PDFs.", top_pad=0)
-    r = rm(r, "\"Field Definitions\" -- a glossary of the 12 schema fields, pulled directly from schema.py.",
+    r = rm(r, f"\"Field Definitions\" -- a glossary of the {len(FIELD_DEFS)} schema fields, pulled directly "
+              f"from schema.py.",
            top_pad=1)
     r = rm(r, "How this was produced", bold=True, size=12, color=NAVY, top_pad=0)
     r = rm(r, "harvest_projects.py found and downloaded each project's loan proposal package; "
@@ -465,14 +639,19 @@ def main():
     ap.add_argument("--harvest-log", default=None, help="optional harvest_log.csv to add country/lending "
                                                            "instrument/approval date columns")
     ap.add_argument("--data-xlsx", default=None, help="optional bulk 'Download Project Information' export "
-                                                         "(data.xlsx) to add country/project name/sector/"
-                                                         "modality/financing amounts/cofinancing agency & amount/"
-                                                         "borrower/executing agency/env category/project status/"
-                                                         "approval date/sovereign guarantee columns -- all free, "
-                                                         "no extra API calls")
+                                                         "(data.xlsx) to add country/country_iso3/is_regional/"
+                                                         "project name/sector/modality/financing amounts/"
+                                                         "cofinancing agency & amount/borrower/executing agency/"
+                                                         "env category/bulk_status/approval date/sovereign "
+                                                         "guarantee columns -- all free, no extra API calls")
+    ap.add_argument("--iati-project-details", default=None,
+                     help="optional idb-iati-dataset-general-project-details.csv to add "
+                          "first_disbursement_date/totally_disbursed_date/"
+                          "current_disbursement_expiration_date/iati_instrument_type columns "
+                          "(covers 1,103 of 2,581 projects in this corpus)")
     args = ap.parse_args()
 
-    df = load_panel(args.panel, args.harvest_log, args.data_xlsx)
+    df = load_panel(args.panel, args.harvest_log, args.data_xlsx, args.iati_project_details)
     audit = load_audit(args.audit)
 
     wb = Workbook()

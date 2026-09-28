@@ -32,10 +32,13 @@ import csv
 import gc
 import json
 import os
+import re
+import unicodedata
 import sys
 from pathlib import Path
 
-from parse_loan_proposal import SUPPORTED_EXTENSIONS, build_project_bundle
+from parse_loan_proposal import (SUPPORTED_EXTENSIONS, build_project_bundle,
+                                 sniff_document_type)
 from schema import EXTRACTION_TOOL, FIELD_DEFS, build_prompt
 
 
@@ -48,7 +51,107 @@ def list_documents(folder: Path):
     case-insensitively (the real IDB site serves some annexes as
     'CO-L1234 IGAS final_rev_07.11.DOCX' -- uppercase extension)."""
     return sorted(str(p) for p in folder.iterdir()
-                  if p.is_file() and p.suffix.lower() in SUPPORTED_EXTENSIONS)
+                  if p.is_file() and (p.suffix.lower() in SUPPORTED_EXTENSIONS
+                                      or sniff_document_type(str(p)) is not None))
+
+
+# Every retrieved paragraph enters the excerpt as its own block, opening with
+# "[<file> ¶<para id>, p.<page>]". The model is asked to echo that id back but
+# often shortens it, so the document is resolved from the excerpt rather than
+# from the reply.
+#
+# Resolution is by QUOTE, not by paragraph id. Paragraph ids are not unique
+# across an operation's documents: unnumbered pages are labelled "page-6" and
+# Word paragraphs "docx-p12", so every document in a folder has a "page-6".
+# Matching on the id alone attributes a value to whichever document happened to
+# be indexed first, which is wrong roughly as often as it is right. The verbatim
+# quote the model returns is copied from one specific block, so it identifies
+# that block unambiguously. The id is used only as a fallback, and only when it
+# occurs in exactly one document.
+_MARKER_RE = re.compile(r"^\[(?P<file>.*?)¶(?P<para>[^,\]]+), p\.(?P<page>[^\]]*)\]")
+
+
+def _norm_text(t: str) -> str:
+    t = unicodedata.normalize("NFKD", t or "")
+    t = "".join(c for c in t if not unicodedata.combining(c)).lower()
+    return re.sub(r"[^a-z0-9]+", " ", t).strip()
+
+
+def document_index(bundle: str):
+    """(blocks, id_index) for one operation's excerpt.
+
+    blocks is a list of (document, paragraph id, normalised text).
+    id_index maps a paragraph id to a document only where that id appears in a
+    single document."""
+    blocks, by_id = [], {}
+    for block in bundle.split("\n\n"):
+        m = _MARKER_RE.match(block.strip())
+        if not m:
+            continue
+        doc, para = m.group("file").strip(), m.group("para").strip()
+        blocks.append((doc, para, _norm_text(block[m.end():])))
+        by_id.setdefault(para, set()).add(doc)
+    id_index = {k: next(iter(v)) for k, v in by_id.items() if len(v) == 1}
+    return blocks, id_index
+
+
+# IDB operation numbers look like AR-L1436, BR-T1092, CO-G1001 -- and, for
+# operations approved up to about 2003, AR0058 or BR0216. Both schemes matter
+# here: the old-format operations harvested on 2026-09-25 are from the years
+# when multi-phase programmes were most common, which is exactly when a quote
+# is most likely to be about a different operation.
+from opnum import INTEXT_RE as _OPERATION_RE
+
+
+def contamination_flags(op_number: str, source_document: str, quote: str, index):
+    """Signals that a value may have been taken from text about another operation.
+
+    Two checks, both cheap and both fallible on their own. The first asks
+    whether this operation is named anywhere in the source document's retrieved
+    text or in its file name; an annex about a different programme usually names
+    neither. The second looks for a DIFFERENT operation number in the block the
+    quote came from, which catches evaluation annexes that tabulate other
+    programmes."""
+    blocks, _ = index
+    own = {op_number.upper()}
+    named = op_number.upper() in (source_document or "").upper()
+    others = set()
+    q = _norm_text(quote)
+    for doc, _para, text in blocks:
+        if source_document and doc != source_document:
+            continue
+        raw = text.upper().replace(" ", "")
+        if op_number.upper().replace("-", "") in raw:
+            named = True
+        if q and len(q) >= 25 and q[:120] in text:
+            others |= {c for c in _OPERATION_RE.findall((quote or "").upper()) if c not in own}
+    return named, sorted(others)
+
+
+def _paragraph_id(citation: str) -> str:
+    text = (citation or "").strip().strip("[]")
+    if "¶" in text:
+        text = text.split("¶", 1)[1]
+    return text.split(",")[0].strip()
+
+
+def resolve_source_document(citation: str, quote: str, index) -> str:
+    """The file a value came from, or "" when it cannot be established.
+
+    An empty result is informative: either the quote is not in the excerpt,
+    meaning it was not copied from the source text, or the citation is too
+    generic to place. Either way the value should not be trusted without a
+    look at the document."""
+    blocks, id_index = index
+    q = _norm_text(quote)
+    if q and len(q) >= 25:
+        hits = {doc for doc, _para, text in blocks if q[:120] in text}
+        if len(hits) == 1:
+            return next(iter(hits))
+    return id_index.get(_paragraph_id(citation), "")
+
+
+_CURRENT_FIELD_NAMES = {f[0] for f in FIELD_DEFS}
 
 
 def extract_one_project(op_number: str, doc_paths: list, client=None):
@@ -83,7 +186,7 @@ def extract_one_project(op_number: str, doc_paths: list, client=None):
                        # here is free (cached in sys.modules) and lets this function
                        # reference anthropic's exception types directly.
 
-    prompt = build_prompt(bundle)
+    prompt = build_prompt(bundle, op_number)
     try:
         resp = client.messages.create(
             model="claude-sonnet-4-5",
@@ -113,10 +216,58 @@ def extract_one_project(op_number: str, doc_paths: list, client=None):
         stats["api_call_failed"] = str(e)
         return {f[0]: None for f in FIELD_DEFS}, [], stats
 
-    calls = [b.input for b in resp.content if b.type == "tool_use"]
+    raw_calls = [b.input for b in resp.content if b.type == "tool_use"]
+
+    # A forced tool call USUALLY comes back with every argument, but not always:
+    # the model can emit a call whose input is missing "field", names a field
+    # that is not in the schema, or is not a dict at all. Before 2026-09-25 that
+    # went straight into row[c["field"]] and killed the whole run with a
+    # KeyError -- on AR-L1353, about 150 projects in. One malformed call should
+    # cost that one value, not the remaining fourteen hours, so drop the bad
+    # calls here and record what was dropped.
+    calls, dropped = [], []
+    for c in raw_calls:
+        if not isinstance(c, dict):
+            dropped.append({"reason": "not an object", "repr": repr(c)[:200]})
+        elif "field" not in c:
+            dropped.append({"reason": "no 'field' key", "keys": sorted(c)[:12]})
+        elif c["field"] not in _CURRENT_FIELD_NAMES:
+            dropped.append({"reason": "unknown field", "field": str(c["field"])[:80]})
+        else:
+            calls.append(c)
+    if dropped:
+        stats["malformed_tool_calls"] = dropped
+        print(f"[warn] {op_number}: {len(dropped)} malformed tool call(s) dropped "
+              f"({'; '.join(d['reason'] for d in dropped)}) -- those fields stay null",
+              file=sys.stderr)
+
+    index = document_index(bundle)
+    unresolved = 0
+    suspect = 0
+    for c in calls:
+        c["source_document"] = resolve_source_document(
+            c.get("citation_para"), c.get("quote"), index)
+        if c.get("status") == "found" and not c["source_document"]:
+            unresolved += 1
+        if c.get("status") == "found":
+            named, others = contamination_flags(op_number, c["source_document"],
+                                                c.get("quote"), index)
+            c["source_names_operation"] = named
+            c["other_operations_in_quote"] = others
+            if not named or others:
+                suspect += 1
+    if unresolved:
+        print(f"[warn] {op_number}: {unresolved} found value(s) cite a paragraph that is not "
+              f"in the excerpt -- those citations were not copied from the source text",
+              file=sys.stderr)
+    stats["citations_unresolved"] = unresolved
+    stats["values_from_unnamed_source"] = suspect
+    if suspect:
+        print(f"[warn] {op_number}: {suspect} found value(s) come from text that does not name "
+              f"this operation -- check for annexes describing other programmes", file=sys.stderr)
     row = {f[0]: None for f in FIELD_DEFS}
     for c in calls:
-        row[c["field"]] = c.get("value")
+        row[c["field"]] = c.get("value")   # calls is already filtered above
     return row, calls, stats
 
 
@@ -124,11 +275,11 @@ def _row_from_calls(op_number: str, calls: list):
     row = {f[0]: None for f in FIELD_DEFS}
     row["operation_number"] = op_number
     for c in calls:
-        row[c["field"]] = c.get("value")
+        if isinstance(c, dict) and c.get("field") in _CURRENT_FIELD_NAMES:
+            row[c["field"]] = c.get("value")
     return row
 
 
-_CURRENT_FIELD_NAMES = {f[0] for f in FIELD_DEFS}
 
 
 def _entry_is_complete(entry: dict) -> bool:

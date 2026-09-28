@@ -12,9 +12,11 @@ procurement modality, currency denomination, price-escalation provisions, and
 executing-agency type are stated in the loan proposal text and coded nowhere.
 This pipeline extracts them.
 
-**Current output: 1,217 operations across 25 borrowing countries, 12 extracted
-fields, every non-missing value paired with a paragraph citation and a verbatim
-supporting quote.**
+**Current output: 2,581 operations across 25 borrowing countries, approval years
+1992 through 2026, 17 extracted fields, every non-missing value paired with a
+paragraph citation and a verbatim supporting quote.** 1,843 of those operations
+have both a document-derived record and a disbursement outcome in the Bank's own
+data warehouse, which is the sample an econometric specification can use.
 
 ## Design
 
@@ -22,8 +24,8 @@ The pipeline runs in four stages, separating deterministic text processing from
 model-based extraction so that each can be validated independently.
 
 **Stage 0 — Harvest.** `src/harvest_projects.py` walks the IDB public project
-search, filters to approved and closed Investment Loans and Policy-Based Loans
-for 1998 through 2019, and downloads each operation's loan proposal and annexes
+search, filters to approved and closed Investment Loans and Policy-Based Loans,
+and downloads each operation's loan proposal and annexes
 into `corpus/<OPERATION-NUMBER>/`. Pre-approval proposals are confidential until
 Board approval, so the approved-and-closed filter is a correctness requirement
 rather than a convenience. Requests are rate-limited.
@@ -75,32 +77,105 @@ in extractable form.
 
 | field | operations with a value | share |
 |---|---:|---:|
-| `executing_agency_type` | 955 | 78.5% |
-| `civil_works_type` | 926 | 76.1% |
-| `cofinancing_present` | 865 | 71.1% |
-| `fx_denomination` | 808 | 66.4% |
-| `counterpart_funding_share_pct` | 749 | 61.5% |
-| `procurement_modality` | 442 | 36.3% |
-| `cofinancing_share_pct` | 435 | 35.7% |
-| `safeguards_category` | 261 | 21.4% |
-| `construction_share_pct` | 75 | 6.2% |
-| `imported_inputs_present` | 7 | 0.6% |
-| `price_escalation_clause` | 1 | 0.1% |
-| `imported_share_est` | 0 | 0.0% |
+| `executing_agency_type` | 2,438 | 94.5% |
+| `cofinancing_present` | 2,430 | 94.1% |
+| `disbursement_period_years` | 2,391 | 92.6% |
+| `civil_works_type` | 2,358 | 91.4% |
+| `conditions_prior_first_disbursement` | 2,350 | 91.0% |
+| `fx_denomination` | 2,324 | 90.0% |
+| `counterpart_funding_share_pct` | 2,245 | 87.0% |
+| `procurement_modality` | 1,850 | 71.7% |
+| `cofinancing_share_pct` | 1,759 | 68.2% |
+| `first_year_disbursement_pct` | 1,354 | 52.5% |
+| `safeguards_category` | 1,332 | 51.6% |
+| `retroactive_financing` | 974 | 37.7% |
+| `construction_share_pct` | 745 | 28.9% |
+| `advance_contracting` | 342 | 13.3% |
+| `goods_share_pct` | 186 | 7.2% |
+| `price_escalation_clause` | 126 | 4.9% |
+| `eligibility_date` | 40 | 1.5% |
 
-190 operations (15.6%) have no extracted values at all, concentrated in older
-vintages where the archived document is a scanned image rather than digital
-text.
+141 operations (5.5%) have no extracted values. For 111 of those the Bank
+published no loan proposal at all, only a completion report or a procurement
+plan, so the absence is a property of the public record rather than of the
+pipeline. The remaining 30 have documents that yield no extractable text.
 
-The three lowest-coverage fields should be treated as unusable in their current
-form. Whether they are unrecoverable in principle or recoverable with a revised
-retrieval step is an open question and the first item in the evaluation work
-described below.
+Two of the low-coverage fields are low for a substantive reason rather than a
+recoverable one. `goods_share_pct` sits at 7% because IDB cost tables are
+organised by project component, not by expenditure category, so a goods share is
+not stated in most proposals. `eligibility_date` sits at 1.5% because a proposal
+states an expected date rather than the declared one; the warehouse records the
+declared date for every operation, at day precision, and should be used instead.
+`safeguards_category` at 52% reflects a change in Bank practice: the
+environmental classification was not standard in proposals written before about
+2003, which is where a large part of this corpus now sits.
+
+## Validation
+
+The extraction is checked two ways, because most of the fields have no external
+benchmark and it is worth being explicit about which claims rest on what.
+
+**Against the Bank's data warehouse.** Three of the 17 fields have a warehouse
+counterpart. On the environmental classification, where both sources assert a
+substantive category, they agree on 838 of 859 operations, or 97.6%. Every one of
+the 21 disagreements is between adjacent categories, 16 of them between the two
+middle ones. A further 99 cases have the extraction reporting a category while
+the warehouse records the "no classification required" default, against 2 cases
+in the opposite direction; a 50-to-1 asymmetry indicates an incomplete warehouse
+field rather than an invented value. On disbursement period the two measures
+correlate at 0.918 across 1,991 operations, with the extraction larger in 97% of
+cases by a median of four months, which is the definitional gap between the span
+stated in the proposal and the warehouse's commitment period.
+
+**Against hand-coding.** The remaining 14 fields have no external source
+anywhere, which is the reason they are worth extracting and also the reason a
+warehouse comparison cannot speak to them.
+`src/sample_for_validation.py` draws a sample stratified by field and status, so
+that `found` values are not swamped by the `not_stated` rows that dominate a flat
+draw, and `src/score_validation.py` scores a reviewer's entries with type-aware
+comparison. That measurement is in progress and its result will be reported here
+rather than summarised.
+
+## Engineering notes
+
+Several defects found during the full run are worth recording, because each was
+silent and each cost data.
+
+**Two operation-numbering schemes.** The Bank changed its numbering around 2003.
+Operations approved before then carry a country prefix and four digits
+(`AR0058`); after, a prefix, an instrument letter and three to five digits
+(`CO-L1234`). Five separate call sites encoded only the second pattern, including
+the harvest filter and the check that flags a quote naming a different operation.
+The consequence was not an error but an absence: 709 operations with complete
+disbursement histories in the warehouse were never harvested, and the
+contamination check was blind to every one of the older operations. The patterns
+now live in one module, `src/opnum.py`, with the country prefixes taken from the
+Bank's own export rather than assumed.
+
+**Filenames truncated past their extension.** The Bank names documents with their
+full title, and long titles are cut at 150 bytes, which removes the `.pdf`. 99
+readable documents across 80 operations were being skipped as unsupported, and
+for 14 operations every document they had. Document type is now determined from
+the file's first bytes rather than its name.
+
+**Citation resolution by quote, not by identifier.** Paragraph identifiers are
+not unique across an operation's documents: an unnumbered page is labelled
+`page-6` in every file. An earlier resolver matched on the identifier and
+attributed a value to whichever document happened to be indexed first, which was
+wrong about as often as it was right. Resolution is now by verbatim quote, with
+the identifier as a fallback only where it is unique, and a value whose source
+cannot be established is recorded as unresolved rather than guessed.
+
+**Malformed tool calls.** A forced tool call occasionally returns with arguments
+missing. Three such calls appeared in roughly 41,500 field values. Unguarded,
+one of them ended a run that had already processed 149 operations. Malformed
+calls are now dropped individually and recorded in the audit.
 
 ## Repository layout
 
 ```
 src/                      pipeline modules, one per stage
+src/opnum.py              canonical operation-number patterns, imported everywhere
 src/tests/                unit test and captured fixtures
 data/processed/           the extracted panel
 data/audit/               citations and quotes behind every cell

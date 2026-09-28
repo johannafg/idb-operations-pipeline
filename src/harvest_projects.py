@@ -88,7 +88,12 @@ LAC_COUNTRIES = {
 # couple of status values were observed directly ("Implementation", "Closed").
 PRE_APPROVAL_STATUS_DENYLIST = {"pipeline", "proposed", "under preparation", "in preparation"}
 
-OP_NUMBER_RE = re.compile(r"^[A-Z]{2}-L\d{3,5}$")  # loan-instrument operation numbers, e.g. CO-L1234
+OP_NUMBER_RE = re.compile(r"^[A-Z]{2}-L\d{3,5}$|^[A-Z]{2}\d{4}$")
+# Two numbering schemes. The IDB switched around 2002-03: operations approved
+# before then carry the old country+serial form (AR0038, BR0216), after that the
+# -L form (CO-L1234). The old scheme was missing from this pattern until
+# 2026-09-24, which is the sole reason the corpus began in 2003 -- 2,859
+# old-format operations sit in the same bulk export and were silently dropped here.
 DOC_URL_RE = re.compile(r"https://www\.iadb\.org/document\.cfm\?id=[\w-]+")
 
 
@@ -302,12 +307,26 @@ def already_harvested(op_number: str, corpus_root: Path) -> int:
     return sum(1 for f in op_dir.iterdir() if f.is_file() and f.stat().st_size > 0)
 
 
+def _safe_filename(name: str, limit: int = 150) -> str:
+    """Trim a long document title to fit the filesystem WITHOUT losing the
+    extension. The IDB names documents with their full title, and the raw name
+    was being cut at 150 bytes, which amputated the ".pdf" and made the file
+    invisible to the extension filter downstream. Cut the stem instead."""
+    stem, dot, ext = name.rpartition(".")
+    if not dot or len(ext) > 5 or "/" in ext:
+        stem, ext = name, ""
+    keep = limit - (len(ext) + 1 if ext else 0)
+    b = stem.encode("utf-8")[:max(keep, 1)]
+    stem = b.decode("utf-8", "ignore").rstrip()
+    return f"{stem}.{ext}" if ext else stem
+
+
 def download_docs(meta: dict, corpus_root: Path, session: requests.Session, delay: float) -> int:
     op_dir = corpus_root / meta["operation_number"]
     op_dir.mkdir(parents=True, exist_ok=True)
     n = 0
     for doc in meta["loan_proposal_docs"]:
-        dest = op_dir / doc["filename"]
+        dest = op_dir / _safe_filename(doc["filename"])
         if dest.exists() and dest.stat().st_size > 0:
             continue  # idempotent -- re-running a harvest doesn't re-download
         resp = polite_get(doc["url"], session, delay, stream=True)
@@ -324,6 +343,9 @@ def main():
     src = ap.add_mutually_exclusive_group(required=True)
     src.add_argument("--project-list", help="official bulk export (.xlsx/.csv) from the search page's "
                                               "'Download Project Information' button -- recommended")
+    src.add_argument("--only-operations", help="plain text file, one operation number per line. "
+                                               "Harvests exactly these, bypassing the year and "
+                                               "lending-instrument filters (the list is trusted).")
     src.add_argument("--scrape-search", action="store_true", help="paginate the live search results instead "
                                                                      "(smoke-test with --limit first)")
     ap.add_argument("--corpus-root", default="../corpus")
@@ -340,7 +362,10 @@ def main():
     corpus_root.mkdir(parents=True, exist_ok=True)
     session = requests.Session()
 
-    if args.project_list:
+    if args.only_operations:
+        with open(args.only_operations, encoding="utf-8") as fh:
+            candidates = sorted({ln.strip() for ln in fh if ln.strip() and not ln.startswith("#")})
+    elif args.project_list:
         candidates = load_project_list(args.project_list, args.start_year, args.end_year)
     else:
         candidates = scrape_search_results(session, args.start_year, args.end_year, args.delay)
@@ -354,10 +379,33 @@ def main():
         if not args.force:
             existing = already_harvested(op, corpus_root)
             if existing > 0:
-                rows.append({"operation_number": op, "eligible": "skipped (already downloaded)",
-                             "n_docs": existing})
+                # Files are already local, so don't re-download -- but still
+                # fetch metadata (country/instrument/status/approval_date).
+                # An earlier version of this branch skipped that too, which
+                # is why, in the August 2026 run, 1,097 of 1,471 rows in harvest_log.csv came back
+                # blank on exactly these four fields: any project already on
+                # disk from a prior run never got its metadata recorded at
+                # all, silently relying on data.xlsx's bulk export to cover
+                # the gap. That's a real risk for newly-harvested projects
+                # (e.g. the post-2019 extended harvest) that aren't in that
+                # snapshot yet.
+                try:
+                    meta = get_project_detail(op, session, args.delay)
+                    rows.append({
+                        "operation_number": op, "eligible": "skipped (already downloaded)",
+                        "n_docs": existing,
+                        "country": meta["country"], "lending_instrument": meta["lending_instrument"],
+                        "project_status": meta["project_status"], "approval_date": meta["approval_date"],
+                    })
+                except Exception as e:
+                    print(f"[warn] {op}: already downloaded, but metadata re-fetch failed ({e}) -- "
+                          f"row will still be missing country/instrument/status/approval_date this run",
+                          file=sys.stderr)
+                    rows.append({"operation_number": op, "eligible": "skipped (already downloaded)",
+                                 "n_docs": existing, "note": f"metadata fetch failed: {e}"})
                 print(f"[{i}/{len(candidates)}] {op}: already have {existing} file(s) in corpus/{op}/ "
-                      f"-- skipping (use --force to re-check)", file=sys.stderr)
+                      f"-- skipping download, refreshed metadata (use --force to re-check eligibility/docs)",
+                      file=sys.stderr)
                 continue
 
         try:
@@ -367,7 +415,13 @@ def main():
             rows.append({"operation_number": op, "eligible": "error", "n_docs": 0, "note": str(e)})
             continue
 
-        eligible = is_eligible(meta, args.start_year, args.end_year)
+        if args.only_operations:
+            # The caller supplied the exact list, so the year and instrument
+            # screens do not apply. Keep only the pre-approval guard, which is
+            # the confidentiality boundary, not a sample filter.
+            eligible = meta["project_status"].strip().lower() not in PRE_APPROVAL_STATUS_DENYLIST
+        else:
+            eligible = is_eligible(meta, args.start_year, args.end_year)
         n = download_docs(meta, corpus_root, session, args.delay) if eligible else 0
         rows.append({
             "operation_number": op, "eligible": eligible, "n_docs": n,

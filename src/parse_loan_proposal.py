@@ -122,10 +122,27 @@ SECTION_KEYWORDS = {
         "obras civiles", "obras de infraestructura", "construccion de",
         "obras civis", "construcao de",
     ],
-    "imports": [
-        "imported", "imports", "import of", "import duties", "importation",
-        "importado", "importada", "importacion", "insumos importados",
-        "importacao", "importados",
+    "execution_conditions": [
+        "retroactive financing", "advance contracting", "advance procurement",
+        "conditions precedent", "special conditions of execution",
+        "financiamiento retroactivo", "contratacion anticipada", "adquisiciones anticipadas",
+        "condiciones especiales de ejecucion", "condiciones contractuales especiales",
+        "financiamento retroativo", "contratacao antecipada", "condicoes especiais de execucao",
+    ],
+    "cost_table": [
+        "cost and financing", "project cost", "goods and services", "equipment and materials",
+        "costo y financiamiento", "costo del proyecto", "adquisicion de bienes",
+        "bienes y servicios", "equipamiento", "presupuesto por componente",
+        "custo e financiamento", "aquisicao de bens", "bens e servicos",
+        "projected disbursements", "disbursement schedule", "cronograma de desembolsos",
+        "plan financiero", "cronograma de inversiones", "cronograma de desembolso",
+    ],
+    "eligibility": [
+        "eligibility", "eligible for disbursement", "eligibility date",
+        "conditions prior to the first disbursement", "first disbursement",
+        "elegibilidad", "fecha de elegibilidad", "elegible para desembolso",
+        "condiciones previas al primer desembolso", "primer desembolso",
+        "elegibilidade", "data de elegibilidade", "primeiro desembolso",
     ],
     "price_adjustment": [
         "price adjustment", "price escalation", "price variation", "escalation clause",
@@ -139,7 +156,8 @@ SECTION_KEYWORDS = {
 # Groups serving fields that appear in only a few paragraphs of a document.
 # They are weighted up so that, when a document has more relevant text than
 # the character budget allows, these paragraphs are kept first.
-TAG_WEIGHTS = {"imports": 3, "price_adjustment": 3, "works": 2}
+TAG_WEIGHTS = {"price_adjustment": 3, "eligibility": 3, "execution_conditions": 3,
+               "cost_table": 2, "works": 2}
 
 
 def _norm(text: str) -> str:
@@ -151,16 +169,70 @@ def _norm(text: str) -> str:
 _NORM_KEYWORDS = {tag: [_norm(k) for k in kws] for tag, kws in SECTION_KEYWORDS.items()}
 
 
+def _pages_via_pdfplumber(pdf_path: str):
+    with pdfplumber.open(pdf_path) as pdf:
+        return [(page.extract_text() or "") for page in pdf.pages]
+
+
+def _pages_via_pypdf(pdf_path: str):
+    import pypdf
+    reader = pypdf.PdfReader(pdf_path)
+    return [(pg.extract_text() or "") for pg in reader.pages]
+
+
+def _pages_via_pdftotext(pdf_path: str):
+    import subprocess
+    out = subprocess.run(["pdftotext", "-layout", pdf_path, "-"],
+                         capture_output=True, timeout=180)
+    if out.returncode != 0:
+        raise RuntimeError(f"pdftotext exit {out.returncode}")
+    # \f is pdftotext's page separator
+    return out.stdout.decode("utf-8", "replace").split("\f")
+
+
+def read_pdf_pages(pdf_path: str):
+    """Page texts, trying three extractors in order.
+
+    pdfplumber is the primary because its layout handling is what the retrieval
+    and the two-column summary tables were tuned against. But pdfminer, which it
+    sits on, raises "list index out of range" on certain malformed page trees --
+    it did so for GU0171, GY0076 and PN0159 in the 2026-09-27 full run, which
+    are ordinary 11-to-33-page PDFs that both pypdf and pdftotext read without
+    complaint (130k-180k characters each). Falling back recovers them instead of
+    recording a null row.
+
+    Raises the ORIGINAL pdfplumber error if every extractor fails, so the audit
+    still shows the real cause."""
+    first_error = None
+    for reader in (_pages_via_pdfplumber, _pages_via_pypdf, _pages_via_pdftotext):
+        try:
+            pages = reader(pdf_path)
+        except Exception as e:
+            if first_error is None:
+                first_error = e
+            continue
+        if any((p or "").strip() for p in pages):
+            return pages
+        if first_error is None:
+            first_error = ValueError("no text on any page")
+    raise first_error if first_error else ValueError("no extractor produced text")
+
+
 def extract_paragraphs(pdf_path: str):
     """Return a list of {para_id, page, text} for every numbered paragraph,
     plus a fallback 'page_blob' for pages with no numbered paragraphs
     (cover page, tables, annexes)."""
     _ensure_downloaded(pdf_path)
+    if sniff_document_type(pdf_path) != "pdf":
+        # A .pdf name is not a promise. AR-L1408's two "PDFs" in the 2026-09-27
+        # run were 3.8 KB HTML error pages from a failed download; handing those
+        # to pdfplumber produced "No /Root object!" instead of a clear reason.
+        raise ValueError(f"file is named .pdf but its content is not a PDF "
+                          f"(likely a failed download saving an error page)")
     paragraphs = []
     current = None
-    with pdfplumber.open(pdf_path) as pdf:
-        for page_num, page in enumerate(pdf.pages, start=1):
-            text = page.extract_text() or ""
+    for page_num, text in enumerate(read_pdf_pages(pdf_path), start=1):
+            text = text or ""
             page_has_para = False
             for line in text.split("\n"):
                 m = PARA_RE.match(line.strip())
@@ -175,8 +247,8 @@ def extract_paragraphs(pdf_path: str):
                 # cover page / table / annex page with no ¶ numbering
                 paragraphs.append({"para_id": f"page-{page_num}", "page": page_num,
                                     "text": text.strip()[:4000]})
-        if current:
-            paragraphs.append(current)
+    if current:
+        paragraphs.append(current)
     return paragraphs
 
 
@@ -213,15 +285,47 @@ def extract_paragraphs_docx(docx_path: str):
     return paragraphs
 
 
+def sniff_document_type(doc_path: str):
+    """The file's REAL type from its first bytes: "pdf", "docx", or None.
+
+    The extension cannot be trusted. The IDB serves documents named with their
+    full title, and long titles are cut at 150 bytes, which amputates the
+    ".pdf" -- e.g. "Brazil. Proposal for an individual loan for the Program for
+    the Digital Transformation of the Government of the State of Piaui - Piaui
+    Mais Digital.pd". Checked on the real corpus 2026-09-25: 99 readable files
+    across 80 operations, and for 14 operations EVERY document, were being
+    skipped as "unsupported" while being perfectly good PDFs.
+
+    A DOCX is a zip, and so are .xlsx/.pptx, so the zip is opened and checked
+    for word/document.xml rather than trusted on its magic bytes alone."""
+    try:
+        with open(doc_path, "rb") as fh:
+            head = fh.read(4)
+    except OSError:
+        return None
+    if head[:4] == b"%PDF":
+        return "pdf"
+    if head[:4] == b"PK\x03\x04":
+        try:
+            import zipfile
+            with zipfile.ZipFile(doc_path) as z:
+                if "word/document.xml" in z.namelist():
+                    return "docx"
+        except Exception:
+            return None
+    return None
+
+
 def extract_paragraphs_any(doc_path: str):
-    """Dispatches to the right extractor by extension. Raises ValueError for
-    anything not in SUPPORTED_EXTENSIONS (e.g. .xlsx, .ppt, legacy .doc) so
-    callers can catch it and log a clear skip reason instead of a confusing
-    parser crash."""
+    """Dispatches to the right extractor. The extension decides when it is one
+    we know; otherwise the file's own first bytes do (see sniff_document_type).
+    Raises ValueError only when the content is genuinely not a PDF or DOCX
+    (.xlsx, .ppt, legacy .doc, images), so callers can log a clear skip."""
     ext = Path(doc_path).suffix.lower()
-    if ext == ".pdf":
+    kind = {".pdf": "pdf", ".docx": "docx"}.get(ext) or sniff_document_type(doc_path)
+    if kind == "pdf":
         return extract_paragraphs(doc_path)
-    if ext == ".docx":
+    if kind == "docx":
         return extract_paragraphs_docx(doc_path)
     raise ValueError(f"unsupported document type '{ext}' -- only {sorted(SUPPORTED_EXTENSIONS)} "
                       f"are parsed for text; this file's content will not be included")
@@ -231,21 +335,6 @@ def extract_paragraphs_any(doc_path: str):
 # carry keywords but no content. They are never tagged, so never retrieved.
 _TOC_RE = re.compile(r"(\.{5,}|…{2,}|_{5,})\s*\d")
 
-# A paragraph mentioning imports is only relevant to the imported-inputs
-# fields if it also refers to goods, equipment, materials, or their purchase.
-# Without this, retrieval surfaces imported COVID-19 cases, national trade
-# statistics, and economic-analysis assumptions.
-_GOODS_TERMS = [_norm(t) for t in [
-    "equipment", "equipo", "equipamento", "materials", "materiales", "materiais",
-    "goods", "bienes", "bens", "machinery", "maquinaria", "vehicle", "vehiculo",
-    "aircraft", "aeronave", "inputs", "insumos", "supplies", "suministro",
-    "procurement", "adquisicion", "aquisicao", "purchase", "compra",
-    "customs", "aduana", "aduaneir", "import duties", "gastos de importacion",
-]]
-_IMPORT_EXCLUDE = [_norm(t) for t in [
-    "shadow price", "precio sombra", "precios sombra", "preco sombra",
-    "imported case", "casos importados", "casos importado",
-]]
 
 
 def _is_toc(text: str) -> bool:
@@ -264,9 +353,6 @@ def tag_sections(paragraphs):
         low = _norm(p["text"])
         counts = {tag: sum(1 for k in kws if k in low) for tag, kws in _NORM_KEYWORDS.items()}
         counts = {t: c for t, c in counts.items() if c}
-        if "imports" in counts and (not any(g in low for g in _GOODS_TERMS)
-                                    or any(x in low for x in _IMPORT_EXCLUDE)):
-            del counts["imports"]
         tagged.append({**p, "tags": list(counts), "tag_hits": counts})
     return tagged
 
@@ -328,7 +414,8 @@ def _doc_hints(filename: str):
 
 # Sparse fields are served first in each selection round, so that their few
 # paragraphs are never crowded out by the dense financing and risk sections.
-_TAG_ORDER = ["price_adjustment", "imports", "works", "disbursement", "safeguards",
+_TAG_ORDER = ["price_adjustment", "eligibility", "execution_conditions", "cost_table",
+              "works", "disbursement", "safeguards",
               "procurement", "execution", "financing", "risks"]
 
 
