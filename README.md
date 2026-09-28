@@ -177,8 +177,9 @@ calls are now dropped individually and recorded in the audit.
 src/                      pipeline modules, one per stage
 src/opnum.py              canonical operation-number patterns, imported everywhere
 src/tests/                unit test and captured fixtures
-data/processed/           the extracted panel
-data/audit/               citations and quotes behind every cell
+data/processed/           the extracted panel, all 2,581 operations
+data/audit/               a 50-operation excerpt of the citation-and-quote audit
+                          (the full audit is 23 MB; Stage 3 regenerates it)
 data/reference/           harvest metadata (country, instrument, approval date)
 evaluation/               validation design and measured accuracy (in progress)
 analysis/                 findings and figures (in progress)
