@@ -216,25 +216,34 @@ sample is well under fifty dollars.
 
 ## Known issues
 
-`disbursement_period_years` is defined in `src/schema.py` but does not appear in
-the current panel, which was built before the field was added. It requires a
-re-run.
+**Live search pagination is unvalidated.** `scrape_search_results` has never been
+run against the production site, and no part of the current corpus came through
+it. The two supported paths are an export of the project list from the IDB search
+page, passed with `--project-list`, and an explicit operation list passed with
+`--only-operations`, which bypasses the year and instrument screens. The
+569-operation extension that brought the corpus back to 1996 used the second.
+Anyone reaching for the scraper should smoke-test it with `--limit` first.
 
-The live search pagination in `scrape_search_results` has not been validated
-against the production site and should be smoke-tested with `--limit` before any
-full run. The supported path is to export the project list from the IDB search
-page and pass it with `--project-list`.
+**Fourteen of the seventeen fields have no measured accuracy.** The three fields
+with a warehouse counterpart are validated above. For the other fourteen there is
+no external benchmark, and fill rate is not accuracy. A stratified sample of 225
+field-values has been drawn and is being hand-coded; until that is scored, the
+coverage table should be read as a statement about what the documents contain,
+not about whether the extraction read them correctly.
 
-Extraction has not yet been validated against hand-coded ground truth. Field
-fill rates are reported above, but fill rate is not accuracy. Measured precision
-and recall are the next deliverable.
+**Two panel fields are not fit for the use their names suggest.**
+`eligibility_date` appears for 40 operations because proposals state an expected
+date rather than the declared one — the warehouse field should be used instead.
+`goods_share_pct` appears for 186 because IDB cost tables are organised by
+component rather than by expenditure category. Both are kept because a stated
+value is still informative; neither should be used as a panel variable.
 
 ## In progress
 
-A validation study drawing a stratified sample of operations, hand-coding the
-target fields, and reporting field-level precision and recall with confidence
-intervals, an error taxonomy built from observed failures, and a test of whether
-error rates vary systematically by document language, length, and vintage.
+The hand-coded validation study: scoring the drawn sample for field-level
+precision and recall with confidence intervals, building an error taxonomy from
+the observed failures, and testing whether error rates vary systematically by
+document language, length, and vintage.
 
 ## Author
 
